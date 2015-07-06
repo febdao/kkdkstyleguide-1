@@ -3,9 +3,14 @@
 var gulp = require('gulp'),
 		browserSync = require('browser-sync'),
 		concatCss = require('gulp-concat-css'),
-		reload = browserSync.reload;
+  	twig = require('gulp-twig'),
+  	prettify = require('gulp-html-prettify'),
+		reload = browserSync.reload,
+	  src = {
+	    html: 'index.twig',
+	  };
 
-gulp.task('server',['css'],function(){
+gulp.task('server',function(){
 	browserSync({
 		notify: false,
 		server: {
@@ -23,11 +28,24 @@ gulp.task('server',['css'],function(){
 gulp.task('css', function() {
   return gulp.src('components/**/*.css')
     .pipe(concatCss("style.css"))
-    .pipe(gulp.dest('css/'));
+    .pipe(gulp.dest('css/'))
+    .on("end", reload);
 });
+
+/**
+ * Generate templates.
+ */
+gulp.task('templates', function () {
+  return gulp.src(src.html)
+    .pipe(twig())
+    .pipe(prettify({indent_char: ' ', indent_size: 2}))
+    .pipe(gulp.dest('./'))
+    .on("end", reload);
+});
+
 
 /*
  * Compile sass, filter the results, inject CSS into all browsers.
  */
 
-gulp.task('default', ['server']);
+gulp.task('default', ['templates', 'css', 'server']);

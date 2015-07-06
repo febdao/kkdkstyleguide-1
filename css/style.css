@@ -1,8 +1,6 @@
-body {
-  border: 1px solid #996633;
-  font-size: 34px;
+.tag {
+  font-size: 16px;
 }
-body {
-  color: blue;
-  background: red;
+.boxicon {
+  font-weight: bold;
 }
