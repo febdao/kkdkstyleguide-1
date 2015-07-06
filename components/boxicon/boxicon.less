@@ -1,0 +1,51 @@
+@color-box-icon-title: #006d8c;
+
+.box-icons {
+  margin: 0 -12px;
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  &__item {
+    float: left;
+    margin-bottom: 22px;
+    padding: 0 12px;
+    width: 33.333%;
+  }
+
+  &__image {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 1.22222em;
+    line-height: 1.21em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: @color-box-icon-title;
+  }
+
+  & .most-read-pages {
+    margin-bottom: 0;
+    padding-top: 0;
+    text-align: left;
+
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    &__item {
+      clear: both;
+      float: left;
+      margin: 0 0 2px;
+    }
+  }
+}

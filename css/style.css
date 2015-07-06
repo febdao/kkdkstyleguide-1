@@ -10,8 +10,9 @@
 
 .box-icons__item {
   float: left;
-  width: 33.333%;
+  margin-bottom: 22px;
   padding: 0 12px;
+  width: 33.333%;
 }
 
 .box-icons__image {
@@ -21,6 +22,7 @@
 .box-icons__title {
   font-size: 1.22222em;
   line-height: 1.21em;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
@@ -29,13 +31,21 @@
 }
 
 .box-icons .most-read-pages {
+  margin-bottom: 0;
+  padding-top: 0;
   text-align: left;
+}
+
+.box-icons .most-read-pages:after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .box-icons .most-read-pages__item {
   clear: both;
   float: left;
-  margin: 2px 0 0;
+  margin: 0 0 2px;
 }
 .most-read-pages {
   margin-bottom: 28px;
