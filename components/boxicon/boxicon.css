@@ -1,3 +1,32 @@
-.boxicon {
-	font-weight: bold;
+.box-icons {
+  margin: 0 -12px;
+}
+.box-icons:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.box-icons__item {
+  float: left;
+  width: 33.333%;
+  padding: 0 12px;
+}
+.box-icons__image {
+  margin-bottom: 10px;
+}
+.box-icons__title {
+  font-size: 1.22222em;
+  line-height: 1.21em;
+  text-transform: uppercase;
+}
+.box-icons__title {
+  color: #006d8c;
+}
+.box-icons .most-read-pages {
+  text-align: left;
+}
+.box-icons .most-read-pages__item {
+  clear: both;
+  float: left;
+  margin: 2px 0 0;
 }
