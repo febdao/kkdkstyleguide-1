@@ -2,7 +2,17 @@
 {% extends "layout.twig" %}
 
 {% block index %}
-  {% include "components/most-read-pages/most-read-pages.html" %}
-  {% include "components/boxicon/boxicon.html" %}
-  {% include "components/tags/tags.html" %}
+
+	{% set list_components = [
+    'boxicon',
+		'most-read-pages',
+		'tags'
+	] %}
+
+  {% for component in list_components %}
+  	<div class="feb">
+  		{% include "components/" ~ component ~ "/" ~ component ~ ".html" %}
+  	</div>
+  {% endfor %}
+
 {% endblock %}
