@@ -1,0 +1,1143 @@
+/* line 3, ../scss/base/_kk.silent.global.scss */
+.page-node.node-type-e-recruitment .reg-sidebar .panel-pane a:before,
+.pane-erecruitment-apply-for-job-link a:after,
+.pane-edoc-handling-item-links a:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 2, ../scss/pages/_kkdk.all.pages.style.scss */
+.sec-menu {
+  margin-bottom: 0;
+  border-bottom-width: 6px; }
+
+/* line 8, ../scss/pages/_kkdk.all.pages.style.scss */
+#edit-start-date-wrapper,
+#edit-tags-wrapper {
+  float: left;
+  margin-bottom: 28px;
+  margin-right: 0.8em;
+  max-width: 30%;
+  font-family: "Gill Sans W04","Gill Sans",serif; }
+  /* line 15, ../scss/pages/_kkdk.all.pages.style.scss */
+  #edit-start-date-wrapper .chosen-container-single,
+  #edit-tags-wrapper .chosen-container-single {
+    max-width: 240px !important; }
+  /* line 19, ../scss/pages/_kkdk.all.pages.style.scss */
+  #edit-start-date-wrapper label,
+  #edit-tags-wrapper label {
+    font-family: "Gill Sans W04","Gill Sans",serif;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    display: inline-block; }
+
+@media all and (max-width: 820px) and (min-width: 120px) {
+  /* line 28, ../scss/pages/_kkdk.all.pages.style.scss */
+  #edit-start-date-wrapper,
+  #edit-tags-wrapper {
+    float: none; } }
+/* line 34, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-courses-list .form-item-start-date .chosen-container-single .chosen-single,
+.page-courses-list .form-type-select .chosen-container-single .chosen-single {
+  border-radius: 0 !important;
+  height: 36px !important;
+  line-height: 37px !important;
+  text-transform: uppercase !important; }
+
+/* line 42, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-most-read-pages {
+  color: #006d8c; }
+  /* line 45, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-most-read-pages .views-row {
+    display: inline-block;
+    margin: 5px 0 0 1px;
+    padding: 5px;
+    background: #e1ecef;
+    font-size: 0.83333em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2em; }
+    /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+    .lt-ie9 .view-most-read-pages .views-row {
+      font-family: "Gill Sans W04_i7", "Gill Sans", serif;
+      font-weight: normal;
+      font-style: normal; }
+    /* line 57, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-most-read-pages .views-row.views-row-1 {
+      margin-left: 0; }
+    /* line 61, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-most-read-pages .views-row a {
+      color: #006d8c; }
+
+/* line 68, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-most-read-pages-most-read-pages h2 {
+  padding: 12px 0 15px;
+  font-size: 1.11111em;
+  text-transform: uppercase;
+  text-align: center; }
+/* line 75, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-most-read-pages-most-read-pages .view-most-read-pages {
+  margin-bottom: 28px;
+  text-align: center; }
+
+/* line 82, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-menu-block-front-page-menu,
+.pane-main-menu {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, ../../../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .pane-menu-block-front-page-menu:after,
+  .pane-main-menu:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 86, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-menu-block-front-page-menu .menu li,
+  .pane-main-menu .menu li {
+    overflow: hidden;
+    margin-bottom: 24px; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      /* line 86, ../scss/pages/_kkdk.all.pages.style.scss */
+      .pane-menu-block-front-page-menu .menu li,
+      .pane-main-menu .menu li {
+        width: 48.97959%;
+        float: left;
+        margin-right: 2.04082%; }
+        /* line 93, ../scss/pages/_kkdk.all.pages.style.scss */
+        .pane-menu-block-front-page-menu .menu li.even,
+        .pane-main-menu .menu li.even {
+          float: right;
+          margin-right: 0; }
+        /* line 97, ../scss/pages/_kkdk.all.pages.style.scss */
+        .pane-menu-block-front-page-menu .menu li.odd,
+        .pane-main-menu .menu li.odd {
+          clear: both; } }
+    @media (min-width: 768px) {
+      /* line 86, ../scss/pages/_kkdk.all.pages.style.scss */
+      .pane-menu-block-front-page-menu .menu li,
+      .pane-main-menu .menu li {
+        width: 31.81818%;
+        float: left;
+        margin-right: 2.27273%; }
+        /* line 104, ../scss/pages/_kkdk.all.pages.style.scss */
+        .pane-menu-block-front-page-menu .menu li.third,
+        .pane-main-menu .menu li.third {
+          float: right;
+          margin-right: 0; }
+        /* line 108, ../scss/pages/_kkdk.all.pages.style.scss */
+        .pane-menu-block-front-page-menu .menu li.first,
+        .pane-main-menu .menu li.first {
+          clear: both; } }
+    /* line 113, ../scss/pages/_kkdk.all.pages.style.scss */
+    .pane-menu-block-front-page-menu .menu li > a,
+    .pane-main-menu .menu li > a {
+      background: none;
+      color: #006d8c;
+      font-size: 1.22222em;
+      line-height: 1.21em; }
+
+/* line 125, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-menu-block-front-page-menu .menu li > a {
+  display: block;
+  margin: 10px 0;
+  text-transform: uppercase; }
+/* line 133, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-menu-block-front-page-menu .view-most-read-pages .views-row {
+  float: left;
+  clear: both;
+  margin: 2px 0 0 0; }
+
+/* line 142, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-main-menu .menu {
+  overflow: hidden;
+  margin: 28px 0; }
+
+/* line 148, ../scss/pages/_kkdk.all.pages.style.scss */
+.block-main-menu-description {
+  display: none; }
+  /* line 151, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-main-menu .block-main-menu-description {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.88889em;
+    line-height: 1.1em; }
+
+/* line 159, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-kkdk-menu-top-level-menu-item {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0 !important;
+  position: relative; }
+  /* line 38, ../../../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .pane-kkdk-menu-top-level-menu-item:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 164, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-kkdk-menu-top-level-menu-item h3 {
+    margin: 12px 0 36px;
+    font-size: 0.72222em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #858585; }
+    /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+    .lt-ie9 .pane-kkdk-menu-top-level-menu-item h3 {
+      font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+      font-weight: normal; }
+  /* line 174, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-kkdk-menu-top-level-menu-item .kkdk-menu-info {
+    padding-bottom: 28px; }
+    /* line 175, ../scss/pages/_kkdk.all.pages.style.scss */
+    .pane-kkdk-menu-top-level-menu-item .kkdk-menu-info h2 {
+      font-size: 2em;
+      line-height: 1em;
+      text-transform: uppercase; }
+    /* line 180, ../scss/pages/_kkdk.all.pages.style.scss */
+    .pane-kkdk-menu-top-level-menu-item .kkdk-menu-info .kkdk-menu-description {
+      margin-top: 5px;
+      font-size: 1.22222em;
+      line-height: 1.4em; }
+    @media (min-width: 768px) {
+      /* line 174, ../scss/pages/_kkdk.all.pages.style.scss */
+      .pane-kkdk-menu-top-level-menu-item .kkdk-menu-info {
+        width: 66.38655%;
+        float: left;
+        margin-right: 0.84034%; } }
+  /* line 193, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-kkdk-menu-top-level-menu-item .kkdk-menu-image {
+    margin-top: -28px; }
+    @media (min-width: 768px) {
+      /* line 193, ../scss/pages/_kkdk.all.pages.style.scss */
+      .pane-kkdk-menu-top-level-menu-item .kkdk-menu-image {
+        width: 32.77311%;
+        float: left;
+        margin-right: 0.84034%;
+        float: right;
+        margin-right: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0; } }
+
+/* line 207, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-line-separator {
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5; }
+
+/* Tender content type and listing */
+/* line 214, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-tender-listing table {
+  width: 100%; }
+  /* line 217, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table a {
+    color: #444444; }
+  /* line 220, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table tr {
+    border-bottom: 1px solid #dddddd; }
+    /* line 223, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-tender-listing table tr:hover, .view-tender-listing table tr:hover a {
+      color: #006d8c; }
+  /* line 227, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table td, .view-tender-listing table th {
+    vertical-align: middle;
+    text-align: left; }
+  /* line 231, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table td {
+    height: 51px;
+    padding: 0 12px;
+    cursor: pointer; }
+  /* line 237, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table th:hover {
+    background-color: #e2e2e2; }
+  /* line 240, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table th a {
+    display: block;
+    padding: 17px 12px; }
+  /* line 247, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table thead tr {
+    background-color: whitesmoke;
+    border-top: 1px solid #dddddd; }
+  /* line 251, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-tender-listing table thead a {
+    color: #006d8c;
+    text-transform: uppercase; }
+    /* line 255, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-tender-listing table thead a span {
+      margin-left: 5px;
+      font-size: 0.66667em; }
+    /* line 261, ../scss/pages/_kkdk.all.pages.style.scss */
+    span:before
+    .view-tender-listing table thead a:hover span:before {
+      color: #006d8c; }
+/* line 268, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-tender-listing .views-field-field-contract-type {
+  width: 25%; }
+/* line 271, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-tender-listing .views-field-title {
+  width: 35%; }
+/* line 275, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-tender-listing .views-field-field-announced-1,
+.view-tender-listing .views-field-field-submit {
+  width: 20%; }
+/* line 281, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-tender-listing .views-field-title a,
+.view-tender-listing .views-field-field-announced-1 a,
+.view-tender-listing .views-field-field-submit a {
+  border-left: 1px solid white; }
+
+/* line 2, ../scss/mixins/_kk.mixin.style.scss */
+.node-type-tender .node-tender .reg-top:after, .node-type-tender .node-tender .reg-top:before {
+  content: "";
+  display: table; }
+/* line 6, ../scss/mixins/_kk.mixin.style.scss */
+.node-type-tender .node-tender .reg-top:after {
+  clear: both; }
+/* line 9, ../scss/mixins/_kk.mixin.style.scss */
+.node-type-tender .node-tender .reg-top {
+  *zoom: 1; }
+/* line 292, ../scss/pages/_kkdk.all.pages.style.scss */
+.node-type-tender .node-tender .reg-top .field-label {
+  display: block;
+  float: left;
+  clear: left;
+  font-weight: bold; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .node-type-tender .node-tender .reg-top .field-label {
+    font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+    font-weight: normal; }
+/* line 302, ../scss/pages/_kkdk.all.pages.style.scss */
+.node-type-tender .node-tender .reg-top .field-name-field-announced,
+.node-type-tender .node-tender .reg-top .field-name-field-submit {
+  float: left;
+  margin-left: 12px; }
+/* line 309, ../scss/pages/_kkdk.all.pages.style.scss */
+.node-type-tender .node-tender .field-name-field-teaser,
+.node-type-tender .node-tender .field-name-body {
+  margin-top: 28px; }
+
+/**
+courses list
+*/
+/* line 318, ../scss/pages/_kkdk.all.pages.style.scss */
+#views-exposed-form-plan2learn-courses-plan2learn-list {
+  margin-top: 1em; }
+
+/* line 323, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-plan2learn-courses .view-header {
+  font-size: 1.33333em;
+  line-height: 1.15em;
+  margin-bottom: 1.58333em;
+  text-transform: uppercase; }
+  /* line 329, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-header em {
+    font-weight: bold;
+    font-style: normal; }
+    /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+    .lt-ie9 .view-plan2learn-courses .view-header em {
+      font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+      font-weight: normal; }
+/* line 338, ../scss/pages/_kkdk.all.pages.style.scss */
+.view-plan2learn-courses .view-content .views-row {
+  overflow: hidden;
+  border-bottom: 1px solid #e2e2e2;
+  vertical-align: top;
+  padding: 1em 0 0;
+  min-height: 5em;
+  clear: both;
+  width: 100%; }
+  /* line 347, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-content .views-row:hover {
+    background-color: #e2e2e2; }
+  /* line 351, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-content .views-row.views-row-first {
+    border-top: 1px solid #e2e2e2; }
+  /* line 354, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-content .views-row.views-row-last {
+    margin-bottom: 1em; }
+  /* line 358, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-content .views-row .views-field-icon-path {
+    margin-bottom: 0; }
+    /* line 360, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-icon-path img {
+      max-width: 100%; }
+  /* line 371, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-content .views-row .views-field-icon-path,
+  .view-plan2learn-courses .view-content .views-row .views-field-title,
+  .view-plan2learn-courses .view-content .views-row .views-field-start-date,
+  .view-plan2learn-courses .view-content .views-row .views-field-price,
+  .view-plan2learn-courses .view-content .views-row .views-field-tags,
+  .view-plan2learn-courses .view-content .views-row .views-field-field-email,
+  .view-plan2learn-courses .view-content .views-row .views-field-link {
+    display: inline-block !important;
+    vertical-align: top; }
+    /* line 375, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-icon-path:after,
+    .view-plan2learn-courses .view-content .views-row .views-field-title:after,
+    .view-plan2learn-courses .view-content .views-row .views-field-start-date:after,
+    .view-plan2learn-courses .view-content .views-row .views-field-price:after,
+    .view-plan2learn-courses .view-content .views-row .views-field-tags:after,
+    .view-plan2learn-courses .view-content .views-row .views-field-field-email:after,
+    .view-plan2learn-courses .view-content .views-row .views-field-link:after {
+      content: '.';
+      visibility: hidden; }
+  /* line 381, ../scss/pages/_kkdk.all.pages.style.scss */
+  .view-plan2learn-courses .view-content .views-row .views-field-title {
+    font-weight: bold;
+    overflow: hidden;
+    position: relative; }
+    /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+    .lt-ie9 .view-plan2learn-courses .view-content .views-row .views-field-title {
+      font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+      font-weight: normal; }
+  @media (min-width: 768px) {
+    /* line 390, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-title {
+      width: 15.96639%;
+      float: left;
+      margin-right: 0.84034%; }
+    /* line 394, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-icon-path {
+      width: 15.96639%;
+      float: left;
+      margin-right: 0.84034%; }
+    /* line 399, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-start-date,
+    .view-plan2learn-courses .view-content .views-row .views-field-price {
+      width: 11.76471%;
+      float: left;
+      margin-right: 0.84034%; }
+    /* line 403, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-tags {
+      width: 20.16807%;
+      float: left;
+      margin-right: 0.84034%; }
+    /* line 407, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-link {
+      width: 11.76471%;
+      float: left;
+      margin-right: 0.84034%;
+      float: right;
+      margin-right: 0; } }
+  @media (max-width: 767px) {
+    /* line 416, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-icon-path {
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%;
+      float: none;
+      display: block !important;
+      height: 120px;
+      width: 240px !important; }
+    /* line 424, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-title {
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; }
+    /* line 431, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-start-date,
+    .view-plan2learn-courses .view-content .views-row .views-field-price,
+    .view-plan2learn-courses .view-content .views-row .views-field-link,
+    .view-plan2learn-courses .view-content .views-row .views-field-tags {
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-top: 0.5em;
+      clear: left; }
+    /* line 437, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-tags {
+      clear: left; }
+    /* line 445, ../scss/pages/_kkdk.all.pages.style.scss */
+    .view-plan2learn-courses .view-content .views-row .views-field-icon-path ~ .views-field-start-date, .view-plan2learn-courses .view-content .views-row .views-field-icon-path ~ .views-field-price, .view-plan2learn-courses .view-content .views-row .views-field-icon-path ~ .views-field-link, .view-plan2learn-courses .view-content .views-row .views-field-icon-path ~ .views-field-tags {
+      float: right;
+      margin-right: 0;
+      float: none; } }
+
+/* E-recruitment */
+/* line 459, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .reg-top {
+  clear: both; }
+  /* line 462, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .reg-top .pane-page-title {
+    margin-bottom: 28px; }
+  /* line 467, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .reg-top .pane-apachesolr-form,
+  .page-jobs-list .reg-top div[class*="pane-facetapi-"] {
+    width: 100%; }
+  /* line 470, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .reg-top .pane-apachesolr-form {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 28px; }
+  /* line 475, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .reg-top div[class*="pane-facetapi-"] {
+    margin-bottom: 0; }
+    /* line 478, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .reg-top div[class*="pane-facetapi-"]:first-child {
+      clear: left; }
+  @media (min-width: 768px) {
+    /* line 484, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .reg-top div[class*="pane-facetapi-"] {
+      width: 24.36975%;
+      float: left;
+      margin-right: 0.84034%; }
+    /* line 488, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .reg-top div.pane-facet-last {
+      float: right;
+      margin-right: 0; } }
+/* line 494, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .pane-apachesolr-info em {
+  font-weight: bold;
+  font-style: normal; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .page-jobs-list .pane-apachesolr-info em {
+    font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+    font-weight: normal; }
+/* line 501, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .chosen-container {
+  font-size: 0.88889em;
+  max-width: 100%; }
+  @media (max-width: 767px) {
+    /* line 501, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .chosen-container {
+      max-width: 100%;
+      width: 100% !important; } }
+  /* line 512, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .chosen-container .chosen-choices,
+  .page-jobs-list .chosen-container .chosen-drop {
+    background: white;
+    padding: 0;
+    border: 1px solid #cbd0d3; }
+  /* line 519, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .chosen-container .chosen-choices li.search-field {
+    margin: 0; }
+    /* line 522, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .chosen-container .chosen-choices li.search-field input.default {
+      font-size: 0.88889em;
+      font-weight: bold;
+      font-style: italic;
+      color: #626262;
+      padding: 0.5625em;
+      width: 100%;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Gill Sans W04", "Gill Sans", serif;
+      text-transform: uppercase;
+      border: 1px solid white !important;
+      min-width: 300px;
+      min-height: 2.2em !important; }
+      /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+      .lt-ie9 .page-jobs-list .chosen-container .chosen-choices li.search-field input.default {
+        font-family: "Gill Sans W04_i7", "Gill Sans", serif;
+        font-weight: normal;
+        font-style: normal; }
+      /* line 538, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .chosen-container .chosen-choices li.search-field input.default:focus {
+        background-color: #ebebeb;
+        outline: none;
+        box-shadow: 0; }
+      @media (max-width: 479px) {
+        /* line 522, ../scss/pages/_kkdk.all.pages.style.scss */
+        .page-jobs-list .chosen-container .chosen-choices li.search-field input.default {
+          width: 100%;
+          min-width: 300px;
+          min-height: 2.2em !important; } }
+  /* line 560, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .chosen-container .chosen-choices li.search-choice {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background: none #e2e2e2;
+    box-shadow: none;
+    margin: 5px;
+    line-height: 1em;
+    padding: 0.3em 2.5em 0.3em 1em;
+    text-transform: uppercase; }
+  /* line 572, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .chosen-container .chosen-drop .chosen-results {
+    margin: 0; }
+    /* line 575, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .chosen-container .chosen-drop .chosen-results .result-selected,
+    .page-jobs-list .chosen-container .chosen-drop .chosen-results .active-result {
+      border: 0;
+      box-shadow: none;
+      padding: 0.6em 2.5em 0.6em 1em;
+      text-transform: uppercase;
+      margin: 0; }
+      /* line 581, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .chosen-container .chosen-drop .chosen-results .result-selected.highlighted,
+      .page-jobs-list .chosen-container .chosen-drop .chosen-results .active-result.highlighted {
+        background: none #ebebeb;
+        color: #444444; }
+/* line 590, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .lt-ie9 .chosen-container .chosen-choices li.search-field input.default {
+  min-height: 1.1em !important; }
+  @media (max-width: 479px) {
+    /* line 590, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .lt-ie9 .chosen-container .chosen-choices li.search-field input.default {
+      min-height: 1.1em !important; } }
+/* line 599, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .chosen-container-active .chosen-choices {
+  box-shadow: none; }
+/* line 607, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .form-actions {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  z-index: 2;
+  padding: 0;
+  margin: 0; }
+  /* line 615, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .form-actions .form-submit {
+    padding: 0 0.5em;
+    background-image: url("../images/icon-search-flip.png");
+    background-size: 21px 21px;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    text-indent: -9999px; }
+/* line 634, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list select.facetapi-multiselect {
+  width: 100%; }
+/* line 640, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-jobs-list .pane-apachesolr-result .search-results {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  width: 100%;
+  clear: both; }
+  /* line 646, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-jobs-list .pane-apachesolr-result .search-results .search-result {
+    overflow: hidden;
+    vertical-align: top;
+    border-bottom: #ebebeb 1px solid;
+    padding: 1em;
+    min-height: 5em; }
+    /* line 653, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .pane-apachesolr-result .search-results .search-result:hover {
+      background-color: whitesmoke; }
+    /* line 657, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .pane-apachesolr-result .search-results .search-result.search-result-heading {
+      min-height: 0;
+      padding: 0; }
+      /* line 661, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result.search-result-heading > div {
+        display: none; }
+    /* line 666, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .pane-apachesolr-result .search-results .search-result .deadline-label {
+      font-weight: bold; }
+      /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+      .lt-ie9 .page-jobs-list .pane-apachesolr-result .search-results .search-result .deadline-label {
+        font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+        font-weight: normal; }
+    @media (min-width: 768px) {
+      /* line 675, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .title,
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .working-time,
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .employment-type,
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .deadline {
+        vertical-align: top; }
+        /* line 679, ../scss/pages/_kkdk.all.pages.style.scss */
+        .page-jobs-list .pane-apachesolr-result .search-results .search-result .title:after,
+        .page-jobs-list .pane-apachesolr-result .search-results .search-result .working-time:after,
+        .page-jobs-list .pane-apachesolr-result .search-results .search-result .employment-type:after,
+        .page-jobs-list .pane-apachesolr-result .search-results .search-result .deadline:after {
+          content: '.';
+          visibility: hidden; }
+      /* line 685, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .title {
+        width: 36.97479%;
+        float: left;
+        margin-right: 0.84034%;
+        word-wrap: break-word; }
+      /* line 690, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .working-time,
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .employment-type {
+        width: 24.36975%;
+        float: left;
+        margin-right: 0.84034%; }
+      /* line 694, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .deadline {
+        width: 11.76471%;
+        float: left;
+        margin-right: 0.84034%;
+        float: right;
+        margin-right: 0; }
+      /* line 699, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result .deadline-label {
+        display: none; }
+      /* line 703, ../scss/pages/_kkdk.all.pages.style.scss */
+      .page-jobs-list .pane-apachesolr-result .search-results .search-result.search-result-heading {
+        padding: 0 1em 0.5em;
+        font-weight: bold; }
+        /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+        .lt-ie9 .page-jobs-list .pane-apachesolr-result .search-results .search-result.search-result-heading {
+          font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+          font-weight: normal; }
+        /* line 708, ../scss/pages/_kkdk.all.pages.style.scss */
+        .page-jobs-list .pane-apachesolr-result .search-results .search-result.search-result-heading > div {
+          display: block; } }
+    /* line 714, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-jobs-list .pane-apachesolr-result .search-results .search-result .title {
+      font-weight: bold; }
+      /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+      .lt-ie9 .page-jobs-list .pane-apachesolr-result .search-results .search-result .title {
+        font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+        font-weight: normal; }
+
+/* line 725, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-node.node-type-e-recruitment .reg-sidebar .panel-pane a:before,
+.pane-erecruitment-apply-for-job-link a:after,
+.pane-edoc-handling-item-links a:before {
+  content: "\e615";
+  font-size: 14px; }
+
+/* line 730, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-erecruitment-apply-for-job-link a:after {
+  padding-left: 5px; }
+
+/* line 733, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-erecruitment-apply-for-job-link {
+  margin-top: 28px; }
+
+/* line 738, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-node.node-type-e-recruitment .reg-sidebar .pane-title {
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  font-size: 1.22222em; }
+/* line 744, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-node.node-type-e-recruitment .reg-sidebar .pane-title,
+.page-node.node-type-e-recruitment .reg-sidebar .panel-pane {
+  border-bottom: 1px solid #ebebeb; }
+/* line 747, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-node.node-type-e-recruitment .reg-sidebar .panel-pane {
+  margin-top: 28px;
+  padding-bottom: 12px; }
+@media (max-width: 767px) {
+  /* line 753, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-node.node-type-e-recruitment .reg-sidebar .field-name-field-geolocation {
+    margin-top: 28px; } }
+
+/* line 758, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-kkms-panes-text-from-variable div {
+  margin-bottom: 1em; }
+
+/* line 763, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-erecruitment-apply-for-job-link a,
+.pane-edoc-handling-item-links a {
+  background-color: #006d8c;
+  color: white;
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+  padding: 5px 5px 5px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  /* line 772, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-erecruitment-apply-for-job-link a:hover,
+  .pane-edoc-handling-item-links a:hover {
+    background-color: #15819d; }
+
+/* E-doc Agenda */
+/* line 779, ../scss/pages/_kkdk.all.pages.style.scss */
+.views-field-ctools-field-edoc-agenda-links .links {
+  margin: 0 0 5px 28px;
+  list-style: disc; }
+  /* line 783, ../scss/pages/_kkdk.all.pages.style.scss */
+  .views-field-ctools-field-edoc-agenda-links .links li, .views-field-ctools-field-edoc-agenda-links .links a {
+    color: #006d8c;
+    line-height: 1.1em; }
+    /* line 787, ../scss/pages/_kkdk.all.pages.style.scss */
+    .views-field-ctools-field-edoc-agenda-links .links li:hover, .views-field-ctools-field-edoc-agenda-links .links a:hover {
+      color: #444444; }
+
+/* line 794, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-edoc-agenda h1, .page-edoc-agenda h2 {
+  margin: 28px 0;
+  font-weight: bold; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .page-edoc-agenda h1, .lt-ie9 .page-edoc-agenda h2 {
+    font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+    font-weight: normal; }
+/* line 799, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-edoc-agenda .pane-node-title {
+  word-break: break-all; }
+/* line 802, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-edoc-agenda table {
+  width: 100%;
+  max-width: 100% !important; }
+  /* line 806, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-edoc-agenda table th {
+    font-weight: bold;
+    text-align: left; }
+    /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+    .lt-ie9 .page-edoc-agenda table th {
+      font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+      font-weight: normal; }
+/* line 813, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-edoc-agenda .agenda-item-number {
+  text-align: right; }
+/* line 816, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-edoc-agenda .edoc-attachment {
+  position: relative;
+  margin-top: 5px;
+  line-height: 1.1em;
+  font-style: italic; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .page-edoc-agenda .edoc-attachment {
+    font-family: "Gill Sans W04_i4", "Gill Sans", serif;
+    font-style: normal; }
+  /* line 823, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-edoc-agenda .edoc-attachment > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #101010; }
+  /* line 830, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-edoc-agenda .edoc-attachment > a {
+    display: block;
+    padding-left: 45px; }
+/* line 835, ../scss/pages/_kkdk.all.pages.style.scss */
+.page-edoc-agenda .agenda-items {
+  font-size: 0.88889em; }
+  /* line 838, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-edoc-agenda .agenda-items th, .page-edoc-agenda .agenda-items td {
+    padding: 5px 15px 5px 0; }
+  /* line 841, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-edoc-agenda .agenda-items tr.even {
+    background-color: whitesmoke; }
+  /* line 845, ../scss/pages/_kkdk.all.pages.style.scss */
+  .page-edoc-agenda .agenda-items a {
+    color: #444444; }
+    /* line 848, ../scss/pages/_kkdk.all.pages.style.scss */
+    .page-edoc-agenda .agenda-items a:hover {
+      color: #006d8c; }
+
+/* line 855, ../scss/pages/_kkdk.all.pages.style.scss */
+.pane-edoc-handling-item-links {
+  margin-bottom: 28px; }
+  /* line 858, ../scss/pages/_kkdk.all.pages.style.scss */
+  .pane-edoc-handling-item-links a {
+    padding: 5px 10px 5px 5px; }
+    /* line 861, ../scss/pages/_kkdk.all.pages.style.scss */
+    .pane-edoc-handling-item-links a:before {
+      content: "\e614";
+      padding-right: 5px; }
+
+/* line 869, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item .case-presentation > p {
+  margin-bottom: 12px !important; }
+/* line 872, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item span {
+  font-family: "Gill Sans W04","Gill Sans",serif !important;
+  font-size: 16px !important; }
+/* line 876, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item ul, .edoc-handling-item ol {
+  margin-left: 28px; }
+/* line 879, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item ul {
+  list-style: disc; }
+/* line 882, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item ol {
+  list-style: decimal; }
+/* line 887, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item .case-presentation,
+.edoc-handling-item .attachments {
+  margin: 28px 0; }
+  /* line 890, ../scss/pages/_kkdk.all.pages.style.scss */
+  .edoc-handling-item .case-presentation > h3,
+  .edoc-handling-item .attachments > h3 {
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  /* line 897, ../scss/pages/_kkdk.all.pages.style.scss */
+  .edoc-handling-item .case-presentation a,
+  .edoc-handling-item .attachments a {
+    color: #444444; }
+    /* line 900, ../scss/pages/_kkdk.all.pages.style.scss */
+    .edoc-handling-item .case-presentation a:hover,
+    .edoc-handling-item .attachments a:hover {
+      color: #006d8c; }
+/* line 906, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item .attachments ul {
+  font-size: 0.88889em; }
+/* line 909, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item .case-presentation.graycolor {
+  padding: 28px;
+  background: white;
+  border: 1px solid #ebebeb;
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0px 0px 1px rgba(68, 68, 68, 0.15);
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0px 0px 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0px 0px 1px rgba(68, 68, 68, 0.15); }
+  @media (max-width: 479px) {
+    /* line 909, ../scss/pages/_kkdk.all.pages.style.scss */
+    .edoc-handling-item .case-presentation.graycolor {
+      padding: 14px; } }
+/* line 920, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item b, .edoc-handling-item strong {
+  font-weight: bold; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .edoc-handling-item b, .lt-ie9 .edoc-handling-item strong {
+    font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+    font-weight: normal; }
+/* line 924, ../scss/pages/_kkdk.all.pages.style.scss */
+.edoc-handling-item i, .edoc-handling-item em {
+  font-style: italic; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .edoc-handling-item i, .lt-ie9 .edoc-handling-item em {
+    font-family: "Gill Sans W04_i4", "Gill Sans", serif;
+    font-style: normal; }
+
+/* line 1, ../scss/panes/_kkdk.better.scss */
+.better-content, .view-better-cph-extended .view-filters,
+.view-better-cph-extended .view-content, .view-better-cph-extended .field-name-name-field,
+.view-better-cph-extended .field-name-description-field, .pane-bundle-better-cph-limited .pane-title, .pane-bundle-better-cph-limited .field-name-field-see-all-link {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 59em; }
+  @media (min-width: 768px) {
+    /* line 1, ../scss/panes/_kkdk.better.scss */
+    .better-content, .view-better-cph-extended .view-filters,
+    .view-better-cph-extended .view-content, .view-better-cph-extended .field-name-name-field,
+    .view-better-cph-extended .field-name-description-field, .pane-bundle-better-cph-limited .pane-title, .pane-bundle-better-cph-limited .field-name-field-see-all-link {
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media (max-width: 767px) {
+    /* line 1, ../scss/panes/_kkdk.better.scss */
+    .better-content, .view-better-cph-extended .view-filters,
+    .view-better-cph-extended .view-content, .view-better-cph-extended .field-name-name-field,
+    .view-better-cph-extended .field-name-description-field, .pane-bundle-better-cph-limited .pane-title, .pane-bundle-better-cph-limited .field-name-field-see-all-link {
+      padding-left: 0.5em;
+      padding-right: 0.5em; } }
+
+/* line 17, ../scss/panes/_kkdk.better.scss */
+.view-better-cph-extended .field-name-name-field,
+.view-better-cph-extended .field-name-description-field, .pane-bundle-better-cph-limited .pane-title, .pane-bundle-better-cph-limited .field-name-field-see-all-link, .pane-bundle-better-cph-limited .stats-numbers-wrapper {
+  position: relative;
+  z-index: 2; }
+
+/* line 23, ../scss/panes/_kkdk.better.scss */
+.view-better-cph-extended .field-type-image, .pane-bundle-better-cph-limited .field-type-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%; }
+  @media (max-width: 767px) {
+    /* line 30, ../scss/panes/_kkdk.better.scss */
+    .view-better-cph-extended .field-type-image img, .pane-bundle-better-cph-limited .field-type-image img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      min-height: 100%;
+      max-width: none;
+      width: auto; } }
+
+/* line 42, ../scss/panes/_kkdk.better.scss */
+.view-better-cph-extended .view-header, .pane-bundle-better-cph-limited {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden; }
+
+/* line 49, ../scss/panes/_kkdk.better.scss */
+.view-better-cph-extended .field-name-name-field h3, .pane-bundle-better-cph-limited .pane-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white; }
+  /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+  .lt-ie9 .view-better-cph-extended .field-name-name-field h3, .view-better-cph-extended .field-name-name-field .lt-ie9 h3, .lt-ie9 .pane-bundle-better-cph-limited .pane-title, .pane-bundle-better-cph-limited .lt-ie9 .pane-title {
+    font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+    font-weight: normal; }
+
+/* line 58, ../scss/panes/_kkdk.better.scss */
+.view-better-cph-extended .view-content h3, .pane-bundle-better-cph-limited h3 {
+  padding-top: 5px;
+  line-height: 1; }
+  /* line 62, ../scss/panes/_kkdk.better.scss */
+  .view-better-cph-extended .view-content h3 a, .pane-bundle-better-cph-limited h3 a {
+    font-size: 2em;
+    font-weight: bold;
+    color: white; }
+    /* line 57, ../scss/mixins/_kk.mixin.style.scss */
+    .lt-ie9 .view-better-cph-extended .view-content h3 a, .view-better-cph-extended .lt-ie9 .view-content h3 a, .lt-ie9 .pane-bundle-better-cph-limited h3 a {
+      font-family: "Gill Sans W04_n7", "Gill Sans", serif;
+      font-weight: normal; }
+
+/* line 80, ../scss/panes/_kkdk.better.scss */
+.node-type-section-page .sec.sec-content .pane-better-cph-extended-better-cph-extended-pane,
+.node-type-section-page .sec.sec-content .pane-bundle-better-cph-limited {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%; }
+
+/* line 86, ../scss/panes/_kkdk.better.scss */
+.node-type-section-page .sec.sec-content .pane-better-cph-extended-better-cph-extended-pane {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* line 91, ../scss/panes/_kkdk.better.scss */
+.view-better-cph-extended {
+  color: white; }
+  /* line 100, ../scss/panes/_kkdk.better.scss */
+  .view-better-cph-extended .form-type-bef-link {
+    background-color: #e2e2e2;
+    display: inline-block;
+    margin-bottom: 5px; }
+    /* line 105, ../scss/panes/_kkdk.better.scss */
+    .view-better-cph-extended .form-type-bef-link a {
+      display: block;
+      padding: 5px 10px;
+      color: #444444; }
+    /* line 111, ../scss/panes/_kkdk.better.scss */
+    .view-better-cph-extended .form-type-bef-link.selected {
+      background-color: #00ba5a; }
+      /* line 114, ../scss/panes/_kkdk.better.scss */
+      .view-better-cph-extended .form-type-bef-link.selected a {
+        color: white; }
+  /* line 120, ../scss/panes/_kkdk.better.scss */
+  .view-better-cph-extended .view-header {
+    min-height: 250px; }
+  /* line 131, ../scss/panes/_kkdk.better.scss */
+  .view-better-cph-extended .field-name-name-field {
+    margin-bottom: 15px; }
+    /* line 134, ../scss/panes/_kkdk.better.scss */
+    .view-better-cph-extended .field-name-name-field h3 {
+      padding-bottom: 5px;
+      border-bottom: 1px solid white; }
+  /* line 141, ../scss/panes/_kkdk.better.scss */
+  .view-better-cph-extended .view-content {
+    margin-top: 25px;
+    margin-bottom: 10px; }
+    /* line 2, ../scss/mixins/_kk.mixin.style.scss */
+    .view-better-cph-extended .view-content:after, .view-better-cph-extended .view-content:before {
+      content: "";
+      display: table; }
+    /* line 6, ../scss/mixins/_kk.mixin.style.scss */
+    .view-better-cph-extended .view-content:after {
+      clear: both; }
+    /* line 9, ../scss/mixins/_kk.mixin.style.scss */
+    .view-better-cph-extended .view-content {
+      *zoom: 1; }
+  /* line 148, ../scss/panes/_kkdk.better.scss */
+  .view-better-cph-extended .views-row {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: #00ba5a; }
+    /* line 153, ../scss/panes/_kkdk.better.scss */
+    .view-better-cph-extended .views-row a {
+      color: white; }
+    @media (min-width: 768px) {
+      /* line 148, ../scss/panes/_kkdk.better.scss */
+      .view-better-cph-extended .views-row {
+        width: 31.81818%;
+        float: left;
+        margin-right: 2.27273%; }
+        /* line 160, ../scss/panes/_kkdk.better.scss */
+        .view-better-cph-extended .views-row.first {
+          clear: both; }
+        /* line 164, ../scss/panes/_kkdk.better.scss */
+        .view-better-cph-extended .views-row.third {
+          margin-right: 0; } }
+
+/* line 171, ../scss/panes/_kkdk.better.scss */
+.pane-bundle-better-cph-limited {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 250px; }
+  /* line 181, ../scss/panes/_kkdk.better.scss */
+  .pane-bundle-better-cph-limited .pane-title {
+    padding-right: 125px; }
+  /* line 188, ../scss/panes/_kkdk.better.scss */
+  .pane-bundle-better-cph-limited .field-name-field-see-all-link {
+    top: -23px;
+    text-align: right; }
+  /* line 197, ../scss/panes/_kkdk.better.scss */
+  .pane-bundle-better-cph-limited a,
+  .pane-bundle-better-cph-limited .field-name-field-stat-subtitle,
+  .pane-bundle-better-cph-limited .field-name-field-stats {
+    color: white; }
+  /* line 2, ../scss/mixins/_kk.mixin.style.scss */
+  .pane-bundle-better-cph-limited .fieldable-panels-pane:after, .pane-bundle-better-cph-limited .fieldable-panels-pane:before {
+    content: "";
+    display: table; }
+  /* line 6, ../scss/mixins/_kk.mixin.style.scss */
+  .pane-bundle-better-cph-limited .fieldable-panels-pane:after {
+    clear: both; }
+  /* line 9, ../scss/mixins/_kk.mixin.style.scss */
+  .pane-bundle-better-cph-limited .fieldable-panels-pane {
+    *zoom: 1; }
+  /* line 205, ../scss/panes/_kkdk.better.scss */
+  .pane-bundle-better-cph-limited .stats-numbers-wrapper {
+    margin-top: -17px;
+    border-top: 1px solid white;
+    padding-top: 15px; }
+    /* line 2, ../scss/mixins/_kk.mixin.style.scss */
+    .pane-bundle-better-cph-limited .stats-numbers-wrapper:after, .pane-bundle-better-cph-limited .stats-numbers-wrapper:before {
+      content: "";
+      display: table; }
+    /* line 6, ../scss/mixins/_kk.mixin.style.scss */
+    .pane-bundle-better-cph-limited .stats-numbers-wrapper:after {
+      clear: both; }
+    /* line 9, ../scss/mixins/_kk.mixin.style.scss */
+    .pane-bundle-better-cph-limited .stats-numbers-wrapper {
+      *zoom: 1; }
+  @media (min-width: 768px) {
+    /* line 213, ../scss/panes/_kkdk.better.scss */
+    .pane-bundle-better-cph-limited .field-name-field-stats-and-numbers-content {
+      width: 31.81818%;
+      float: left;
+      margin-right: 2.27273%; }
+      /* line 218, ../scss/panes/_kkdk.better.scss */
+      .pane-bundle-better-cph-limited .field-name-field-stats-and-numbers-content:first-child {
+        clear: both; }
+        /* line 221, ../scss/panes/_kkdk.better.scss */
+        .pane-bundle-better-cph-limited .field-name-field-stats-and-numbers-content:first-child + div + div {
+          margin-right: 0; } }
+  @media (max-width: 767px) {
+    /* line 213, ../scss/panes/_kkdk.better.scss */
+    .pane-bundle-better-cph-limited .field-name-field-stats-and-numbers-content {
+      margin-bottom: 25px; }
+      /* line 230, ../scss/panes/_kkdk.better.scss */
+      .pane-bundle-better-cph-limited .field-name-field-stats-and-numbers-content:first-child + div + div {
+        margin-bottom: 0; } }
