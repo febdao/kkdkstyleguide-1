@@ -2,6 +2,16 @@
 {% extends "layout.twig" %}
 
 {% block index %}
-  {% include "components/boxicon/boxicon.html" %}
-  {% include "components/tags/tags.html" %}
+
+	{% set list_components = [
+		'boxicon',
+		'tags'
+	] %}
+
+  {% for component in list_components %}
+  	<div class="feb">
+  		{% include "components/" ~ component ~ "/" ~ component ~ ".html" %}
+  	</div>
+  {% endfor %}
+
 {% endblock %}
