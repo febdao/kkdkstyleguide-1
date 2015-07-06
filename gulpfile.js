@@ -8,17 +8,19 @@ var gulp = require('gulp'),
 		reload = browserSync.reload,
 	  src = {
 	    html: 'index.twig',
+	    htmlcompo: 'components/**/*.html',
+	    css: 'components/**/*.css',
 	  };
 
-gulp.task('server',function(){
+gulp.task('server',['templates', 'css'],function(){
 	browserSync({
 		notify: false,
 		server: {
 			baseDir: '.'
 		}
 	});
-	gulp.watch(['css/style.css'], reload);
-	gulp.watch(['*.html'], reload);
+	gulp.watch(src.css, ['css']);
+	gulp.watch([src.html,src.htmlcompo], ['templates']);
 	gulp.watch(['js/*.js'], reload);
 });
 
@@ -45,7 +47,7 @@ gulp.task('templates', function () {
 
 
 /*
- * Compile sass, filter the results, inject CSS into all browsers.
+ * Compile inject CSS into all browsers.
  */
 
-gulp.task('default', ['templates', 'css', 'server']);
+gulp.task('default', ['server']);
