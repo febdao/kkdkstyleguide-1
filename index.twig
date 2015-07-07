@@ -1,44 +1,6 @@
 {# index.twig #}
-{% extends "layout.twig" %}
+{% extends "includes/layout.twig" %}
 
 {% block index %}
-
-	{% set list_components = [
-    {
-      'id':'boxicon',
-      'name': 'Box Icon'
-    },
-    {
-      'id':'most-read-pages',
-      'name': 'Most Read Pages'
-    },
-    {
-      'id':'tags',
-      'name': 'Tags'
-    },
-    {
-      'id':'coloured-infobox',
-      'name': 'Info Box'
-    },
-    {
-      'id':'post',
-      'name': 'Post'
-    },
-    {
-      'id':'image-link',
-      'name': 'Image Link'
-    },
-    {
-      'id':'pager',
-      'name': 'Pager'
-    }
-	] %}
-
-  {% for component in list_components %}
-  	<div class="feb">
-      <h2>{{ component.name }}</h2>
-  		{% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
-  	</div>
-  {% endfor %}
-
+  <h1> KK Styleguide </h1>
 {% endblock %}

@@ -1,0 +1,28 @@
+.search-form {
+  max-width: 670px;
+  position: relative;
+  width: 100%;
+}
+.search-form .form-item {
+  width: 100%;
+  padding-right: 155px;
+}
+.search-form .form-text {
+  background-image: url("http://www.kk.dk/sites/all/themes/kkms_theme/images/icon-search-flip.png");
+  background-position: 0.55556em 50%;
+  background-repeat: no-repeat;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em 0.5em 0.5em 2.125em;
+}
+.search-form .form-submit {
+  font-size: 1em;
+  line-height: 39px;
+  margin-right: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 140px;
+}

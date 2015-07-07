@@ -1,0 +1,37 @@
+.banner {
+  overflow: hidden;
+  position: relative;
+}
+.banner img {
+  height: auto;
+  width: 100%;
+}
+.banner__text-inner {
+  width: auto;
+  padding: 14px;
+  font-size: 1.55556em;
+  line-height: 1.3em;
+  color: white;
+  background-color: #007ea4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .banner__item {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+  }
+  .banner__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 59em;
+    padding: 1em;
+  }
+  .banner__text-inner {
+    display: inline-block;
+    max-width: 80%;
+    padding: 28px;
+    font-size: 42px;
+  }
+}

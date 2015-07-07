@@ -1,14 +1,50 @@
-.clearleft:after {
-  clear: both;
-  content: '';
-  display: table;
+.banner {
+  overflow: hidden;
+  position: relative;
 }
 
-.box-style-border-doupble {
-  border: 1px solid #ebebeb;
-  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+.banner img {
+  height: auto;
+  width: 100%;
+}
+
+.banner__text-inner {
+  width: auto;
+  padding: 14px;
+  font-size: 1.55556em;
+  line-height: 1.3em;
+  color: white;
+  background-color: #007ea4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__item {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+  }
+
+  .banner__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 59em;
+    padding: 1em;
+  }
+
+  .banner__text-inner {
+    display: inline-block;
+    max-width: 80%;
+    padding: 28px;
+    font-size: 42px;
+  }
+}
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
 }
 
 .box-icons {
@@ -60,17 +96,11 @@
   float: left;
   margin: 0 0 2px;
 }
-.clearleft:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.box-style-border-doupble {
-  border: 1px solid #ebebeb;
-  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
 }
 
 .coloured-infobox {
@@ -117,17 +147,88 @@
   width: 130px;
   z-index: 1;
 }
-.clearleft:after {
-  clear: both;
-  content: '';
-  display: table;
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
 }
 
-.box-style-border-doupble {
-  border: 1px solid #ebebeb;
-  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+.filter .chosen-container {
+  font-size: 0.88889em;
+  max-width: 100%;
+}
+
+.filter .chosen-container .chosen-choices,
+.filter .chosen-container .chosen-drop {
+  background: #fff;
+  border: 1px solid #cbd0d3;
+  padding: 0;
+}
+
+.filter .chosen-container .chosen-choices {
+  line-height: 39px;
+}
+
+.filter .chosen-container .chosen-choices li.search-field {
+  margin: 0;
+}
+
+.filter .chosen-container .chosen-choices li.search-field input.default {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #626262;
+  font-size: 0.88889em;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0.5625em;
+  width: 100%;
+  font-family: "Gill Sans W04", "Gill Sans", serif;
+  text-transform: uppercase;
+  border: 1px solid #fff !important;
+  min-width: 300px;
+  min-height: 2.2em !important;
+}
+
+.filter .chosen-container .chosen-choices li.search-choice {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  line-height: 1em;
+  margin: 5px;
+  padding: 0.3em 2.5em 0.3em 1em;
+  text-transform: uppercase;
+}
+
+.filter .chosen-container .chosen-drop li.active-result {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  margin: 0;
+  padding: 0.6em 2.5em 0.6em 1em;
+  text-transform: uppercase;
+}
+
+.filter .chosen-container .chosen-drop li.active-result.highlighted {
+  background: #ebebeb none repeat scroll 0 0;
+  color: #444444;
+}
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
 }
 
 .image-link {
@@ -199,17 +300,11 @@
   padding: 5px;
   line-height: 1.2em;
 }
-.clearleft:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.box-style-border-doupble {
-  border: 1px solid #ebebeb;
-  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
 }
 
 .pager {
@@ -221,17 +316,11 @@
   content: '';
   display: table;
 }
-.clearleft:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.box-style-border-doupble {
-  border: 1px solid #ebebeb;
-  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
 }
 
 .post {
@@ -268,8 +357,42 @@
 .post .tags {
   margin: 1em 0;
 }
+.search-form {
+  max-width: 670px;
+  position: relative;
+  width: 100%;
+}
+
+.search-form .form-item {
+  width: 100%;
+  padding-right: 155px;
+}
+
+.search-form .form-text {
+  background-image: url("http://www.kk.dk/sites/all/themes/kkms_theme/images/icon-search-flip.png");
+  background-position: 0.55556em 50%;
+  background-repeat: no-repeat;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em 0.5em 0.5em 2.125em;
+}
+
+.search-form .form-submit {
+  font-size: 1em;
+  line-height: 39px;
+  margin-right: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 140px;
+}
 .tags {
   font-size: 0.83333em;
   font-style: italic;
   font-weight: 700;
+}
+.social__item {
+  display: inline-block;
 }

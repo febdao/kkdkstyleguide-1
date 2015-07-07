@@ -11,7 +11,17 @@
   <title>KK Styleguide</title>
   <link rel="stylesheet" type="text/css" href="basetheme/css/kkms.style.css">
   <link rel="stylesheet" type="text/css" href="basetheme/css/kkdk_styles.css">
+  <link rel="stylesheet" type="text/css" href="css/shCore.css">
+  <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
+  <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src='libraries/chosen/chosen.jquery.js'></script>
+  <script type="text/javascript" src='js/script.js'></script>
 </head>
 
 <body class="node-type-section-page">
@@ -23,10 +33,15 @@
       <div class="sec-inner">
         <div class="pane-menu-block-front-page-menu">
           {% block index %}{% endblock %}
+          {% block components %}{% endblock %}
         </div>
       </div>
     </section>
   </div>
+  
+  <script type="text/javascript">
+     SyntaxHighlighter.all()
+  </script>
 </body>
 
 </html>
