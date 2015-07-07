@@ -1,22 +1,5 @@
-@path-font : '../../basetheme/fonts';
-
-.font-face(@fontname: sans-serif, @fontweight: normal, @fontstyle: normal) {
-  @font-face {
-    font-family: "@{fontname}";
-    src: url("@{path-font}/@{fontname}.eot");
-    src: url("@{path-font}/@{fontname}.eot?#iefix") format("embedded-opentype"),
-         url("@{path-font}/@{fontname}.woff") format("woff"),
-         url("@{path-font}/@{fontname}.ttf") format("truetype"),
-         url("@{path-font}/@{fontname}.svg#@{fontname}") format("svg");
-    font-weight: @fontweight;
-    font-style: @fontstyle;
-   }
-}
-
-.font-face(icomoon);
-
 .tag {
   font-size: 0.83333em;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
 }
