@@ -1,0 +1,15 @@
+.list-without-bullets > ul {
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-without-bullets > ul > li {
+  list-style: none;
+}
+.list-without-bullets > ul > li:after,
+ > .list-without-bullets > ul > li:before,
+.list-without-bullets > ul > li > a:after,
+.list-without-bullets > ul > li > a:before {
+  content: '';
+}

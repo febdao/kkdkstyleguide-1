@@ -1,0 +1,18 @@
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+.box-list-without-bullets {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  padding: 28px;
+}
+.box-list-without-bullets > .title {
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-size: 1.11111em;
+}

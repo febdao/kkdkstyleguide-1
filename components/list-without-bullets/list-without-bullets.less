@@ -1,0 +1,16 @@
+.list-without-bullets {
+  > ul {
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      list-style: none;
+
+      &:after, > &:before, > a:after, > a:before {
+        content: '';
+      }
+    }
+  }
+}
