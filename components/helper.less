@@ -6,7 +6,7 @@
 @white: #fff;
 
 //Helper class
-.clearleft {
+.clearleft() {
 
   &:after {
     clear: both;
@@ -21,7 +21,7 @@
 //   box-shadow:         @string;
 // }
 
-.box-style-border-doupble {
+.box-style-border-doupble() {
   border: 1px solid #ebebeb;
   -moz-box-shadow : 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow : 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -32,4 +32,21 @@
   -webkit-opacity:  @opacity;
   -moz-opacity:     @opacity;
   opacity:    @opacity;
+}
+
+.element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
 }

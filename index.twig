@@ -4,20 +4,56 @@
 {% block index %}
 
 	{% set list_components = [
-    'boxicon',
-		'most-read-pages',
-    'tags',
-		'coloured-infobox',
-    'post',
-    'image-link',
-    'pager',
-    'banner',
-    'social'
+    {
+      'id':'boxicon',
+      'name': 'Box Icon'
+    },
+    {
+      'id':'most-read-pages',
+      'name': 'Most Read Pages'
+    },
+    {
+      'id':'tags',
+      'name': 'Tags'
+    },
+    {
+      'id':'coloured-infobox',
+      'name': 'Info Box'
+    },
+    {
+      'id':'post',
+      'name': 'Post'
+    },
+    {
+      'id':'image-link',
+      'name': 'Image Link'
+    },
+    {
+      'id':'pager',
+      'name': 'Pager'
+    },
+    {
+      'id':'banner',
+      'name': 'Banner'
+    },
+    {
+      'id':'social',
+      'name': 'Social'
+    },
+    {
+      'id':'search',
+      'name': 'Search'
+    },
+    {
+      'id':'filter',
+      'name': 'Filter'
+    }
 	] %}
 
   {% for component in list_components %}
   	<div class="feb">
-  		{% include "components/" ~ component ~ "/" ~ component ~ ".html" %}
+      <h2>{{ component.name }}</h2>
+  		{% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
   	</div>
   {% endfor %}
 
