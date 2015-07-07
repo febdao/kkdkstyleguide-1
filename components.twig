@@ -51,24 +51,28 @@
 	] %}
 
   {% for component in list_components %}
-  	<div class="feb">
-      <h2>{{ component.name }}</h2>
+  	<div class="component--item">
+      <h2 class="component--title">{{ component.name }}</h2>
       <div class="component--demo">
       {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
       </div>
-      <div class="component--source">
-        <div class="component--html element-invisible">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h2 class="component--source--title">Markup</h2>
           <pre  class="brush: php">
             {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
           </pre>
         </div>
-        <div class="component--css element-invisible">
+        <div class="component--css">
+          <h2 class="component--source--title">Style</h2>
           <pre class="brush: css">
           {% spaceless %}
             {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".css" %}
           {% endspaceless %}
           </pre>
         </div>
+        <button class="hide-code">Hide Code</button>
       </div>
   	</div>
   {% endfor %}
