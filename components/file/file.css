@@ -4,32 +4,19 @@
   overflow: hidden;
   position: absolute !important;
 }
-.post {
-  margin: 0 -4px;
-}
-.post:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-.post__item {
-  padding: 0 4px;
-  width: 33.33333333%;
-  float: left;
-}
-.post__content {
+.file {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-  height: 201px;
-  overflow: auto;
+  margin-bottom: 28px;
   padding: 28px;
 }
-.post__created {
-  color: #626262;
-  margin-bottom: 21px;
+.file__title {
+  margin-bottom: 18px;
+  font-size: 1.33333em;
+  line-height: 1.15em;
 }
-.post .tags {
-  margin: 1em 0;
+.file__type {
+  margin-bottom: 2px;
 }

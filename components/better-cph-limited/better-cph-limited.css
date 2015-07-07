@@ -1,0 +1,61 @@
+.better-cph-limited {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  min-height: 250px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.better-cph-limited .pane-title {
+  padding-right: 125px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.better-cph-limited .better-cph-limited__link {
+  text-align: right;
+  top: -23px;
+  position: relative;
+  z-index: 2;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.better-cph-limited .better-cph-limited__content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.better-cph-limited .better-cph-limited__image {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.better-cph-limited .stats-numbers-wrapper {
+  border-top: 1px solid white;
+  margin-top: -17px;
+  padding-top: 15px;
+  position: relative;
+  z-index: 2;
+}
+.better-cph-limited .stats__items {
+  float: left;
+  margin-right: 2.27273%;
+  width: 31.8182%;
+  color: white;
+}
+.better-cph-limited .stats__items:first-child {
+  clear: both;
+}
+.better-cph-limited .stats__items:first-child + div + div {
+  margin-right: 0;
+}
+.better-cph-limited .stats__number {
+  line-height: 1;
+  padding-top: 5px;
+}
+.better-cph-limited .stats__number a {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
