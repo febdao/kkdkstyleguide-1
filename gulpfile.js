@@ -7,7 +7,7 @@ var gulp = require('gulp'),
   	prettify = require('gulp-html-prettify'),
 		reload = browserSync.reload,
 	  src = {
-	    html: 'index.twig',
+	    html: '*.twig',
 	    htmlcompo: 'components/**/*.html',
 	    css: 'components/**/*.css',
 	  };
@@ -20,7 +20,7 @@ gulp.task('server',['templates', 'css'],function(){
 		}
 	});
 	gulp.watch(src.css, ['css']);
-	gulp.watch([src.html,src.htmlcompo], ['templates']);
+	gulp.watch([src.html], ['templates']);
 	gulp.watch(['js/*.js'], reload);
 });
 
@@ -38,7 +38,7 @@ gulp.task('css', function() {
  * Generate templates.
  */
 gulp.task('templates', function () {
-  return gulp.src(src.html)
+  return gulp.src('index.twig')
     .pipe(twig())
     .pipe(prettify({indent_char: ' ', indent_size: 2}))
     .pipe(gulp.dest('./'))

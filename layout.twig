@@ -10,12 +10,16 @@
 
   <title>KK Styleguide</title>
 
-	<link rel="stylesheet" type="text/css" href="basetheme/css/kkms.style.default.css">
+	<link rel="stylesheet" type="text/css" href="basetheme/css/kkms.style.css">
 	<link rel="stylesheet" type="text/css" href="basetheme/css/kkdk_styles.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
+
+<section>
+    {% include "header.twig" %}
+</section>
 <section>
     {% block index %}{% endblock %}
 </section>
