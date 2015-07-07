@@ -37,7 +37,23 @@
   {% for component in list_components %}
   	<div class="feb">
       <h2>{{ component.name }}</h2>
-  		{% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
+      <div class="component--demo">
+      {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
+      </div>
+      <div class="component--source">
+        <div class="component--html">
+          <pre  class="brush: php">
+            {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
+          </pre>
+        </div>
+        <div class="component--css">
+          <pre class="brush: css">
+          {% spaceless %}
+            {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".css" %}
+          {% endspaceless %}
+          </pre>
+        </div>
+      </div>
   	</div>
   {% endfor %}
 
