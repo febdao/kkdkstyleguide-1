@@ -139,7 +139,6 @@
 }
 
 .filter .chosen-container .chosen-choices li.search-choice {
-  border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -147,11 +146,27 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: none;
+  border: 0;
   box-shadow: none;
-  margin: 5px;
   line-height: 1em;
+  margin: 5px;
   padding: 0.3em 2.5em 0.3em 1em;
   text-transform: uppercase;
+}
+
+.filter .chosen-container .chosen-drop li.active-result {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  margin: 0;
+  padding: 0.6em 2.5em 0.6em 1em;
+  text-transform: uppercase;
+}
+
+.filter .chosen-container .chosen-drop li.active-result.highlighted {
+  background: #ebebeb none repeat scroll 0 0;
+  color: #444444;
 }
 .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
