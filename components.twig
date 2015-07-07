@@ -57,12 +57,12 @@
       {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
       </div>
       <div class="component--source">
-        <div class="component--html">
+        <div class="component--html element-invisible">
           <pre  class="brush: php">
             {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
           </pre>
         </div>
-        <div class="component--css">
+        <div class="component--css element-invisible">
           <pre class="brush: css">
           {% spaceless %}
             {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".css" %}
