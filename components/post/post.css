@@ -1,0 +1,40 @@
+.clearleft:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.box-style-border-doupble {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+}
+.post {
+  margin: 0 -4px;
+}
+.post:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.post__item {
+  padding: 0 4px;
+  width: 33.33333333%;
+  float: left;
+}
+.post__content {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  height: 201px;
+  overflow: auto;
+  padding: 28px;
+}
+.post__created {
+  color: #626262;
+  margin-bottom: 21px;
+}
+.post .tags {
+  margin: 1em 0;
+}

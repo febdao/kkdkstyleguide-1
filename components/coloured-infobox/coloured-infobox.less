@@ -1,0 +1,40 @@
+@import '../helper.less';
+
+.coloured-infobox {
+  .clearleft;
+
+  margin: 0 -17.5px;
+
+  &__item {
+    width: @width-33;
+    float: left;
+    padding: 0 17.5px;
+  }
+
+  &__link {
+    .box-style-border-doupble;
+
+    display: block;
+    min-height: 160px;
+    padding: 24px 1em;
+    position: relative;
+  }
+
+  &__content {
+    color: @black;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 5px;
+    height: 95px;
+    opacity: 0.1;
+    position: absolute;
+    right: 5px;
+    width: 130px;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,50 @@
+.clearleft:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.box-style-border-doupble {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+}
+.coloured-infobox {
+  margin: 0 -17.5px;
+}
+.coloured-infobox:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.coloured-infobox__item {
+  width: 33.33333333%;
+  float: left;
+  padding: 0 17.5px;
+}
+.coloured-infobox__link {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  display: block;
+  min-height: 160px;
+  padding: 24px 1em;
+  position: relative;
+}
+.coloured-infobox__content {
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.coloured-infobox__icon {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  bottom: 5px;
+  height: 95px;
+  opacity: 0.1;
+  position: absolute;
+  right: 5px;
+  width: 130px;
+  z-index: 1;
+}

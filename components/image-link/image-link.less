@@ -1,0 +1,42 @@
+@import '../helper.less';
+
+.image-link {
+  .clearleft;
+
+  margin: 0 -18px;
+
+  &__item {
+    padding: 0 18px;
+    width: @width-33;
+    float: left;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__single {
+    line-height: 0;
+
+    img{
+
+    }
+  }
+
+  &__info {
+    .opacity(.7);
+    background: @black;
+    bottom: 0;
+    display: block;
+    min-height: 82px;
+    padding: 12px 12px 46px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    a {
+      color : @white;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+//Helper var
+@width-33 : 100%/3 ;
+
+//Helper color
+@black: #000;
+@white: #fff;
+
+//Helper class
+.clearleft {
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// .box-shadow (@string) {
+//   -webkit-box-shadow: @string;
+//   -moz-box-shadow:    @string;
+//   box-shadow:         @string;
+// }
+
+.box-style-border-doupble {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow : 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow : 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow : 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+}
+
+.opacity (@opacity: 0.5) {
+  -webkit-opacity:  @opacity;
+  -moz-opacity:     @opacity;
+  opacity:    @opacity;
+}

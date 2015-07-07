@@ -1,13 +1,11 @@
+@import '../helper.less';
+
 @color-box-icon-title: #006d8c;
 
 .box-icons {
-  margin: 0 -12px;
+  .clearleft;
 
-  &:after {
-    clear: both;
-    content: '';
-    display: table;
-  }
+  margin: 0 -12px;
 
   &__item {
     float: left;
@@ -32,15 +30,11 @@
   }
 
   & .most-read-pages {
+    .clearleft;
+
     margin-bottom: 0;
     padding-top: 0;
     text-align: left;
-
-    &:after {
-      clear: both;
-      content: '';
-      display: table;
-    }
 
     &__item {
       clear: both;

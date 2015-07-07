@@ -1,0 +1,32 @@
+@import '../helper.less';
+
+@color-post-created: #626262;
+
+.post {
+  .clearleft;
+
+  margin: 0 -4px;
+
+  &__item {
+    padding: 0 4px;
+    width: @width-33;
+    float: left;
+  }
+
+  &__content {
+    .box-style-border-doupble;
+
+    height: 201px;
+    overflow: auto;
+    padding: 28px;
+  }
+
+  &__created {
+    color: @color-post-created;
+    margin-bottom: 21px;
+  }
+
+  & .tags {
+    margin: 1em 0;
+  }
+}
