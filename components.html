@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
   <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
   <link rel="stylesheet" type="text/css" href="css/app.css">
-  <link rel="stylesheet" type="text/css" href="http://flexslider.woothemes.com/css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/helper-class.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="components/flexslider/flexslider.css">
   <link rel="stylesheet" type="text/css" href="components/services/services.css">
@@ -25,6 +25,7 @@
   <script type="text/javascript" src="js/shBrushJScript.js"></script>
   <script type="text/javascript" src="js/shBrushPhp.js"></script>
   <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src='js/jquery.matchHeight.js'></script>
   <script type="text/javascript" src='libraries/chosen/chosen.jquery.js'></script>
   <script type="text/javascript" src='js/script.js'></script>
 </head>
@@ -239,13 +240,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.box-icons {
+          .box-icons {
   margin: 0 -12px;
 }
 .box-icons:after {
@@ -257,7 +252,17 @@
   float: left;
   margin-bottom: 22px;
   padding: 0 12px;
-  width: 33.333%;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .box-icons__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .box-icons__item {
+    width: 33.33333333%;
+  }
 }
 .box-icons__image {
   margin-bottom: 10px;
@@ -446,13 +451,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.coloured-infobox {
+          .coloured-infobox {
   margin: 0 -17.5px;
 }
 .coloured-infobox:after {
@@ -587,13 +586,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.post {
+          .post {
   margin: 0 -4px;
 }
 .post:after {
@@ -706,13 +699,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.image-link {
+          .image-link {
   margin: 0 -18px;
 }
 .image-link:after {
@@ -796,13 +783,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.pager {
+          .pager {
   height: auto;
 }
 .pager:after {
@@ -1054,13 +1035,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.filter .chosen-container {
+          .filter .chosen-container {
   font-size: 0.88889em;
   max-width: 100%;
 }
@@ -1542,13 +1517,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.box-list-without-bullets {
+          .box-list-without-bullets {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -2030,6 +1999,10 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   text-transform: none;
 }
 .accordion #ui-id-1.accordion_item {
+  border-top: 2px solid transparent;
+}
+.accordion #ui-id-1.accordion_item:hover,
+.accordion #ui-id-1.ui-accordion-header-active {
   border-top: 2px solid #cbd0d3;
 }
 .accordion .ui-accordion-content {
@@ -2054,10 +2027,10 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
             </div>
           </div>
           <div class="component--item">
-            <h2 class="component--title">File</h2>
+            <h2 class="component--title">Related files</h2>
             <div class="component--demo">
-              <div class="file">
-                <h2 class="file__title">Document</h2>
+              <div class="related-files">
+                <h2 class="related-files__title">Document</h2>
                 <div class="file__type tx-sec">
                   <a href="#" type="application/pdf; length=516718" class="button download" target="_blank">
                     <span aria-hidden="true" class="filetype-generic">fil</span>
@@ -2093,8 +2066,8 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--html">
                 <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
-            <div class="file">
-  <h2 class="file__title">Document</h2>
+            <div class="related-files">
+  <h2 class="related-files__title">Document</h2>
   <div class="file__type tx-sec">
     <a href="#" type="application/pdf; length=516718" class="button download" target="_blank">
       <span aria-hidden="true" class="filetype-generic">fil</span>
@@ -2129,13 +2102,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.file {
+          .related-files {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -2143,12 +2110,12 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   margin-bottom: 28px;
   padding: 28px;
 }
-.file__title {
+.related-files__title {
   margin-bottom: 18px;
   font-size: 1.33333em;
   line-height: 1.15em;
 }
-.file__type {
+.related-files__type {
   margin-bottom: 2px;
 }          </pre>
               </div>
@@ -2483,8 +2450,6 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                       </ul>
                       <div class="horizontal-tabs-panes horizontal-tabs-processed">
                         <fieldset id="fcg--2" class="form-wrapper horizontal-tabs-pane">
-                          <legend><span class="fieldset-legend">1. Blanket om selvforsørgelse</span>
-                          </legend>
                           <div class="fieldset-wrapper">
                             <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
                               Blanket om selvforsørgelse finder du til sidst i ansøgningen om dansk statsborgerskab</div>
@@ -2496,8 +2461,6 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                           </div>
                         </fieldset>
                         <fieldset id="fcg-3" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
-                          <legend><span class="fieldset-legend">2. Indsend blanket</span>
-                          </legend>
                           <div class="fieldset-wrapper">
                             <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
                               Indsend blanketten om selvforsørgelse til Ydelsesservice København</div>
@@ -2522,9 +2485,6 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                           </div>
                         </fieldset>
                         <fieldset id="fcg-4" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
-                          <legend>
-                            <span class="fieldset-legend">3. Få svar</span>
-                          </legend>
                           <div class="fieldset-wrapper">
                             <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
                               Du får udtalelsen fra kommunen indenfor tre uger.</div>
@@ -2548,7 +2508,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 <pre class="brush: php">
             <aside class="node node-stepbox-tabs tabs" >
   <div class="field field-name-field-steps field-type-field-collection field-label-hidden">
-    <div class="field-group-htabs-wrapper "><h2 class="element-invisible">Horizontal tabs</h2><div class="horizontal-tabs clearfix"><ul class="horizontal-tabs-list"><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-0 first selected"><a href="#fcg--2"><strong>1. Blanket om selvforsørgelse</strong><span class="element-invisible" id="active-horizontal-tab">(aktiv fane)</span></a></li><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-1"><a href="#fcg-3"><strong>2. Indsend blanket</strong></a></li><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-2 last"><a href="#fcg-4"><strong>3. Få svar</strong></a></li></ul><div class="horizontal-tabs-panes horizontal-tabs-processed"><fieldset id="fcg--2" class="form-wrapper horizontal-tabs-pane"><legend><span class="fieldset-legend">1. Blanket om selvforsørgelse</span></legend><div class="fieldset-wrapper">
+    <div class="field-group-htabs-wrapper "><h2 class="element-invisible">Horizontal tabs</h2><div class="horizontal-tabs clearfix"><ul class="horizontal-tabs-list"><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-0 first selected"><a href="#fcg--2"><strong>1. Blanket om selvforsørgelse</strong><span class="element-invisible" id="active-horizontal-tab">(aktiv fane)</span></a></li><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-1"><a href="#fcg-3"><strong>2. Indsend blanket</strong></a></li><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-2 last"><a href="#fcg-4"><strong>3. Få svar</strong></a></li></ul><div class="horizontal-tabs-panes horizontal-tabs-processed"><fieldset id="fcg--2" class="form-wrapper horizontal-tabs-pane"><div class="fieldset-wrapper">
   <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
     Blanket om selvforsørgelse finder du til sidst i ansøgningen om dansk statsborgerskab  </div>
 
@@ -2557,7 +2517,8 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
 <p>Du skal printe ansøgningsskemaet og derefter udfylde Blanketten om selvforsørgelse i hånden. Du kan derefter vælge at indsende blanketten til os via almindelig post eller digitalt.</p>
   </div>
 </div></fieldset>
-<fieldset id="fcg-3" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden"><legend><span class="fieldset-legend">2. Indsend blanket</span></legend><div class="fieldset-wrapper">
+<fieldset id="fcg-3" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
+<div class="fieldset-wrapper">
   <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
     Indsend blanketten om selvforsørgelse til Ydelsesservice København  </div>
 
@@ -2575,9 +2536,6 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
 </ol>  </div>
 </div></fieldset>
   <fieldset id="fcg-4" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
-    <legend>
-      <span class="fieldset-legend">3. Få svar</span>
-    </legend>
     <div class="fieldset-wrapper">
       <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
         Du får udtalelsen fra kommunen indenfor tre uger.</div>
@@ -2829,6 +2787,259 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   width: 40px;
   z-index: 10;
 }          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Better Exposed Filters Link</h2>
+            <div class="component--demo">
+              <div class="bef-link">
+                <div class="form-type-bef-link selected">
+                  <a href="#">Alle</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Børn og uddannelse</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Vækst og beskæftigelse</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Social udvikling</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Grøn by</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Kultur og idræt</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Sundhed</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Borgerservice</a>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="bef-link">
+  <div class="form-type-bef-link selected">
+    <a href="#">Alle</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Børn og uddannelse</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Vækst og beskæftigelse</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Social udvikling</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Grøn by</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Kultur og idræt</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Sundhed</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Borgerservice</a>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .bef-link {
+  color: #fff;
+}
+.bef-link .form-type-bef-link {
+  background-color: #e2e2e2;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.bef-link .form-type-bef-link a {
+  display: block;
+  padding: 5px 10px;
+  color: #444444;
+}
+.bef-link .form-type-bef-link.selected {
+  background-color: #00ba5a;
+}
+.bef-link .form-type-bef-link.selected a {
+  color: #fff;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">List image</h2>
+            <div class="component--demo">
+              <div class="list-image">
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s150x150/e15/10919705_1412483479082057_19978079_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11378318_137429133254992_1539367568_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11348393_814235122017241_182655127_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11355864_792040254243591_1702978201_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11381810_971487742871723_1580480050_n.jpg">
+                </a>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="list-image">
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s150x150/e15/10919705_1412483479082057_19978079_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11378318_137429133254992_1539367568_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11348393_814235122017241_182655127_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11355864_792040254243591_1702978201_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11381810_971487742871723_1580480050_n.jpg">
+  </a>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .list-image {
+  margin: 0 -2.5px;
+}
+.list-image:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.list-image a {
+  float: left;
+  padding: 0 2.5px 5px;
+}
+.list-image a img {
+  height: 193px;
+  width: 193px;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">File video</h2>
+            <div class="component--demo">
+              <div class="file file-video">
+                <h2 class="element-invisible">
+    <a href="#">Exit fra kriminalitet - Tidligere deltager </a>
+  </h2>
+                <div class="content">
+                  <div style="width:100%; height:0; position: relative; padding-bottom:56.25%">
+                    <iframe frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" scrolling="no" border="0" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" src="http://www.video.kk.dk/v.ihtml/player.html?source=share&amp;photo%5fid=8756041&amp;autoPlay=0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="file file-video">
+  <h2 class="element-invisible">
+    <a href="#">Exit fra kriminalitet - Tidligere deltager </a>
+  </h2>
+  <div class="content">
+    <div style="width:100%; height:0; position: relative; padding-bottom:56.25%">
+      <iframe frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" scrolling="no" border="0" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" src="http://www.video.kk.dk/v.ihtml/player.html?source=share&amp;photo%5fid=8756041&amp;autoPlay=0"></iframe>
+    </div>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+                    </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Intro text with list link</h2>
+            <div class="component--demo">
+              <div class="intro-with-list-link">
+                <div class="tx-teaser">
+                  Afmeld din olietank eller tjek om der er olietank på din grund. Se hvordan du etablerer en ny olietank.
+                </div>
+                <div class="tx-content">
+                  <h3>
+        <a href="http://www.kk.dk/node/10173">Etablering eller udskifter af olietank</a>
+    </h3>
+                  <h3>
+        <a href="http://www.kk.dk/node/10167">Kontrol af store olietanke over 6.000 liter&nbsp;</a>
+    </h3>
+                  <h3>
+        <a href="http://www.kk.dk/node/10170">Sløjfning og bortskaffelse af olietank</a>
+    </h3>
+                  <h3>
+        <a href="http://www.kk.dk/node/10169">Spild fra olietank</a>
+    </h3>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="intro-with-list-link">
+  <div class="tx-teaser">
+  Afmeld din olietank eller tjek om der er olietank på din grund. Se hvordan du etablerer en ny olietank.
+  </div>
+  <div class="tx-content">
+    <h3>
+        <a href="http://www.kk.dk/node/10173">Etablering eller udskifter af olietank</a>
+    </h3>
+    <h3>
+        <a href="http://www.kk.dk/node/10167">Kontrol af store olietanke over 6.000 liter&nbsp;</a>
+    </h3>
+    <h3>
+        <a href="http://www.kk.dk/node/10170">Sløjfning og bortskaffelse af olietank</a>
+    </h3>
+    <h3>
+        <a href="http://www.kk.dk/node/10169">Spild fra olietank</a>
+    </h3>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+                    </pre>
               </div>
               <button class="hide-code">Hide Code</button>
             </div>

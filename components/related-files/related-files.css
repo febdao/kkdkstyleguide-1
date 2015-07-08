@@ -1,10 +1,4 @@
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.file {
+.related-files {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -12,11 +6,11 @@
   margin-bottom: 28px;
   padding: 28px;
 }
-.file__title {
+.related-files__title {
   margin-bottom: 18px;
   font-size: 1.33333em;
   line-height: 1.15em;
 }
-.file__type {
+.related-files__type {
   margin-bottom: 2px;
 }

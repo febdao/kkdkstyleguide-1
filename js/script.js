@@ -10,12 +10,11 @@
       $(this).parent(".component--source").addClass("element-invisible");
     });
 
-    $('.pane-menu-block-front-page-menu').attr('class','reg-inner-regions');
-
     $( ".accordion" ).accordion({
       heightStyle: "content",
       collapsible: true
     });
+
 
     var offset = $(".sticky-header").offset();
     var width_table = $(".sticky-header").width();
@@ -55,5 +54,7 @@
       $(".horizontal-tabs-processed .horizontal-tabs-pane").eq( tab_index ).removeClass( "horizontal-tab-hidden" );
       return false;
     });
+
+    $('.list-local-content__wrap').matchHeight();
   });
 } )( jQuery );

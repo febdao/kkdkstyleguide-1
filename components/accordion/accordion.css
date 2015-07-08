@@ -40,6 +40,10 @@
   text-transform: none;
 }
 .accordion #ui-id-1.accordion_item {
+  border-top: 2px solid transparent;
+}
+.accordion #ui-id-1.accordion_item:hover,
+.accordion #ui-id-1.ui-accordion-header-active {
   border-top: 2px solid #cbd0d3;
 }
 .accordion .ui-accordion-content {

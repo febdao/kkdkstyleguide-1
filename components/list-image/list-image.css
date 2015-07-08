@@ -1,0 +1,16 @@
+.list-image {
+  margin: 0 -2.5px;
+}
+.list-image:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.list-image a {
+  float: left;
+  padding: 0 2.5px 5px;
+}
+.list-image a img {
+  height: 193px;
+  width: 193px;
+}
