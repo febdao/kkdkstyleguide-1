@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url(../../fonts/flexslider-icon.eot);
+  src: url(../../fonts/flexslider-icon.eot?#iefix) format('embedded-opentype'), url(../../fonts/flexslider-icon.woff) format('woff'), url(../../fonts/flexslider-icon.ttf) format('truetype'), url(../../fonts/flexslider-icon.svg#flexslider-icon) format('svg');
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.flex-pauseplay a.flex-play:before {
+  content: "";
+}
+.flex-pauseplay a:before {
+  content: "";
+  display: inline-block;
+  font-family: "flexslider-icon";
+  font-size: 20px;
+}
+.flex-pauseplay a.flex-play:before {
+  content: "";
+}
+.flex-pauseplay a {
+  bottom: 5px;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  left: 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  z-index: 10;
+}
+.flexslider {
+  position: relative;
+  max-width: 800px;
+}
+.flexslider .controls-nav {
+  bottom: 0;
+  height: 34px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+.flexslider .flex-control-nav {
+  bottom: 1em;
+  display: inline-block;
+  position: static;
+  width: auto;
+}
+.flexslider .flex-control-nav li a {
+  background-color: #007ea4;
+}
+.flexslider .flex-control-nav.flex-control-paging li a {
+  height: 14px;
+  width: 14px;
+}
+.flexslider .flex-direction-nav {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.flexslider .flex-direction-nav .flex-prev,
+.flexslider .flex-direction-nav .flex-next {
+  background-color: #007ea4;
+  background-position: center center;
+  color: white;
+  text-indent: -9999px;
+}
+.flexslider .flex-direction-nav .flex-prev {
+  background: url("../../images/icon-arrow-left.png") no-repeat scroll center center #007ea4;
+  left: 0.5em;
+}
+.flexslider .flex-direction-nav .flex-next {
+  background: url("../../images/icon-arrow-right.png") no-repeat scroll center center #007ea4;
+  right: 0.5em;
+}
+.flexslider .flex-pauseplay {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  vertical-align: top;
+}
+.flexslider .flex-pauseplay .flex-pause,
+.flexslider .flex-pauseplay .flex-play {
+  background-position: center center;
+  color: #007ea4;
+}
+.flexslider .flex-pauseplay a {
+  position: static;
+}
+.flexslider .flex-pauseplay a,
+.flexslider .flex-pauseplay a.flex-pause,
+.flexslider .flex-pauseplay a.flex-play {
+  color: #fff;
+  padding: 0 12px;
+  text-align: left;
+  width: 40px;
+}
+.flexslider .flex-pauseplay a:before,
+.flexslider .flex-pauseplay a.flex-pause:before,
+.flexslider .flex-pauseplay a.flex-play:before {
+  color: #007ea4;
+  font-size: 16px;
+  line-height: 15px;
+  vertical-align: top;
+}
+.flex-control-nav {
+  bottom: -40px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.flex-control-nav li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.flex-control-paging li a {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
+  display: block;
+  height: 11px;
+  text-indent: -9999px;
+  width: 11px;
+}
+.flex-direction-nav a {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  margin: -20px 0 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  top: 50%;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  z-index: 10;
+}
