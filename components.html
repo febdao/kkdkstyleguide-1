@@ -1435,6 +1435,724 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
+          <div class="component--item">
+            <h2 class="component--title">List without bullets</h2>
+            <div class="component--demo">
+              <div class="list-without-bullets">
+                <ul>
+                  <li><a href="#">Digital Post</a>
+                  </li>
+                  <li><a href="#">Job</a>
+                  </li>
+                  <li><a href="#">Presse</a>
+                  </li>
+                  <li><a href="#">Hvis du vil klage</a>
+                  </li>
+                  <li><a href="#">Om hjemmesiden</a>
+                  </li>
+                  <li><a href="#">Københavnerkort</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="list-without-bullets">
+  <ul>
+    <li><a href="#">Digital Post</a></li>
+    <li><a href="#">Job</a></li>
+    <li><a href="#">Presse</a></li>
+    <li><a href="#">Hvis du vil klage</a></li>
+    <li><a href="#">Om hjemmesiden</a></li>
+    <li><a href="#">Københavnerkort</a></li>
+  </ul>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .list-without-bullets > ul {
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-without-bullets > ul > li {
+  list-style: none;
+}
+.list-without-bullets > ul > li:after,
+ > .list-without-bullets > ul > li:before,
+.list-without-bullets > ul > li > a:after,
+.list-without-bullets > ul > li > a:before {
+  content: '';
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Box list without bullets</h2>
+            <div class="component--demo">
+              <div class="box-list-without-bullets">
+                <h2 class="title">Box list without bullets</h2>
+                <div class="list-without-bullets">
+                  <ul>
+                    <li><a href="#">Digital Post</a>
+                    </li>
+                    <li><a href="#">Job</a>
+                    </li>
+                    <li><a href="#">Presse</a>
+                    </li>
+                    <li><a href="#">Hvis du vil klage</a>
+                    </li>
+                    <li><a href="#">Om hjemmesiden</a>
+                    </li>
+                    <li><a href="#">Københavnerkort</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="box-list-without-bullets">
+  <h2 class="title">Box list without bullets</h2>
+  <div class="list-without-bullets">
+    <ul>
+      <li><a href="#">Digital Post</a></li>
+      <li><a href="#">Job</a></li>
+      <li><a href="#">Presse</a></li>
+      <li><a href="#">Hvis du vil klage</a></li>
+      <li><a href="#">Om hjemmesiden</a></li>
+      <li><a href="#">Københavnerkort</a></li>
+    </ul>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+.box-list-without-bullets {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  padding: 28px;
+}
+.box-list-without-bullets > .title {
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-size: 1.11111em;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Menu vertical</h2>
+            <div class="component--demo">
+              <div class="menu-vertical">
+
+                <h2 class="menu-vertical__title">Menu</h2>
+
+                <div class="menu-block-second_level">
+                  <ul class="menu">
+                    <li class="first last expanded"><a class="menu_icon active-trail" href="#">Tilladelser</a>
+                      <div class="block-main-menu-description">Vi ønsker at det skal være nemt for dig som erhvervsdrivende at få de nødvendige tilladelser. Her finder du en oversigt over de tilladelser du kan søge i Københavns Kommune.</div>
+                      <ul class="menu">
+                        <li class="first"><a href="#">Parkering</a>
+                          <div class="block-main-menu-description">Virksomheder i København kan købe en erhvervslicens eller et erhvervsperiodekort, hvis de opfylder kriterierne.</div>
+                        </li>
+                        <li class=""><a href="#">Arbejde på vejene</a>
+                          <div class="block-main-menu-description">Her har vi samlet information til dig, der arbejder med og på byens veje, pladser og parker.</div>
+                        </li>
+                        <li class=""><a href="#">Miljø</a>
+                          <div class="block-main-menu-description">Her kan du læse mere om, hvordan du søger om miljøtilladelser, der har med din virksomhed at gøre.</div>
+                        </li>
+                        <li class=""><a href="#">Arrangementer</a>
+                          <div class="block-main-menu-description">Du kan låne kommunens parker, kirkegårde, naturområder, veje og pladser til alle slags åbne arrangementer.</div>
+                        </li>
+                        <li class="active"><a class="active-trail active" href="#">Byggeri</a>
+                          <div class="block-main-menu-description">Her kan du finde de relevante blanketter og notater, du kan få brug for ved større byggerier i Københavns Kommune</div>
+                          <ul class="menu">
+                            <li class="first"><a href="#">Jord</a>
+                              <div class="block-main-menu-description">Jord ved byggeri og anlæg</div>
+                            </li>
+                            <li class=""><a href="#">Oppumpning og afledning af vand</a>
+                              <div class="block-main-menu-description">Håndtering af vand ved byggeri og anlæg</div>
+                            </li>
+                            <li class=""><a href="#">Kloak og afløb</a>
+                            </li>
+                            <li class=""><a href="#">Byggeaffald</a>
+                            </li>
+                            <li class="last"><a href="#">Byggearbejde</a>
+                              <div class="block-main-menu-description">Byggearbejde udenfor normal arbejdstid. Facaderenovering</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class=""><a href="#">Gadesalg</a>
+                          <div class="block-main-menu-description">Du kan få tilladelse til gadesalg fra en fast stadeplads, mobilt gadesalg på kommunale pladser og veje eller cykeltaxi.</div>
+                        </li>
+                        <li class=""><a href="#">Vareudstillinger, skilte og reklamer</a>
+                          <div class="block-main-menu-description">Her kan du søge tilladelse til stilladsreklamer, reklameskilte og vareudstillinger foran butikker og på bygninger</div>
+                        </li>
+                        <li class=""><a href="#">Udendørsservering</a>
+                          <div class="block-main-menu-description">Det er gratis at have udendørsservering foran din cafe eller restaurant men du skal søge om tilladelse først.</div>
+                        </li>
+                        <li class="last"><a href="#">Filmoptagelse</a>
+                          <div class="block-main-menu-description">Her kan du søge om tilladelse til filmoptagelse udendørs i København.</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="menu-vertical">
+
+                <h2 class="menu-vertical__title">Menu</h2>
+
+                <div class="menu-block-second_level">
+                  <ul class="menu">
+                    <li class="first last expanded"><a class="menu_icon active-trail" href="#">Tilladelser</a>
+                      <div class="block-main-menu-description">Vi ønsker at det skal være nemt for dig som erhvervsdrivende at få de nødvendige tilladelser. Her finder du en oversigt over de tilladelser du kan søge i Københavns Kommune.</div>
+                      <ul class="menu">
+                        <li class="first"><a href="#">Parkering</a>
+                          <div class="block-main-menu-description">Virksomheder i København kan købe en erhvervslicens eller et erhvervsperiodekort, hvis de opfylder kriterierne.</div>
+                        </li>
+                        <li class=""><a href="#">Arbejde på vejene</a>
+                          <div class="block-main-menu-description">Her har vi samlet information til dig, der arbejder med og på byens veje, pladser og parker.</div>
+                        </li>
+                        <li class=""><a href="#">Miljø</a>
+                          <div class="block-main-menu-description">Her kan du læse mere om, hvordan du søger om miljøtilladelser, der har med din virksomhed at gøre.</div>
+                        </li>
+                        <li class=""><a href="#">Arrangementer</a>
+                          <div class="block-main-menu-description">Du kan låne kommunens parker, kirkegårde, naturområder, veje og pladser til alle slags åbne arrangementer.</div>
+                        </li>
+                        <li class="active"><a class="active-trail active" href="#">Byggeri</a>
+                          <div class="block-main-menu-description">Her kan du finde de relevante blanketter og notater, du kan få brug for ved større byggerier i Københavns Kommune</div>
+                          <ul class="menu">
+                            <li class="first"><a href="#">Jord</a>
+                              <div class="block-main-menu-description">Jord ved byggeri og anlæg</div>
+                            </li>
+                            <li class=""><a href="#">Oppumpning og afledning af vand</a>
+                              <div class="block-main-menu-description">Håndtering af vand ved byggeri og anlæg</div>
+                            </li>
+                            <li class=""><a href="#">Kloak og afløb</a>
+                            </li>
+                            <li class=""><a href="#">Byggeaffald</a>
+                            </li>
+                            <li class="last"><a href="#">Byggearbejde</a>
+                              <div class="block-main-menu-description">Byggearbejde udenfor normal arbejdstid. Facaderenovering</div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class=""><a href="#">Gadesalg</a>
+                          <div class="block-main-menu-description">Du kan få tilladelse til gadesalg fra en fast stadeplads, mobilt gadesalg på kommunale pladser og veje eller cykeltaxi.</div>
+                        </li>
+                        <li class=""><a href="#">Vareudstillinger, skilte og reklamer</a>
+                          <div class="block-main-menu-description">Her kan du søge tilladelse til stilladsreklamer, reklameskilte og vareudstillinger foran butikker og på bygninger</div>
+                        </li>
+                        <li class=""><a href="#">Udendørsservering</a>
+                          <div class="block-main-menu-description">Det er gratis at have udendørsservering foran din cafe eller restaurant men du skal søge om tilladelse først.</div>
+                        </li>
+                        <li class="last"><a href="#">Filmoptagelse</a>
+                          <div class="block-main-menu-description">Her kan du søge om tilladelse til filmoptagelse udendørs i København.</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .menu-vertical__title {
+  display: none;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Accordion</h2>
+            <div class="component--demo">
+              <div class="accordion effect-bounceslide">
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Større byggeprojekter - hold stjernemøde med kommunen']);" href="#">Større byggeprojekter - hold stjernemøde med kommunen</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Et større byggeprojekt i kommunen involverer mange myndighedsområder. For overskuelighedens skyld tilbyder vi at samle relevante myndighedsområder og give en professionel vejledning. Vi kalder konceptet for stjernemøder.</p>
+                    <div id="regions_1_contentblock_0_ArticleText">
+                      <h2>Hvad er et stjernemøde?</h2>
+                      <p>Et stjernemøde giver jer samlet, professionel vejledning fra alle de kommunale myndighedsområder på én gang.
+                        <br>Allerede i projekteringsfasen kan I få overblik over:</p>
+                      <ul>
+                        <li>hvilke krav vi som myndigheder stiller til projektet</li>
+                        <li>hvilke tilladelser I har brug for, før byggeriet kan gå i gang</li>
+                        <li>hvilke lovkrav og reglementer, der er i spil</li>
+                      </ul>
+                      <h2>Et stjernemøde bliver til på jeres opfordring.</h2>
+                      <p>Kontakt os, allerede når I har et skitseprojekt, så planlægger vi forløbet i fællesskab. Vi møder velforberedte til ethvert stjernemøde. Det kræver, at I senest 8 dage før mødet sender os:</p>
+                      <ul>
+                        <li>oplysninger om projektets indhold og omfang</li>
+                        <li>jeres tidsplan for byggeriet</li>
+                        <li>skitseprojekt i 8 eksemplarer</li>
+                        <li>en dagsorden med jeres ønsker og spørgsmål</li>
+                        <li>en deltagerliste</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Ændring af bolig til erhverv eller omvendt']);" href="#">Ændring af bolig til erhverv eller omvendt</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Må lokalerne ændre status?
+                      <br>Hvis du ønsker at ændre en bolig til erhverv eller omvendt, skal du <a href="http://www.kk.dk/file/10375/download?token=fkblxpo7">ansøge om byggetilladelse</a>.</p>
+                    <p>Skal du ændre til erhverv, skal du undersøge, om der eksisterer&nbsp;<a href="http://www.kk.dk/node/11515">lokalplaner</a> for området og om lokalet er godkendt til erhverv. Det kan du få hjælp til at finde ud af i vores <a href="http://www.kk.dk/artikel/teknik-og-milj%C3%B8forvaltningens-kundecenter">kundecenter</a>.</p>
+                    <p>Er bygningen fredet?
+                      <br>Mange gamle bygninger er fredede, og der stilles derfor særlige krav til byggearbejdets udførelse. Se om din bolig er fredet på&nbsp;<a target="_blank" href="http://www.kulturstyrelsen.dk/kulturarv/arkitektur/fredet-eller-bevaringsvaerdigt/">Kulturstyrelsens hjemmeside.</a>
+                    </p>
+                    <p>Hvilke krav findes til erhvervsmål?
+                      <br>Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtveje og tilgængelighed (eksempelvis for kørestolsbrugere) i virksomheden. Kravene fremgår af <a target="_blank" href="http://www.bygningsreglementet.dk/">Bygningsreglementet</a>
+                    </p>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Hotline om digital byggeansøgning']);" href="#">Hotline om digital byggeansøgning</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Fra 1. december 2014 er det blevet lovpligtigt at ansøge digitalt om byggetilladelse via den digitale løsning Byg og Miljø.</p>
+                    <p>I Byg og Miljø kan du hurtigt, enkelt og effektivt søge om den tilladelse, du har brug for. Du guides sikkert gennem hele ansøgningsprocessen, og du bliver løbende informeret om, hvor langt i processen du er.</p>
+                    <ul>
+                      <li>Kontakt Københavns Erhvervshus hvis du har spørgsmål til den digitale byggeansøgning. Du kan ringe mandag &ndash; torsdag 8-22 og fredag 8-18 på telefon 3366 3333.
+                        <br>&nbsp;
+                      </li>
+                      <li>Hvis du har andre spørgsmål om f.eks. byggeri/byggesager/ansøgningsmateriale kan du kontakte os på 3366 5200.
+                        <br>Vores telefoner er åbne mandag til fredag kl. 10-14</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Få hjælp til din byggesag i vores kundecenter']);" href="#">Få hjælp til din byggesag i vores kundecenter</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Har du spørgsmål til dit byggeprojekt eller din byggesag? Eller er du i tvivl om, hvad du skal sende med din ansøgning om byggetilladelse? Så kan du få hjælp i <a href="http://www.kk.dk/artikel/teknik-og-milj%C3%B8forvaltningens-kundecenter"> Teknik- og Miljøforvaltningens kundecenter</a>,
+                      Njalsgade 13, 2300 København S.</p>
+                    <p>I kundecentret ser vi på din sag, og kan få tegninger mv. sendt op fra vores arkiv. Vi kan tilkalde fagpersoner (fx arkitekter eller ingeniører), som kan vurdere din byggesag.</p>
+                    <h2>I kundecentret kan du få:</h2>
+                    <ul>
+                      <li>kopi af tegninger fra byggesagsarkivet</li>
+                      <li>tekniske råd og vejledning</li>
+                      <li>en vurdering af dit projekt - fejl og mangler - inden du ansøger.</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Typisk ansøgningsmateriale']);" href="#">Typisk ansøgningsmateriale</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Ansøgningsmaterialet afhænger af, hvad du skal bygge, og når du ansøger digitalt via Byg og Miljø bliver du automatisk bedt om det materiale, lige præcis din byggesag kræver.</p>
+                    <p>Du kan regne med, at kommunen typisk skal modtage en del dokumentation for at kunne behandle din byggesag, som oftest:</p>
+                    <ul>
+                      <li>en&nbsp;overordnet beskrivelse af, hvad der ansøges om.</li>
+                      <li>fuldmagt fra ejer, hvis det ikke er&nbsp;ejer, som indsender&nbsp;ansøgningen.</li>
+                      <li><a href="http://www.kk.dk/file/12976/download">situationsplan</a>&nbsp;med byggeriets afstand til skel og andre bygninger på grunden.</li>
+                      <li><a href="http://www.kk.dk/file/12978/download">facadetegninger</a>
+                      </li>
+                      <li><a href="http://www.kk.dk/file/12977/download">plantegninger</a>
+                      </li>
+                      <li><a href="http://www.kk.dk/file/12975/download">snittegninger</a>
+                      </li>
+                      <li>grundens og bygningernes areal</li>
+                      <li>oplysning om, hvad bygningen skal benyttes til. Ved en ændret anvendelse skal du oplyse om både den nuværende og fremtidige benyttelse.</li>
+                      <li><a href="http://www.kk.dk/node/10380">BBR-oplysninger</a>
+                      </li>
+                      <li>dispensationsansøgning, hvis byggeriet fx ikke overholder loklaplaner eller servitutter</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Gebyr']);" href="#">Gebyr</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Fra 1. januar 2015 betaler du gebyr for den tid, kommunen bruger på sagsbehandling af din byggeansøgning.</p>
+                    <p>Timeprisen er 800 kroner (momsfri) og dækker den tid, vi bruger på sagsbehandling samt den tid vi bruger på forhåndsdialog, møder og administrativ behandling, herunder registrering, afsendelse og fakturering. Gebyret bliver opkrævet
+                      hos bygningens ejer to gange i sagsforløbet. Første gang, når der er givet byggetilladelse og derefter ved byggesagens afslutning.</p>
+                    <p>Det er ikke alle typer byggeri, du skal betale gebyr for - <a href="http://www.kk.dk/node/10410">læs mere på vores gebyrside</a>
+                    </p>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Sagsbehandlingstid']);" href="#">Sagsbehandlingstid</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Vi skelner mellem ”lette” og ”svære” sager og bruger disse definitioner:</p>
+                    <p>Alle byggesager, der alene vedrører byggearbejder <a href="http://bygningsreglementet.dk/br10_04_id2008/0/42">under kapitel 1.5.1 i Bygningsreglementet</a>, afgøres inden for gennemsnitligt 5 arbejdsdage. Disse sager kalder vi lette
+                      sager.</p>
+                    <p>Alle andre byggesager afgøres inden for gennemsnitligt 20 arbejdsdage med mindre, der er lavet en aftale om en længere behandlingstid. Disse sager kalder vi svære sager.</p>
+                    <p>Sagsbehandlingstiden bliver længere, hvis ikke ansøgningsmaterialet fyldestgørende. Det kan du <a href="http://www.kk.dk/node/10399">læse mere om på vores side om sagsbehandlingstider</a>.</p>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Blanketter om byggeri']);" href="#">Blanketter om byggeri</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <p>Fra 1. december 2014 er det obligatorisk at ansøge om byggetilladelse via Byg og Miljø.</p>
+                    <p>For byggesager der er påbegyndt inden denne dato, kan du stadig få brug for&nbsp;<a href="http://www.kk.dk/node/2604">nogle af vores blanketter, som du finder her</a>.</p>
+                  </div>
+                </div>
+                <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Notater og beregninger']);" href="#">Notater og beregninger</a>
+    </h3>
+                <div class="accordion__content">
+                  <div class="tx-content">
+                    <ul>
+                      <li>Bærende konstruktioner:&nbsp;Hvis du skal ændre de bærende konstruktioner, skal du redegøre for de bærende konstruktioner sammen med byggeansøgningen.&nbsp;<a target="_blank" href="http://www.kk.dk/file/10381/download?token=HkbqRD6G">Du kan læse her, hvilken dokumentation du skal indsende</a>.
+                        Du kan også&nbsp;se vores&nbsp;<a href="http://www.kk.dk/file/8284/download?token=EP3N4-Fy">tjekliste om redegørelse for den statiske dokumentation</a>
+                        <br>&nbsp;
+                      </li>
+                      <li>Tagetage og ombygning til beboelse:&nbsp;Når du skal bygge om til beboelse i tagetagen, skal du være opmærksom på de&nbsp;<a target="_blank" href="http://www.kk.dk/file/8314/download?token=m_j6H1io">konstruktionstegninger og statiske beregninger</a>,
+                        der skal udarbejdes ved ansøgning om ombygning, og på de forskellige typer af tagkonstruktioner og deres statiske virkemåde.
+                        <br>&nbsp;
+                      </li>
+                      <li>Når du skal opsætte eller renovere altaner, er der en lang række forhold såsom brandmodstandsevne og bygningens stabilitet, du skal være opmærksom på. Se her, hvad du skal vide,&nbsp;<a href="http://www.kk.dk/file/10337/download">hvis du skal opsætte eller renovere en altan.</a>
+                        <br>&nbsp;
+                      </li>
+                      <li>Ændring af bindingsværksvægge må kun ske i begrænset omfang.&nbsp;<a href="http://www.kk.dk/file/8350/download">Udfordringer og begrænsninger ved ændringer kan ses her</a>.
+                        <br>&nbsp;
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="accordion effect-bounceslide">
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Større byggeprojekter - hold stjernemøde med kommunen']);" href="#">Større byggeprojekter - hold stjernemøde med kommunen</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Et større byggeprojekt i kommunen involverer mange myndighedsområder. For overskuelighedens skyld tilbyder vi at samle relevante myndighedsområder og give en professionel vejledning. Vi kalder konceptet for stjernemøder.</p>
+<div id="regions_1_contentblock_0_ArticleText">
+<h2>Hvad er et stjernemøde?</h2>
+<p>Et stjernemøde giver jer samlet, professionel vejledning fra alle de kommunale myndighedsområder på én gang.<br>
+Allerede i projekteringsfasen kan I få overblik over:</p>
+<ul><li>hvilke krav vi som myndigheder stiller til projektet</li>
+<li>hvilke tilladelser I har brug for, før byggeriet kan gå i gang</li>
+<li>hvilke lovkrav og reglementer, der er i spil</li>
+</ul><h2>Et stjernemøde bliver til på jeres opfordring.</h2>
+<p>Kontakt os, allerede når I har et skitseprojekt, så planlægger vi forløbet i fællesskab. Vi møder velforberedte til ethvert stjernemøde. Det kræver, at I senest 8 dage før mødet sender os:</p>
+<ul><li>oplysninger om projektets indhold og omfang</li>
+<li>jeres tidsplan for byggeriet</li>
+<li>skitseprojekt i 8 eksemplarer</li>
+<li>en dagsorden med jeres ønsker og spørgsmål</li>
+<li>en deltagerliste</li>
+</ul></div>
+  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Ændring af bolig til erhverv eller omvendt']);" href="#">Ændring af bolig til erhverv eller omvendt</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Må lokalerne ændre status?<br>
+Hvis du ønsker at ændre en bolig til erhverv eller omvendt, skal du <a href="http://www.kk.dk/file/10375/download?token=fkblxpo7">ansøge om byggetilladelse</a>.</p>
+<p>Skal du ændre til erhverv, skal du undersøge, om der eksisterer&nbsp;<a href="http://www.kk.dk/node/11515">lokalplaner</a> for området og om lokalet er godkendt til erhverv. Det kan du få hjælp til at finde ud af i vores <a href="http://www.kk.dk/artikel/teknik-og-milj%C3%B8forvaltningens-kundecenter">kundecenter</a>.</p>
+<p>Er bygningen fredet?<br>
+Mange gamle bygninger er fredede, og der stilles derfor særlige krav til byggearbejdets udførelse. Se om din bolig er fredet på&nbsp;<a target="_blank" href="http://www.kulturstyrelsen.dk/kulturarv/arkitektur/fredet-eller-bevaringsvaerdigt/">Kulturstyrelsens hjemmeside.</a></p>
+<p>Hvilke krav findes til erhvervsmål?<br>
+Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtveje og tilgængelighed (eksempelvis for kørestolsbrugere) i virksomheden. Kravene fremgår af <a target="_blank" href="http://www.bygningsreglementet.dk/">Bygningsreglementet</a></p>
+  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Hotline om digital byggeansøgning']);" href="#">Hotline om digital byggeansøgning</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Fra 1. december 2014 er det blevet lovpligtigt at ansøge digitalt om byggetilladelse via den digitale løsning Byg og Miljø.</p>
+<p>I Byg og Miljø kan du hurtigt, enkelt og effektivt søge om den tilladelse, du har brug for. Du guides sikkert gennem hele ansøgningsprocessen, og du bliver løbende informeret om, hvor langt i processen du er.</p>
+<ul><li>Kontakt Københavns Erhvervshus hvis du har spørgsmål til den digitale byggeansøgning. Du kan ringe mandag &ndash; torsdag 8-22 og fredag 8-18 på telefon 3366 3333.<br>
+  &nbsp;</li>
+<li>Hvis du har andre spørgsmål om f.eks. byggeri/byggesager/ansøgningsmateriale kan du kontakte os på 3366 5200.<br>
+  Vores telefoner er åbne mandag til fredag kl. 10-14</li>
+</ul>  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Få hjælp til din byggesag i vores kundecenter']);" href="#">Få hjælp til din byggesag i vores kundecenter</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Har du spørgsmål til dit byggeprojekt eller din byggesag? Eller er du i tvivl om, hvad du skal sende med din ansøgning om byggetilladelse? Så kan du få hjælp i <a href="http://www.kk.dk/artikel/teknik-og-milj%C3%B8forvaltningens-kundecenter"> Teknik- og Miljøforvaltningens kundecenter</a>, Njalsgade 13, 2300 København S.</p>
+<p>I kundecentret ser vi på din sag, og kan få tegninger mv. sendt op fra vores arkiv. Vi kan tilkalde fagpersoner (fx arkitekter eller ingeniører), som kan vurdere din byggesag.</p>
+<h2>I kundecentret kan du få:</h2>
+<ul><li>kopi af tegninger fra byggesagsarkivet</li>
+<li>tekniske råd og vejledning</li>
+<li>en vurdering af dit projekt - fejl og mangler - inden du ansøger.</li>
+</ul>  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Typisk ansøgningsmateriale']);" href="#">Typisk ansøgningsmateriale</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Ansøgningsmaterialet afhænger af, hvad du skal bygge, og når du ansøger digitalt via Byg og Miljø bliver du automatisk bedt om det materiale, lige præcis din byggesag kræver.</p>
+<p>Du kan regne med, at kommunen typisk skal modtage en del dokumentation for at kunne behandle din byggesag, som oftest:</p>
+<ul><li>en&nbsp;overordnet beskrivelse af, hvad der ansøges om.</li>
+<li>fuldmagt fra ejer, hvis det ikke er&nbsp;ejer, som indsender&nbsp;ansøgningen.</li>
+<li><a href="http://www.kk.dk/file/12976/download">situationsplan</a>&nbsp;med byggeriets afstand til skel og andre bygninger på grunden.</li>
+<li><a href="http://www.kk.dk/file/12978/download">facadetegninger</a></li>
+<li><a href="http://www.kk.dk/file/12977/download">plantegninger</a></li>
+<li><a href="http://www.kk.dk/file/12975/download">snittegninger</a></li>
+<li>grundens og bygningernes areal</li>
+<li>oplysning om, hvad bygningen skal benyttes til. Ved en ændret anvendelse skal du oplyse om både den nuværende og fremtidige benyttelse.</li>
+<li><a href="http://www.kk.dk/node/10380">BBR-oplysninger</a></li>
+<li>dispensationsansøgning, hvis byggeriet fx ikke overholder loklaplaner eller servitutter</li>
+</ul>  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Gebyr']);" href="#">Gebyr</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Fra 1. januar 2015 betaler du gebyr for den tid, kommunen bruger på sagsbehandling af din byggeansøgning.</p>
+<p>Timeprisen er 800 kroner (momsfri) og dækker den tid, vi bruger på sagsbehandling samt den tid vi bruger på forhåndsdialog, møder og administrativ behandling, herunder registrering, afsendelse og fakturering. Gebyret bliver opkrævet hos bygningens ejer to gange i sagsforløbet. Første gang, når der er givet byggetilladelse og derefter ved byggesagens afslutning.</p>
+<p>Det er ikke alle typer byggeri, du skal betale gebyr for - <a href="http://www.kk.dk/node/10410">læs mere på vores gebyrside</a></p>
+  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Sagsbehandlingstid']);" href="#">Sagsbehandlingstid</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Vi skelner mellem ”lette” og ”svære” sager og bruger disse definitioner:</p>
+<p>Alle byggesager, der alene vedrører byggearbejder <a href="http://bygningsreglementet.dk/br10_04_id2008/0/42">under kapitel 1.5.1 i Bygningsreglementet</a>, afgøres inden for gennemsnitligt 5 arbejdsdage. Disse sager kalder vi lette sager.</p>
+<p>Alle andre byggesager afgøres inden for gennemsnitligt 20 arbejdsdage med mindre, der er lavet en aftale om en længere behandlingstid. Disse sager kalder vi svære sager.</p>
+<p>Sagsbehandlingstiden bliver længere, hvis ikke ansøgningsmaterialet fyldestgørende. Det kan du <a href="http://www.kk.dk/node/10399">læse mere om på vores side om sagsbehandlingstider</a>.</p>
+  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Blanketter om byggeri']);" href="#">Blanketter om byggeri</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <p>Fra 1. december 2014 er det obligatorisk at ansøge om byggetilladelse via Byg og Miljø.</p>
+<p>For byggesager der er påbegyndt inden denne dato, kan du stadig få brug for&nbsp;<a href="http://www.kk.dk/node/2604">nogle af vores blanketter, som du finder her</a>.</p>
+  </div>
+</div>
+    <h3 class="accordion__title accordion_item">
+      <a onclick="$netminers.push(['postOther', 'Foldud/Notater og beregninger']);" href="#">Notater og beregninger</a>
+    </h3><div class="accordion__content">
+  <div class="tx-content">
+    <ul><li>Bærende konstruktioner:&nbsp;Hvis du skal ændre de bærende konstruktioner, skal du redegøre for de bærende konstruktioner sammen med byggeansøgningen.&nbsp;<a target="_blank" href="http://www.kk.dk/file/10381/download?token=HkbqRD6G">Du kan læse her, hvilken dokumentation du skal indsende</a>. Du kan også&nbsp;se vores&nbsp;<a href="http://www.kk.dk/file/8284/download?token=EP3N4-Fy">tjekliste om redegørelse for den statiske dokumentation</a><br>
+  &nbsp;</li>
+<li>Tagetage og ombygning til beboelse:&nbsp;Når du skal bygge om til beboelse i tagetagen, skal du være opmærksom på de&nbsp;<a target="_blank" href="http://www.kk.dk/file/8314/download?token=m_j6H1io">konstruktionstegninger og statiske beregninger</a>, der skal udarbejdes ved ansøgning om ombygning, og på de forskellige typer af tagkonstruktioner og deres statiske virkemåde.<br>
+  &nbsp;</li>
+<li>Når du skal opsætte eller renovere altaner, er der en lang række forhold såsom brandmodstandsevne og bygningens stabilitet, du skal være opmærksom på. Se her, hvad du skal vide,&nbsp;<a href="http://www.kk.dk/file/10337/download">hvis du skal opsætte eller renovere en altan.</a><br>
+  &nbsp;</li>
+<li>Ændring af bindingsværksvægge må kun ske i begrænset omfang.&nbsp;<a href="http://www.kk.dk/file/8350/download">Udfordringer og begrænsninger ved ændringer kan ses her</a>.<br>
+  &nbsp;</li>
+</ul>  </div>
+</div></div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .accordion .ui-accordion-header {
+  border-bottom: 2px solid #cbd0d3;
+  color: #007ea4;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0;
+  padding: 1em 2em 1em 2.5em;
+  position: relative;
+  text-transform: uppercase;
+}
+.accordion .ui-accordion-header:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  max-width: 4px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+.accordion .ui-accordion-header:hover {
+  background-color: #ebebeb;
+}
+.accordion .ui-accordion-header:hover:before {
+  border-left: 4px solid #007ea4;
+}
+.accordion .ui-accordion-header .ui-accordion-header-icon {
+  left: 1em;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+}
+.accordion .ui-accordion-header .ui-accordion-header-icon:before {
+  color: #007ea4;
+  content: '\e615';
+  font-family: "icomoon";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+.accordion #ui-id-1.accordion_item {
+  border-top: 2px solid #cbd0d3;
+}
+.accordion .ui-accordion-content {
+  border-bottom: 2px solid #cbd0d3;
+  padding: 1em 2.2em;
+}
+.accordion .ui-accordion-header-active,
+.accordion .ui-accordion-content-active {
+  background-color: #cbd0d3;
+}
+.accordion .ui-accordion-header-active {
+  color: #444444;
+}
+.accordion .ui-accordion-header-active:before {
+  border-left: 4px solid #007ea4;
+}
+.accordion .ui-accordion-header-active .ui-accordion-header-icon:before {
+  content: '\e613';
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">File</h2>
+            <div class="component--demo">
+              <div class="file">
+                <h2 class="file__title">Document</h2>
+                <div class="file__type tx-sec">
+                  <a href="#" type="application/pdf; length=516718" class="button download" target="_blank">
+                    <span aria-hidden="true" class="filetype-generic">fil</span>
+                    <span>Billedvifte af Borgerrepræsentationens medlemmer</span>
+                    <span class="element-invisible">.fil</span>
+                  </a>
+                </div>
+                <div class="file__type tx-sec">
+                  <a href="#" type="application/pdf; length=232927" class="button download" target="_blank">
+                    <span aria-hidden="true" class="filetype-pdf">pdf</span>
+                    <span>Koebenhavns Kommunes Styrelsesvedtaegt 23 januar 2014</span>
+                    <span class="element-invisible">.pdf</span>
+                  </a>
+                </div>
+                <div class="file__type tx-sec">
+                  <a href="#" type="application/pdf; length=269725" class="button download" target="_blank">
+                    <span aria-hidden="true" class="filetype-pdf">pdf</span>
+                    <span>Bemaerkninger til styrelsesvedtaegt for KK</span>
+                    <span class="element-invisible">.pdf</span>
+                  </a>
+                </div>
+                <div class="file__type tx-sec">
+                  <a href="#" type="application/pdf; length=40600" class="button download" target="_blank">
+                    <span aria-hidden="true" class="filetype-generic">fil</span>
+                    <span>Borgerepræsentationens forretningsorden</span>
+                    <span class="element-invisible">.fil</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="file">
+  <h2 class="file__title">Document</h2>
+  <div class="file__type tx-sec">
+    <a href="#" type="application/pdf; length=516718" class="button download" target="_blank">
+      <span aria-hidden="true" class="filetype-generic">fil</span>
+      <span>Billedvifte af Borgerrepræsentationens medlemmer</span>
+      <span class="element-invisible">.fil</span>
+    </a>
+  </div>
+  <div class="file__type tx-sec">
+    <a href="#" type="application/pdf; length=232927" class="button download" target="_blank">
+      <span aria-hidden="true" class="filetype-pdf">pdf</span>
+      <span>Koebenhavns Kommunes Styrelsesvedtaegt 23 januar 2014</span>
+      <span class="element-invisible">.pdf</span>
+    </a>
+  </div>
+  <div class="file__type tx-sec">
+    <a href="#" type="application/pdf; length=269725" class="button download" target="_blank">
+      <span aria-hidden="true" class="filetype-pdf">pdf</span>
+      <span>Bemaerkninger til styrelsesvedtaegt for KK</span>
+      <span class="element-invisible">.pdf</span>
+    </a>
+  </div>
+  <div class="file__type tx-sec">
+    <a href="#" type="application/pdf; length=40600" class="button download" target="_blank">
+      <span aria-hidden="true" class="filetype-generic">fil</span>
+      <span>Borgerepræsentationens forretningsorden</span>
+      <span class="element-invisible">.fil</span>
+    </a>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .element-invisible {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+}
+.file {
+  border: 1px solid #ebebeb;
+  -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
+  margin-bottom: 28px;
+  padding: 28px;
+}
+.file__title {
+  margin-bottom: 18px;
+  font-size: 1.33333em;
+  line-height: 1.15em;
+}
+.file__type {
+  margin-bottom: 2px;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
 
         </div>
       </div>
