@@ -1,0 +1,19 @@
+.bef-link {
+  color: #fff;
+}
+.bef-link .form-type-bef-link {
+  background-color: #e2e2e2;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.bef-link .form-type-bef-link a {
+  display: block;
+  padding: 5px 10px;
+  color: #444444;
+}
+.bef-link .form-type-bef-link.selected {
+  background-color: #00ba5a;
+}
+.bef-link .form-type-bef-link.selected a {
+  color: #fff;
+}
