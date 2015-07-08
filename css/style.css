@@ -211,13 +211,6 @@
   font-size: 2em;
   font-weight: bold;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .box-list-without-bullets {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -231,13 +224,6 @@
   margin-top: 0;
   font-size: 1.11111em;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .box-icons {
   margin: 0 -12px;
 }
@@ -252,7 +238,19 @@
   float: left;
   margin-bottom: 22px;
   padding: 0 12px;
-  width: 33.333%;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .box-icons__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .box-icons__item {
+    width: 33.33333333%;
+  }
 }
 
 .box-icons__image {
@@ -287,13 +285,6 @@
   float: left;
   margin: 0 0 2px;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .coloured-infobox {
   margin: 0 -17.5px;
 }
@@ -363,13 +354,6 @@
 
 .contact .telephone {
   margin: 0.5em 28px;
-}
-
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
 }
 
 .filter .chosen-container {
@@ -442,13 +426,6 @@
   background: #ebebeb none repeat scroll 0 0;
   color: #444444;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .image-link {
   margin: 0 -18px;
 }
@@ -531,13 +508,6 @@
   width: 32.7731%;
   margin-top: -28px;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .list-image {
   margin: 0 -2.5px;
 }
@@ -557,13 +527,6 @@
   height: 193px;
   width: 193px;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .list-local-content {
   margin: 0 -17.5px;
 }
@@ -674,13 +637,6 @@
   padding: 5px;
   line-height: 1.2em;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .pager {
   height: auto;
 }
@@ -690,13 +646,6 @@
   content: '';
   display: table;
 }
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .post {
   margin: 0 -4px;
 }
@@ -730,13 +679,6 @@
 
 .post .tags {
   margin: 1em 0;
-}
-
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
 }
 
 .related-files {
