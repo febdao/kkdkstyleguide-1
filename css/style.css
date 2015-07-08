@@ -630,6 +630,7 @@
 .post .tags {
   margin: 1em 0;
 }
+
 .search-form {
   max-width: 670px;
   position: relative;
@@ -661,9 +662,7 @@
   top: 0;
   width: 140px;
 }
-.social__item {
-  display: inline-block;
-}
+
 .tags {
   font-size: 0.83333em;
   font-style: italic;
