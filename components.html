@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/shCore.css">
   <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
   <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -37,14 +38,13 @@
       <nav class="sec sec-menu">
         <div class="sec-inner menu-section-addings-processed">
           <ul class="menu-main menu clearfix" id="main-menu">
-            <li class="menu-1908">
-              <a class="menu_icon menu-1908" href="index.html">KK Style Guide</a>
+            <li><a href="index.html">KK Style Guide</a>
             </li>
-            <li class="menu-1811"><a href="components.html">Components</a>
+            <li><a href="components.html">Components</a>
             </li>
-            <li class="menu-1834"><a href="elements.html">Base Elements</a>
+            <li><a href="typography.html">Typography</a>
             </li>
-            <li class="menu-1856"><a href="grid.html">Grid</a>
+            <li><a href="grid.html">Grid</a>
             </li>
           </ul>
         </div>
@@ -52,11 +52,11 @@
     </section>
     <section id="main-content" class="sec sec-content">
       <div class="sec-inner">
-        <div class="pane-menu-block-front-page-menu">
+        <div class="reg-inner-regions">
 
 
-          <div class="feb">
-            <h2>Box Icon</h2>
+          <div class="component--item">
+            <h2 class="component--title">Box Icon</h2>
             <div class="component--demo">
               <div class="box-icons">
                 <div class="box-icons__item">
@@ -151,8 +151,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="box-icons">
   <div class="box-icons__item">
@@ -230,7 +232,8 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
@@ -280,10 +283,11 @@
   margin: 0 0 2px;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Most Read Pages</h2>
+          <div class="component--item">
+            <h2 class="component--title">Most Read Pages</h2>
             <div class="component--demo">
               <div class="most-read-pages">
                 <h2 class="most-read-pages__title">Mest læste sider</h2>
@@ -299,8 +303,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="most-read-pages">
   <h2 class="most-read-pages__title">Mest læste sider</h2>
@@ -312,7 +318,8 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .most-read-pages {
   margin-bottom: 28px;
@@ -339,10 +346,11 @@
   line-height: 1.2em;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Tags</h2>
+          <div class="component--item">
+            <h2 class="component--title">Tags</h2>
             <div class="component--demo">
               <div class="tags ic-tag">
                 <span class="tags-content">
@@ -356,8 +364,10 @@
               </div>
 
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="tags ic-tag">
 	<span class="tags-content">
@@ -372,7 +382,8 @@
 
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .tags {
   font-size: 0.83333em;
@@ -380,10 +391,11 @@
   font-weight: 700;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Info Box</h2>
+          <div class="component--item">
+            <h2 class="component--title">Info Box</h2>
             <div class="component--demo">
               <div class="coloured-infobox">
                 <div class="coloured-infobox__item">
@@ -406,8 +418,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="coloured-infobox">
   <div class="coloured-infobox__item"><a href="#" class="coloured-infobox__link" style='background-color: #00ACDD'>
@@ -425,7 +439,8 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
@@ -472,10 +487,11 @@
   z-index: 1;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Post</h2>
+          <div class="component--item">
+            <h2 class="component--title">Post</h2>
             <div class="component--demo">
               <div class="post">
                 <div class="post__item">
@@ -519,8 +535,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="post">
   <div class="post__item">
@@ -562,7 +580,8 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
@@ -600,10 +619,11 @@
   margin: 1em 0;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Image Link</h2>
+          <div class="component--item">
+            <h2 class="component--title">Image Link</h2>
             <div class="component--demo">
               <div class="image-link">
                 <div class="image-link__item">
@@ -639,8 +659,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="image-link">
   <div class="image-link__item">
@@ -677,7 +699,8 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
@@ -722,10 +745,11 @@
   color: #ffffff;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Pager</h2>
+          <div class="component--item">
+            <h2 class="component--title">Pager</h2>
             <div class="component--demo">
               <ul class="pager">
                 <li class="pager-previous first"><span>&lt;</span>
@@ -747,8 +771,10 @@
                 </li>
               </ul>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <ul class="pager">
   <li class="pager-previous first"><span>&lt;</span></li>
@@ -763,7 +789,8 @@
 </ul>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
@@ -780,10 +807,11 @@
   display: table;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Banner</h2>
+          <div class="component--item">
+            <h2 class="component--title">Banner</h2>
             <div class="component--demo">
               <div class="banner">
                 <a href="#">
@@ -796,8 +824,10 @@
                 </a>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="banner">
   <a href="#">
@@ -811,7 +841,8 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .banner {
   overflow: hidden;
@@ -851,10 +882,11 @@
   }
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Social</h2>
+          <div class="component--item">
+            <h2 class="component--title">Social</h2>
             <div class="component--demo">
               <div class="social">
                 <div class="social__item">
@@ -869,8 +901,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="social">
   <div class="social__item">
@@ -886,16 +920,18 @@
 </div>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .social__item {
   display: inline-block;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Search</h2>
+          <div class="component--item">
+            <h2 class="component--title">Search</h2>
             <div class="component--demo">
               <form accept-charset="UTF-8" id="search-form" method="post" action="" class="search-form">
                 <div>
@@ -913,8 +949,10 @@
                 </div>
               </form>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <form accept-charset="UTF-8" id="search-form" method="post" action="" class="search-form">
   <div>
@@ -933,7 +971,8 @@
 </form>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .search-form {
   max-width: 670px;
@@ -964,10 +1003,11 @@
   width: 140px;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Filter</h2>
+          <div class="component--item">
+            <h2 class="component--title">Filter</h2>
             <div class="component--demo">
               <form accept-charset="UTF-8" id="facetapi-multiselect-form-5" class="filter" method="post" action="">
                 <div>
@@ -986,8 +1026,10 @@
 
               <script type="text/javascript"></script>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <form accept-charset="UTF-8" id="facetapi-multiselect-form-5" class="filter" method="post" action="">
   <div>
@@ -1007,7 +1049,8 @@
 <script type="text/javascript"></script>
           </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
@@ -1079,10 +1122,11 @@
   color: #444444;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Better Cph Limited</h2>
+          <div class="component--item">
+            <h2 class="component--title">Better Cph Limited</h2>
             <div class="component--demo">
               <div class="pane-bundle-better-cph-limited better-cph-limited">
                 <h2 class="pane-title">Et bedre København</h2>
@@ -1124,8 +1168,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="pane-bundle-better-cph-limited better-cph-limited">
   <h2 class="pane-title">Et bedre København</h2>
@@ -1166,7 +1212,8 @@
 	</div>
 </div>          </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .better-cph-limited {
   margin-bottom: 25px;
@@ -1230,10 +1277,11 @@
   font-weight: bold;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Kkdk Menu</h2>
+          <div class="component--item">
+            <h2 class="component--title">Kkdk Menu</h2>
             <div class="component--demo">
               <div class="kkdk-menu">
                 <div class="kkdk-menu__info">
@@ -1245,8 +1293,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="kkdk-menu">
   <div class="kkdk-menu__info">
@@ -1258,7 +1308,8 @@
   </div>
 </div>          </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .kkdk-menu {
   margin-left: auto;
@@ -1296,10 +1347,11 @@
   margin-top: -28px;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="feb">
-            <h2>Contact</h2>
+          <div class="component--item">
+            <h2 class="component--title">Contact</h2>
             <div class="component--demo">
               <div class="bl-element contact">
                 <h2 class="contact__title">Kontakt</h2>
@@ -1325,8 +1377,10 @@
                 </div>
               </div>
             </div>
-            <div class="component--source">
-              <div class="component--html element-invisible">
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
             <div class="bl-element contact">
   <h2 class="contact__title">Kontakt</h2>
@@ -1352,7 +1406,8 @@
   </div>
 </div>          </pre>
               </div>
-              <div class="component--css element-invisible">
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
           .contact {
   background: none repeat scroll 0 0 white;
@@ -1377,6 +1432,7 @@
   margin: 0.5em 28px;
 }          </pre>
               </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
 

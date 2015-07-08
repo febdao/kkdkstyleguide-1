@@ -23,6 +23,7 @@ gulp.task('server',['templates', 'css'],function(){
 	gulp.watch(src.css, ['css']);
 	gulp.watch([src.html,src.page,src.htmlcompo], ['templates']);
 	gulp.watch(['js/*.js'], reload);
+	gulp.watch(['css/app.css'], reload);
 });
 
 /*
