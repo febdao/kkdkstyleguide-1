@@ -235,63 +235,6 @@
   margin-top: 0;
   font-size: 1.11111em;
 }
-.box-icons:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.box-icons__item {
-  float: left;
-  margin-bottom: 22px;
-  padding: 0 12px;
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .box-icons__item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  .box-icons__item {
-    width: 33.33333333%;
-  }
-}
-
-.box-icons__image {
-  margin-bottom: 10px;
-}
-
-.box-icons__title {
-  font-size: 1.22222em;
-  line-height: 1.21em;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-
-.box-icons__title {
-  color: #006d8c;
-}
-
-.box-icons .most-read-pages {
-  margin-bottom: 0;
-  padding-top: 0;
-  text-align: left;
-}
-
-.box-icons .most-read-pages:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.box-icons .most-read-pages__item {
-  clear: both;
-  float: left;
-  margin: 0 0 2px;
-}
 .coloured-infobox {
   margin: 0 -17.5px;
 }
@@ -925,6 +868,7 @@
     bottom: 0;
   }
 }
+
 .post {
   margin: 0 -4px;
 }
@@ -972,7 +916,6 @@
 .post .tags {
   margin: 1em 0;
 }
-
 .related-files {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -1191,4 +1134,61 @@ table {
   font-size: 0.83333em;
   font-style: italic;
   font-weight: 700;
+}
+.box-icons:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.box-icons__item {
+  float: left;
+  margin-bottom: 22px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .box-icons__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .box-icons__item {
+    width: 33.33333333%;
+  }
+}
+
+.box-icons__image {
+  margin-bottom: 10px;
+}
+
+.box-icons__title {
+  font-size: 1.22222em;
+  line-height: 1.21em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.box-icons__title {
+  color: #006d8c;
+}
+
+.box-icons .most-read-pages {
+  margin-bottom: 0;
+  padding-top: 0;
+  text-align: left;
+}
+
+.box-icons .most-read-pages:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.box-icons .most-read-pages__item {
+  clear: both;
+  float: left;
+  margin: 0 0 2px;
 }
