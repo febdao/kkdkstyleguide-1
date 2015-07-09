@@ -29,3 +29,11 @@
     margin: 0.5em 28px;
   }
 }
+.contact .group-contact-info__inner {
+  margin-bottom: 42px;
+}
+.contact .group-contact-info__inner:after {
+  clear: both;
+  content: '';
+  display: table;
+}

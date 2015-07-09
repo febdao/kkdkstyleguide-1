@@ -387,6 +387,16 @@
   }
 }
 
+.contact .group-contact-info__inner {
+  margin-bottom: 42px;
+}
+
+.contact .group-contact-info__inner:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 
 .filter .chosen-container {
   font-size: 0.88889em;
@@ -401,6 +411,9 @@
 }
 
 .filter .chosen-container .chosen-choices {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   line-height: 39px;
 }
 
