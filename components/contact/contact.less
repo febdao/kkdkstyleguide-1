@@ -1,22 +1,10 @@
+@import '../helper.less';
+
 .contact {
 	background: none repeat scroll 0 0 white;
-	padding: 28px;
 
 	> div:nth-of-type(1) {
 	  margin-bottom: 1.33333em;
-	}
-
-	.contact__title,
-	.pane-title {
-
-	}
-
-	.contact__description {
-
-	}
-
-	.contact__content {
-
 	}
 
 	.contact__content {
@@ -31,10 +19,16 @@
 	}
 
 	.address {
-		margin: 0 42px 1em;
+		margin: 0 20px 10px;
+		.responsiveMin(@mq-bp-desktop; {
+			margin: 0 42px 1em;
+    });
 	}
 
 	.telephone {
-		margin: 0.5em 28px;
+		margin: 0.5em 20px;
+		.responsiveMin(@mq-bp-desktop; {
+			margin: 0.5em 28px;
+    });
 	}
 }

@@ -2,6 +2,20 @@ table.sticky-header {
   background-color: #fff;
   margin-top: 0;
 }
+table {
+  display: inline-block;
+  width: 100%;
+  overflow-x: auto;
+}
+@media (min-width: 768px) {
+  table {
+    border-collapse: collapse;
+    font-size: 0.88889em;
+    table-layout: fixed;
+    overflow: none;
+    display: table;
+  }
+}
 .sticky-header {
   border-collapse: collapse;
   font-size: 0.88889em;

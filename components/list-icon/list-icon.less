@@ -1,0 +1,27 @@
+@import '../helper.less';
+
+.list-icon {
+	margin-bottom: 20px;
+
+	&:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+	li {
+		.span-columns(1);
+		float: left;
+		margin: 10px 0;
+		.responsiveMin(@mq-bp-tablet-plus; {
+      .span-columns(2);
+    });
+		.responsiveMin(@mq-bp-desktop; {
+      .span-columns(3);
+    });
+	}
+}

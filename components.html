@@ -1247,14 +1247,19 @@
   padding-right: 1em;
 }
 .better-cph-limited .better-cph-limited__content {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+@media (min-width: 768px) {
+  .better-cph-limited .better-cph-limited__content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 .better-cph-limited .better-cph-limited__image {
   bottom: 0;
   position: absolute;
   top: 0;
-  width: 100%;
 }
 .better-cph-limited .stats-numbers-wrapper {
   border-top: 1px solid white;
@@ -1264,10 +1269,14 @@
   z-index: 2;
 }
 .better-cph-limited .stats__items {
-  float: left;
-  margin-right: 2.27273%;
-  width: 31.8182%;
   color: white;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .better-cph-limited .stats__items {
+    float: left;
+    width: 33.33333333%;
+  }
 }
 .better-cph-limited .stats__items:first-child {
   clear: both;
@@ -1288,15 +1297,15 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item" id="kkdk-menu">
-            <h2 class="component--title">Kkdk Menu</h2>
+          <div class="component--item" id="personlige-forhold">
+            <h2 class="component--title">Personlige Forhold</h2>
             <div class="component--demo">
-              <div class="kkdk-menu">
-                <div class="kkdk-menu__info">
+              <div class="personlige-forhold">
+                <div class="personlige-forhold__info">
                   <h2>Personlige forhold</h2>
-                  <div class="kkdk-menu__description">Her finder du oplysninger om bl.a. flytning, vielse og pension. Du kan også læse om Digital Post og få mere at vide om pas, kørekort og personnummer.</div>
+                  <div class="personlige-forhold__description">Her finder du oplysninger om bl.a. flytning, vielse og pension. Du kan også læse om Digital Post og få mere at vide om pas, kørekort og personnummer.</div>
                 </div>
-                <div class="kkdk-menu__image">
+                <div class="personlige-forhold__image">
                   <img alt="Personlige forhold" src="http://www.kk.dk/sites/default/files/styles/kkdk_menu_parent_icon/public/menu_icons/menu_icon_1820.png?itok=_B4yz-4h" typeof="foaf:Image">
                 </div>
               </div>
@@ -1306,12 +1315,12 @@
               <div class="component--html">
                 <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
-            <div class="kkdk-menu">
-  <div class="kkdk-menu__info">
+            <div class="personlige-forhold">
+  <div class="personlige-forhold__info">
 		<h2>Personlige forhold</h2>
-    <div class="kkdk-menu__description">Her finder du oplysninger om bl.a. flytning, vielse og pension. Du kan også læse om Digital Post og få mere at vide om pas, kørekort og personnummer.</div>
+    <div class="personlige-forhold__description">Her finder du oplysninger om bl.a. flytning, vielse og pension. Du kan også læse om Digital Post og få mere at vide om pas, kørekort og personnummer.</div>
   </div>
-  <div class="kkdk-menu__image">
+  <div class="personlige-forhold__image">
   	<img alt="Personlige forhold" src="http://www.kk.dk/sites/default/files/styles/kkdk_menu_parent_icon/public/menu_icons/menu_icon_1820.png?itok=_B4yz-4h" typeof="foaf:Image">
   </div>
 </div>          </pre>
@@ -1319,7 +1328,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .kkdk-menu {
+          .personlige-forhold {
   margin-left: auto;
   margin-right: auto;
   max-width: 59em;
@@ -1329,30 +1338,39 @@
   padding-top: 1em;
   position: relative;
 }
-.kkdk-menu:after {
+.personlige-forhold:after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
-.kkdk-menu .kkdk-menu__info {
-  float: left;
-  margin-right: 0.84034%;
-  width: 66.3866%;
-  padding-bottom: 28px;
+.personlige-forhold__info h2 {
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: uppercase;
 }
-.kkdk-menu .kkdk-menu__description {
+@media (min-width: 768px) {
+  .personlige-forhold__info {
+    margin-right: 0.84034%;
+    padding-bottom: 28px;
+    width: 66.3866%;
+    float: left;
+  }
+}
+.personlige-forhold__description {
   font-size: 1.22222em;
   line-height: 1.4em;
   margin-top: 5px;
 }
-.kkdk-menu .kkdk-menu__image {
-  bottom: 0;
-  float: right;
-  margin-right: 0;
-  position: absolute;
-  right: 0;
-  width: 32.7731%;
-  margin-top: -28px;
+@media (min-width: 768px) {
+  .personlige-forhold__image {
+    float: right;
+    margin-right: 0;
+    margin-top: -28px;
+    position: absolute;
+    right: 0;
+    width: 32.7731%;
+    bottom: 0;
+  }
 }          </pre>
               </div>
               <button class="hide-code">Hide Code</button>
@@ -1419,7 +1437,6 @@
                 <pre class="brush: css">
           .contact {
   background: none repeat scroll 0 0 white;
-  padding: 28px;
 }
 .contact > div:nth-of-type(1) {
   margin-bottom: 1.33333em;
@@ -1434,10 +1451,20 @@
   text-transform: none;
 }
 .contact .address {
-  margin: 0 42px 1em;
+  margin: 0 20px 10px;
+}
+@media (min-width: 768px) {
+  .contact .address {
+    margin: 0 42px 1em;
+  }
 }
 .contact .telephone {
-  margin: 0.5em 28px;
+  margin: 0.5em 20px;
+}
+@media (min-width: 768px) {
+  .contact .telephone {
+    margin: 0.5em 28px;
+  }
 }          </pre>
               </div>
               <button class="hide-code">Hide Code</button>
@@ -2437,6 +2464,20 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   background-color: #fff;
   margin-top: 0;
 }
+table {
+  display: inline-block;
+  width: 100%;
+  overflow-x: auto;
+}
+@media (min-width: 768px) {
+  table {
+    border-collapse: collapse;
+    font-size: 0.88889em;
+    table-layout: fixed;
+    overflow: none;
+    display: table;
+  }
+}
 .sticky-header {
   border-collapse: collapse;
   font-size: 0.88889em;
@@ -3078,7 +3119,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
           <div class="component--item" id="list-icon">
             <h2 class="component--title">list-icon</h2>
             <div class="component--demo">
-              <ul>
+              <ul class="list-icon">
                 <li class="ic-share tx-ln">ic-share</li>
                 <li class="ic-print tx-ln">ic-print</li>
                 <li class="ic-facebook tx-ln">ic-facebook</li>
@@ -3115,11 +3156,8 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 <li class="ic-linkedin-circle tx-ln">ic-linkedin-circle</li>
                 <li class="icon-instagram-with-circle ic- tx-ln">icon-instagram-with-circle</li>
               </ul>
-              <ul>
+              <ul class="list-icon">
                 <li class="ln-facebook ic-facebook tx-ln">ln-facebook</li>
-                <li class="ln-twitter ic-link tx-ln">ln-twitter</li>
-                <li class="ln-myspace ic-link tx-ln">ln-myspace</li>
-                <li class="ln-youtube ic-link tx-ln">ln-youtube</li>
                 <li class="ln-vimeo ic-link tx-ln">ln-vimeo</li>
                 <li class="ln-newsletter ic-mail-circle tx-ln">ln-newsletter</li>
                 <li class="ln-this-site ic-rss-circle tx-ln">ln-this-site</li>
@@ -3135,7 +3173,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--html">
                 <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
-            <ul>
+            <ul class="list-icon">
   <li class="ic-share tx-ln"> ic-share</li>
   <li class="ic-print tx-ln"> ic-print</li>
   <li class="ic-facebook tx-ln"> ic-facebook</li>
@@ -3172,11 +3210,8 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   <li class="ic-linkedin-circle tx-ln"> ic-linkedin-circle</li>
   <li class="icon-instagram-with-circle ic- tx-ln"> icon-instagram-with-circle</li>
 </ul>
-<ul>
+<ul class="list-icon">
   <li class="ln-facebook ic-facebook tx-ln"> ln-facebook</li>
-  <li class="ln-twitter ic-link tx-ln"> ln-twitter</li>
-  <li class="ln-myspace ic-link tx-ln"> ln-myspace</li>
-  <li class="ln-youtube ic-link tx-ln"> ln-youtube</li>
   <li class="ln-vimeo ic-link tx-ln"> ln-vimeo</li>
   <li class="ln-newsletter ic-mail-circle tx-ln"> ln-newsletter</li>
   <li class="ln-this-site ic-rss-circle tx-ln"> ln-this-site</li>
@@ -3190,7 +3225,32 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-                    </pre>
+          .list-icon {
+  margin-bottom: 20px;
+}
+.list-icon:before,
+.list-icon:after {
+  content: '';
+  display: table;
+}
+.list-icon:after {
+  clear: both;
+}
+.list-icon li {
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+}
+@media (min-width: 480px) {
+  .list-icon li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .list-icon li {
+    width: 33.33333333%;
+  }
+}          </pre>
               </div>
               <button class="hide-code">Hide Code</button>
             </div>
@@ -3228,7 +3288,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 </li>
                 <li class="component--list--item"><a href="#better-cph-limited">Better Cph Limited</a>
                 </li>
-                <li class="component--list--item"><a href="#kkdk-menu">Kkdk Menu</a>
+                <li class="component--list--item"><a href="#personlige-forhold">Personlige Forhold</a>
                 </li>
                 <li class="component--list--item"><a href="#contact">Contact</a>
                 </li>

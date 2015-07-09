@@ -1,6 +1,5 @@
 .contact {
   background: none repeat scroll 0 0 white;
-  padding: 28px;
 }
 .contact > div:nth-of-type(1) {
   margin-bottom: 1.33333em;
@@ -15,8 +14,18 @@
   text-transform: none;
 }
 .contact .address {
-  margin: 0 42px 1em;
+  margin: 0 20px 10px;
+}
+@media (min-width: 768px) {
+  .contact .address {
+    margin: 0 42px 1em;
+  }
 }
 .contact .telephone {
-  margin: 0.5em 28px;
+  margin: 0.5em 20px;
+}
+@media (min-width: 768px) {
+  .contact .telephone {
+    margin: 0.5em 28px;
+  }
 }

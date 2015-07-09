@@ -1,3 +1,5 @@
+@import '../helper.less';
+
 .better-cph-limited{
 	margin-bottom: 25px;
 	margin-top: 25px;
@@ -24,15 +26,18 @@
 	}
 
 	.better-cph-limited__content {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		.responsiveMin(@mq-bp-desktop; {
+      padding-left: 1em;
+			padding-right: 1em;
+    });
 	}
 
 	.better-cph-limited__image {
 		bottom: 0;
 		position: absolute;
 		top: 0;
-		width: 100%;
 	}
 
 	.stats-numbers-wrapper {
@@ -44,10 +49,13 @@
 	}
 
 	.stats__items {
-		float: left;
-		margin-right: 2.27273%;
-		width: 31.8182%;
 		color: white;
+		margin-bottom: 25px;
+
+		.responsiveMin(@mq-bp-desktop; {
+			float: left;
+      .span-columns(3);
+    });
 
 		&:first-child {
 			clear: both;

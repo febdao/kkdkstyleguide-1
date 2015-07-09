@@ -1,0 +1,26 @@
+.list-icon {
+  margin-bottom: 20px;
+}
+.list-icon:before,
+.list-icon:after {
+  content: '';
+  display: table;
+}
+.list-icon:after {
+  clear: both;
+}
+.list-icon li {
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+}
+@media (min-width: 480px) {
+  .list-icon li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .list-icon li {
+    width: 33.33333333%;
+  }
+}
