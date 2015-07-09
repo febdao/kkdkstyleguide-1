@@ -1,0 +1,42 @@
+$import "../bower_components/susy/sass/susy";
+
+// $desktop:
+$mq-bp-desktop-plus: 960px;
+$mq-bp-desktop-plus-minus: 959px;
+$mq-bp-desktop: 768px;
+$mq-bp-desktop-minus: 767px;
+$mq-bp-tablet-plus : 480px;
+$mq-bp-tablet-plus-minus : 479px;
+
+//Clearfix
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.layout-3col {
+  $extend %clearfix;
+
+  &__col-x {
+    $include gallery(4 of 12);
+  }
+
+  $include susy-media(30em) {
+
+  }
+}
+
+.layout-4col {
+  $extend %clearfix;
+
+  &__col-x {
+    $include gallery(3 of 12);
+  }
+}
