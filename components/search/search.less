@@ -1,3 +1,5 @@
+@import '../helper.less';
+
 @width-search-form : 21%;
 
 .search-form {
@@ -6,8 +8,12 @@
   width: 100%;
 
   .form-item {
+    margin-bottom: 12px;
     width: 100%;
-    padding-right: 23%;
+
+    .responsiveMin(@mq-bp-tablet-plus; {
+      padding-right: 23%;
+    });
   }
 
   .form-text {
@@ -22,12 +28,17 @@
   .form-submit {
     font-size: 1em;
     line-height: 39px;
+    margin-bottom: 6px;
     margin-right: 0;
     padding: 0 0.5em;
-    position: absolute;
-    right: 0;
     text-transform: uppercase;
-    top: 0;
-    width: @width-search-form;
+
+    .responsiveMin(@mq-bp-tablet-plus; {
+      margin-bottom: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: @width-search-form;
+    });
   }
 }
