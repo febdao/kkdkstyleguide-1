@@ -1,40 +1,201 @@
-/*
-Error: Invalid CSS after "$import ": expected ":", was ""../bower_compo..."
-        on line 1 of d:/congviec/xampp/htdocs/gp/project/kkdkstyleguide/sass/thanh.scss
+/* line 13, ../sass/thanh.scss */
+.layout-3col:before, .layout-4col:before, .layout-5col:before, .layout-3col:after, .layout-4col:after, .layout-5col:after {
+  content: '';
+  display: table;
+}
+/* line 19, ../sass/thanh.scss */
+.layout-3col:after, .layout-4col:after, .layout-5col:after {
+  clear: both;
+}
 
-1: $import "../bower_components/susy/sass/susy";
-2: 
-3: // $desktop:
-4: $mq-bp-desktop-plus: 960px;
-5: $mq-bp-desktop-plus-minus: 959px;
-6: $mq-bp-desktop: 768px;
+/* line 27, ../sass/thanh.scss */
+.layout-3col__col-x {
+  width: 100%;
+  float: left;
+}
+/* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+.layout-3col__col-x:nth-child(1n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 480px) {
+  /* line 27, ../sass/thanh.scss */
+  .layout-3col__col-x {
+    width: 48.27586%;
+    float: left;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-3col__col-x:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-3col__col-x:nth-child(2n + 2) {
+    margin-left: 51.72414%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 27, ../sass/thanh.scss */
+  .layout-3col__col-x {
+    width: 31.03448%;
+    float: left;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-3col__col-x:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-3col__col-x:nth-child(3n + 2) {
+    margin-left: 34.48276%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-3col__col-x:nth-child(3n + 3) {
+    margin-left: 68.96552%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
 
-Backtrace:
-d:/congviec/xampp/htdocs/gp/project/kkdkstyleguide/sass/thanh.scss:1
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1162:in `expected'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1098:in `expected'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1093:in `tok!'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:602:in `variable'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:657:in `block_child'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:647:in `block_contents'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:117:in `stylesheet'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:42:in `parse'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/engine.rb:393:in `_to_tree'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/engine.rb:268:in `render'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:328:in `block in watch'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `call'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$import \": expected \":\", was \"\"../bower_compo...\"\A         on line 1 of d:/congviec/xampp/htdocs/gp/project/kkdkstyleguide/sass/thanh.scss\A \A 1: $import \"../bower_components/susy/sass/susy\";\A 2: \A 3: // $desktop:\A 4: $mq-bp-desktop-plus: 960px;\A 5: $mq-bp-desktop-plus-minus: 959px;\A 6: $mq-bp-desktop: 768px;"; }
+/* line 42, ../sass/thanh.scss */
+.layout-4col__col-x {
+  width: 100%;
+  float: left;
+}
+/* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+.layout-4col__col-x:nth-child(1n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 480px) {
+  /* line 42, ../sass/thanh.scss */
+  .layout-4col__col-x {
+    width: 49.15254%;
+    float: left;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-4col__col-x:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-4col__col-x:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 42, ../sass/thanh.scss */
+  .layout-4col__col-x {
+    width: 23.72881%;
+    float: left;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-4col__col-x:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-4col__col-x:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-4col__col-x:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-4col__col-x:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 57, ../sass/thanh.scss */
+.layout-5col__col-x {
+  width: 100%;
+  float: left;
+}
+/* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+.layout-5col__col-x:nth-child(1n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 480px) {
+  /* line 57, ../sass/thanh.scss */
+  .layout-5col__col-x {
+    width: 48.97959%;
+    float: left;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(2n + 2) {
+    margin-left: 51.02041%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 57, ../sass/thanh.scss */
+  .layout-5col__col-x {
+    width: 18.36735%;
+    float: left;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(5n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(5n + 2) {
+    margin-left: 20.40816%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(5n + 3) {
+    margin-left: 40.81633%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(5n + 4) {
+    margin-left: 61.22449%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../bower_components/susy/sass/susy/language/susy/_gallery.scss */
+  .layout-5col__col-x:nth-child(5n + 5) {
+    margin-left: 81.63265%;
+    margin-right: -100%;
+    clear: none;
+  }
+}

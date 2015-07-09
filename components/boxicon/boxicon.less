@@ -3,9 +3,21 @@
 @color-box-icon-title: #006d8c;
 
 .box-icons {
+  .clearleft;
 
   &__item {
+    float: left;
     margin-bottom: 22px;
+    padding: 0 12px;
+    width: 100%;
+
+    .responsiveMin(@mq-bp-tablet-plus; {
+      .span-columns(2);
+    });
+
+    .responsiveMin(@mq-bp-desktop; {
+      .span-columns(3);
+    });
   }
 
   &__image {

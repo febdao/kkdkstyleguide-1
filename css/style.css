@@ -224,8 +224,29 @@
   margin-top: 0;
   font-size: 1.11111em;
 }
+.box-icons:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 .box-icons__item {
+  float: left;
   margin-bottom: 22px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .box-icons__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .box-icons__item {
+    width: 33.33333333%;
+  }
 }
 
 .box-icons__image {
@@ -759,9 +780,6 @@
 .list-without-bullets > ul > li > a:before {
   content: '';
 }
-.menu-vertical__title {
-  display: none;
-}
 .most-read-pages {
   margin-bottom: 28px;
   text-align: center;
@@ -788,6 +806,9 @@
   display: block;
   padding: 5px;
   line-height: 1.2em;
+}
+.menu-vertical__title {
+  display: none;
 }
 .pager {
   height: auto;
