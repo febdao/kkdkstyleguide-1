@@ -127,7 +127,7 @@
 	] %}
 
   {% for component in list_components %}
-  	<div class="component--item">
+    <div class="component--item" id="{{component.id}}">
       <h2 class="component--title">{{ component.name }}</h2>
       <div class="component--demo">
       {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
@@ -150,7 +150,22 @@
         </div>
         <button class="hide-code">Hide Code</button>
       </div>
-  	</div>
+    </div>
   {% endfor %}
+
+  <div class="component--list">
+    <div class="component--list--header">
+      <h2 class="component--title">Components List</h2>
+      <a title="Show List" class="show-list">+</a>
+      <a title="Hide List"   style="display:none" class="hide-list">-</a>
+    </div>
+    <div class="component--list--content">
+      <ul>
+        {% for component in list_components %}
+          <li class="component--list--item"><a href="#{{component.id}}">{{ component.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
 {% endblock %}

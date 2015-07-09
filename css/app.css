@@ -1,3 +1,82 @@
+.component--list.active {
+	left: 0;
+}
+.component--list {
+  bottom: 10px;
+  left: -300px;
+  position: fixed;
+  top: 10px;
+  width: 300px;
+  background-color: #FFF;
+  transition: left 0.5s;
+  z-index: 9;
+}
+.component--list .component--list--header{
+	position: relative;
+}
+.component--list .component--title{
+	background: #f5f5f5;
+  -webkit-border-radius: 0;
+					border-radius: 0;
+}
+.hide-list,
+.show-list {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+  -webkit-border-radius: 0 44px 44px 0;
+					border-radius: 0 44px 44px 0;
+	font-size: 30px;
+	top: 0;
+	right: -44px;
+	cursor: pointer;
+	transition: all 0.5s;
+	text-align: center;
+	z-index: 2;
+	color: #FFF;
+  background: #007EA4;
+}
+.hide-list {
+  line-height: 37px;
+	background: #f5f5f5;
+	color: #444444;
+}
+.hide-list.active:before {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	cursor: default;
+
+}
+.hide-list:hover,
+.show-list:hover {
+	opacity: 0.8;
+}
+.hide-list:hover {
+	background-color: #e5e5e5;
+}
+.component--list--content {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.component--list--item a{
+	display: block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #d3d3d3;
+}
+.component--list--item a:hover,
+.component--list--item a.active{
+	background-color: #DDF0FF;
+}
 .component--item {
   border: 1px solid #ddd;
   -webkit-border-radius: 5px;
