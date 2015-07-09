@@ -224,33 +224,8 @@
   margin-top: 0;
   font-size: 1.11111em;
 }
-.box-icons {
-  margin: 0 -12px;
-}
-
-.box-icons:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
 .box-icons__item {
-  float: left;
   margin-bottom: 22px;
-  padding: 0 12px;
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .box-icons__item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  .box-icons__item {
-    width: 33.33333333%;
-  }
 }
 
 .box-icons__image {
