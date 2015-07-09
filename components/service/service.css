@@ -1,0 +1,47 @@
+.service {
+  background: none repeat scroll 0 0 #00acdd;
+  color: white;
+  line-height: 1.1;
+  min-height: 94px;
+  padding: 20px 95px 20px 20px;
+  position: relative;
+}
+.service:after {
+  background: url("../../images/self-service-provided.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  content: " ";
+  display: block;
+  height: 54px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 55px;
+  z-index: 1;
+}
+.service .service__title {
+  font-size: 1.22222em;
+  text-transform: uppercase;
+}
+.service .service__content {
+  margin-top: 6px;
+}
+.service .service__link {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.service .service__link a {
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding-left: 100%;
+  width: 0;
+  z-index: 3;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}

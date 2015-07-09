@@ -14,13 +14,18 @@
   <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
   <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/helper-class.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="components/flexslider/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="components/services/services.css">
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://2nlizv2n463m4ezbxb1ci6m1.wpengine.netdna-cdn.com/wp-content/themes/woo/includes/js/jquery.flexslider.min.js?ver=2.2.2"></script>
   <script type="text/javascript" src="js/shCore.js"></script>
   <script type="text/javascript" src="js/shBrushJScript.js"></script>
   <script type="text/javascript" src="js/shBrushPhp.js"></script>
   <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src='js/jquery.matchHeight.js'></script>
   <script type="text/javascript" src='libraries/chosen/chosen.jquery.js'></script>
   <script type="text/javascript" src='js/script.js'></script>
 </head>
@@ -235,13 +240,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.box-icons {
+          .box-icons {
   margin: 0 -12px;
 }
 .box-icons:after {
@@ -253,7 +252,17 @@
   float: left;
   margin-bottom: 22px;
   padding: 0 12px;
-  width: 33.333%;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .box-icons__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .box-icons__item {
+    width: 33.33333333%;
+  }
 }
 .box-icons__image {
   margin-bottom: 10px;
@@ -442,13 +451,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.coloured-infobox {
+          .coloured-infobox {
   margin: 0 -17.5px;
 }
 .coloured-infobox:after {
@@ -583,13 +586,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.post {
+          .post {
   margin: 0 -4px;
 }
 .post:after {
@@ -702,13 +699,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.image-link {
+          .image-link {
   margin: 0 -18px;
 }
 .image-link:after {
@@ -792,13 +783,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.pager {
+          .pager {
   height: auto;
 }
 .pager:after {
@@ -1050,13 +1035,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.filter .chosen-container {
+          .filter .chosen-container {
   font-size: 0.88889em;
   max-width: 100%;
 }
@@ -1538,13 +1517,7 @@
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.box-list-without-bullets {
+          .box-list-without-bullets {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -2026,6 +1999,10 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   text-transform: none;
 }
 .accordion #ui-id-1.accordion_item {
+  border-top: 2px solid transparent;
+}
+.accordion #ui-id-1.accordion_item:hover,
+.accordion #ui-id-1.ui-accordion-header-active {
   border-top: 2px solid #cbd0d3;
 }
 .accordion .ui-accordion-content {
@@ -2050,10 +2027,10 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
             </div>
           </div>
           <div class="component--item">
-            <h2 class="component--title">File</h2>
+            <h2 class="component--title">Related files</h2>
             <div class="component--demo">
-              <div class="file">
-                <h2 class="file__title">Document</h2>
+              <div class="related-files">
+                <h2 class="related-files__title">Document</h2>
                 <div class="file__type tx-sec">
                   <a href="#" type="application/pdf; length=516718" class="button download" target="_blank">
                     <span aria-hidden="true" class="filetype-generic">fil</span>
@@ -2089,8 +2066,8 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--html">
                 <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
-            <div class="file">
-  <h2 class="file__title">Document</h2>
+            <div class="related-files">
+  <h2 class="related-files__title">Document</h2>
   <div class="file__type tx-sec">
     <a href="#" type="application/pdf; length=516718" class="button download" target="_blank">
       <span aria-hidden="true" class="filetype-generic">fil</span>
@@ -2125,13 +2102,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
-          .element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-.file {
+          .related-files {
   border: 1px solid #ebebeb;
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
@@ -2139,12 +2110,12 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
   margin-bottom: 28px;
   padding: 28px;
 }
-.file__title {
+.related-files__title {
   margin-bottom: 18px;
   font-size: 1.33333em;
   line-height: 1.15em;
 }
-.file__type {
+.related-files__type {
   margin-bottom: 2px;
 }          </pre>
               </div>
@@ -2184,15 +2155,14 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
           <div class="component--item">
             <h2 class="component--title">Service</h2>
             <div class="component--demo">
-              <div class="field field-name-field-service-provided field-type-field-collection field-label-hidden">
-                <div class="field field-name-field-title-service-provided field-type-text field-label-hidden">
+              <div class="service">
+                <div class="service__title">
                   Meld flytning</div>
 
-                <div class="field field-name-field-teaser-service-provided field-type-text-long field-label-hidden">
-                  For at melde flytning, skal du logge på med NemID.</div>
+                <div class="service__content">For at melde flytning, skal du logge på med NemID.</div>
 
-                <div class="field field-name-field-url-or-file field-type-link-field field-label-hidden">
-                  <a onclick="$netminers.push(['postOther','Selvbetjeningsbanner/Udfyld_ægteskabserklæring_og ønsk_et_vielsessted']);" href="https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=F">https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=...</a> 
+                <div class="service__link">
+                  <a onclick="$netminers.push(['postOther','Selvbetjeningsbanner/Udfyld_ægteskabserklæring_og ønsk_et_vielsessted']);" href="https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=F">https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=...</a>
                 </div>
               </div>
             </div>
@@ -2201,16 +2171,870 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <div class="component--html">
                 <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
-            <div class="field field-name-field-service-provided field-type-field-collection field-label-hidden">
-<div class="field field-name-field-title-service-provided field-type-text field-label-hidden">
-  Meld flytning  </div>
+            <div class="service">
+	<div class="service__title">
+	  Meld flytning  </div>
 
-<div class="field field-name-field-teaser-service-provided field-type-text-long field-label-hidden">
-  For at melde flytning, skal du logge på med NemID.  </div>
+	<div class="service__content">For at melde flytning, skal du logge på med NemID.  </div>
 
-<div class="field field-name-field-url-or-file field-type-link-field field-label-hidden">
-  <a onclick="$netminers.push(['postOther','Selvbetjeningsbanner/Udfyld_ægteskabserklæring_og ønsk_et_vielsessted']);" href="https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=F">https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=...</a>  </div>
+	<div class="service__link">
+	  <a onclick="$netminers.push(['postOther','Selvbetjeningsbanner/Udfyld_ægteskabserklæring_og ønsk_et_vielsessted']);" href="https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=F">https://notuseborger.scandihealth.net/general/eborger.aspx?kommuneid=101&amp;ydelse=...</a>
+	</div>
 </div>          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .service {
+  background: none repeat scroll 0 0 #00acdd;
+  color: white;
+  line-height: 1.1;
+  min-height: 94px;
+  padding: 20px 95px 20px 20px;
+  position: relative;
+}
+.service:after {
+  background: url("../../images/self-service-provided.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  content: " ";
+  display: block;
+  height: 54px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 55px;
+  z-index: 1;
+}
+.service .service__title {
+  font-size: 1.22222em;
+  text-transform: uppercase;
+}
+.service .service__content {
+  margin-top: 6px;
+}
+.service .service__link {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.service .service__link a {
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding-left: 100%;
+  width: 0;
+  z-index: 3;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Factbox</h2>
+            <div class="component--demo">
+              <aside class="factbox bl-element">
+                <h2>Nyttig info</h2>
+                <div class="tx-content">
+                  <ol>
+                    <li>
+                      <a title="Åbner i nyt vindue" target="_blank" href="http://um.dk/da/rejse-og-ophold/legalisering/apostillestemplet/apostillelande/">Legalisering: Apostille-lande</a>
+                    </li>
+                    <li>
+                      <a title="Åbner i nyt vindue" target="_blank" href="http://ast.dk/born-familie/aegteskab-og-skilsmisse/aegteskab/sporgsmal-svar">Civilstandsattester: Spørgsmål og svar</a>
+                    </li>
+                    <li>
+                      <a title="Åbner i nyt vindue" target="_blank" href="http://www.nyidanmark.dk/da-dk/ophold/visum/visumpligtige+lande/hvem_er_visumpligtige">Visumpligtige land</a>
+                    </li>
+                  </ol>
+                </div>
+              </aside>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <aside class="factbox bl-element">
+  <h2>Nyttig info</h2>
+  <div class="tx-content">
+		<ol>
+			<li>
+				<a title="Åbner i nyt vindue" target="_blank" href="http://um.dk/da/rejse-og-ophold/legalisering/apostillestemplet/apostillelande/">Legalisering: Apostille-lande</a>
+			</li>
+			<li>
+				<a title="Åbner i nyt vindue" target="_blank" href="http://ast.dk/born-familie/aegteskab-og-skilsmisse/aegteskab/sporgsmal-svar">Civilstandsattester: Spørgsmål og svar</a>
+			</li>
+			<li>
+				<a title="Åbner i nyt vindue" target="_blank" href="http://www.nyidanmark.dk/da-dk/ophold/visum/visumpligtige+lande/hvem_er_visumpligtige">Visumpligtige land</a>
+			</li>
+		</ol>
+	</div>
+</aside>          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+                    </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Table</h2>
+            <div class="component--demo">
+              <div class="table">
+                <table class="sticky-header">
+                  <thead>
+                    <tr>
+                      <th class="row_0 col_0">
+                        <p>ETABLERINGS- STØTTE (2015)</p>
+                      </th>
+                      <th class="row_0 col_1">
+                        <p>Ved udrejse</p>
+                      </th>
+                      <th class="row_0 col_2">
+                        <p>Efter 1 år i hjemlandet</p>
+                      </th>
+                      <th class="row_0 col_3">
+                        <p>I alt pr. person</p>
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+                <table class="tablefield sticky-enabled tableheader-processed sticky-table" id="tablefield-0">
+                  <thead>
+                    <tr>
+                      <th class="row_0 col_0">
+                        <p>ETABLERINGS- STØTTE (2015)</p>
+                      </th>
+                      <th class="row_0 col_1">
+                        <p>Ved udrejse</p>
+                      </th>
+                      <th class="row_0 col_2">
+                        <p>Efter 1 år i hjemlandet</p>
+                      </th>
+                      <th class="row_0 col_3">
+                        <p>I alt pr. person</p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd">
+                      <td class="row_1 col_0">
+                        <p>Hvis du er over 18 år</p>
+                      </td>
+                      <td class="row_1 col_1">
+                        <p>51.772 kr.</p>
+                      </td>
+                      <td class="row_1 col_2">
+                        <p>77.658 kr.</p>
+                      </td>
+                      <td class="row_1 col_3">
+                        <p>129.430 kr.</p>
+                      </td>
+                    </tr>
+                    <tr class="even">
+                      <td class="row_2 col_0">
+                        <p>Hvis du er under 18 år</p>
+                      </td>
+                      <td class="row_2 col_1">
+                        <p>15.789 kr.</p>
+                      </td>
+                      <td class="row_2 col_2">
+                        <p>23.684 kr.</p>
+                      </td>
+                      <td class="row_2 col_3">
+                        <p>39.473 kr.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="table">
+  <table class="sticky-header">
+    <thead>
+      <tr>
+        <th class="row_0 col_0" ><p>ETABLERINGS- STØTTE (2015)</p></th>
+        <th class="row_0 col_1" ><p>Ved udrejse </p></th>
+        <th class="row_0 col_2" ><p>Efter 1 år i  hjemlandet  </p></th>
+        <th class="row_0 col_3" ><p>I alt pr. person  </p></th>
+      </tr>
+    </thead>
+  </table>
+  <table class="tablefield sticky-enabled tableheader-processed sticky-table" id="tablefield-0">
+    <thead>
+      <tr>
+      <th class="row_0 col_0"><p>ETABLERINGS- STØTTE (2015)</p></th>
+      <th class="row_0 col_1"><p>Ved udrejse </p></th>
+      <th class="row_0 col_2"><p>Efter 1 år i  hjemlandet  </p></th>
+      <th class="row_0 col_3"><p>I alt pr. person  </p></th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td class="row_1 col_0"><p>Hvis du er over 18 år</p></td>
+        <td class="row_1 col_1"><p>51.772 kr. </p></td>
+        <td class="row_1 col_2"><p>77.658 kr. </p></td>
+        <td class="row_1 col_3"><p>129.430 kr. </p></td>
+      </tr>
+      <tr class="even">
+        <td class="row_2 col_0"><p>Hvis du er under 18 år   </p></td>
+        <td class="row_2 col_1"><p>15.789 kr. </p></td>
+        <td class="row_2 col_2"><p>23.684 kr. </p></td>
+        <td class="row_2 col_3"><p>39.473 kr. </p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          table.sticky-header {
+  background-color: #fff;
+  margin-top: 0;
+}
+.sticky-header {
+  border-collapse: collapse;
+  font-size: 0.88889em;
+  table-layout: fixed;
+  width: 100%;
+}
+.sticky-header thead {
+  display: table-header-group !important;
+  font-size: 18px;
+}
+.sticky-header thead tr {
+  background-color: #f4f4f4;
+}
+.sticky-header thead th {
+  background-color: #f4f4f4;
+  border: 1px solid #ebebeb;
+  font-weight: bold;
+  padding: 0.8em;
+  text-align: left;
+  word-wrap: break-word;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Tabs</h2>
+            <div class="component--demo">
+              <aside class="node node-stepbox-tabs tabs">
+                <div class="field field-name-field-steps field-type-field-collection field-label-hidden">
+                  <div class="field-group-htabs-wrapper ">
+                    <h2 class="element-invisible">Horizontal tabs</h2>
+                    <div class="horizontal-tabs clearfix">
+                      <ul class="horizontal-tabs-list">
+                        <li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-0 first selected"><a href="#fcg--2"><strong>1. Blanket om selvforsørgelse</strong><span class="element-invisible" id="active-horizontal-tab">(aktiv fane)</span></a>
+                        </li>
+                        <li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-1"><a href="#fcg-3"><strong>2. Indsend blanket</strong></a>
+                        </li>
+                        <li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-2 last"><a href="#fcg-4"><strong>3. Få svar</strong></a>
+                        </li>
+                      </ul>
+                      <div class="horizontal-tabs-panes horizontal-tabs-processed">
+                        <fieldset id="fcg--2" class="form-wrapper horizontal-tabs-pane">
+                          <div class="fieldset-wrapper">
+                            <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
+                              Blanket om selvforsørgelse finder du til sidst i ansøgningen om dansk statsborgerskab</div>
+
+                            <div class="field field-name-field-text field-type-text-long field-label-hidden tx-content">
+                              <p>Du finder <a href="http://www.justitsministeriet.dk/arbejdsomr%C3%A5der/statsborgerskab/udenlandske-statsborgere/ans%C3%B8gningsskema">ansøgningsskemaet til dansk statsborgerskab på justitsministeriets hjemmeside</a>.&nbsp;</p>
+                              <p>Du skal printe ansøgningsskemaet og derefter udfylde Blanketten om selvforsørgelse i hånden. Du kan derefter vælge at indsende blanketten til os via almindelig post eller digitalt.</p>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <fieldset id="fcg-3" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
+                          <div class="fieldset-wrapper">
+                            <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
+                              Indsend blanketten om selvforsørgelse til Ydelsesservice København</div>
+
+                            <div class="field field-name-field-text field-type-text-long field-label-hidden tx-content">
+                              <p>Du kan vælge at indsende Blanketten om selvforsørgelse til Ydelsesservice København enten via:</p>
+                              <ol>
+                                <li>Almindelig post til:
+                                  <br>Ydelsesservice København
+                                  <br>Kontanthjælp
+                                  <br>Postboks 210
+                                  <br>1502 København V
+                                  <br>&nbsp;
+                                </li>
+                                <li><a href="https://minside.borger.dk/post?function=inbox&amp;mailboxid=11088">Digital post</a>&nbsp;- Hav dit NemID klar.
+                                  <br>&nbsp;
+                                </li>
+                                <li>E-mail på&nbsp;<a href="mailto:kontanthjaelp@bif.kk.dk">kontanthjaelp@bif.kk.dk</a>, hvis du skriver til os via vores e-mail,&nbsp;skal du være opmærksom på, at en almindelig e-mail ikke er sikker.&nbsp;Skal du sende personfølsomme
+                                  oplysninger til os, opfordrer vi dig til at bruge Digital Post.</li>
+                              </ol>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <fieldset id="fcg-4" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
+                          <div class="fieldset-wrapper">
+                            <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
+                              Du får udtalelsen fra kommunen indenfor tre uger.</div>
+
+                            <div class="field field-name-field-text field-type-text-long field-label-hidden tx-content">
+                              <p>Læs mere om reglerne for at få dansk statsborgerskab på <a href="https://www.nyidanmark.dk/da-dk">nyidanmark.dk</a>
+                              </p>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <aside class="node node-stepbox-tabs tabs" >
+  <div class="field field-name-field-steps field-type-field-collection field-label-hidden">
+    <div class="field-group-htabs-wrapper "><h2 class="element-invisible">Horizontal tabs</h2><div class="horizontal-tabs clearfix"><ul class="horizontal-tabs-list"><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-0 first selected"><a href="#fcg--2"><strong>1. Blanket om selvforsørgelse</strong><span class="element-invisible" id="active-horizontal-tab">(aktiv fane)</span></a></li><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-1"><a href="#fcg-3"><strong>2. Indsend blanket</strong></a></li><li tabindex="-1" class="horizontal-tab-button horizontal-tab-button-2 last"><a href="#fcg-4"><strong>3. Få svar</strong></a></li></ul><div class="horizontal-tabs-panes horizontal-tabs-processed"><fieldset id="fcg--2" class="form-wrapper horizontal-tabs-pane"><div class="fieldset-wrapper">
+  <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
+    Blanket om selvforsørgelse finder du til sidst i ansøgningen om dansk statsborgerskab  </div>
+
+  <div class="field field-name-field-text field-type-text-long field-label-hidden tx-content">
+    <p>Du finder <a href="http://www.justitsministeriet.dk/arbejdsomr%C3%A5der/statsborgerskab/udenlandske-statsborgere/ans%C3%B8gningsskema">ansøgningsskemaet til dansk statsborgerskab på justitsministeriets hjemmeside</a>.&nbsp;</p>
+<p>Du skal printe ansøgningsskemaet og derefter udfylde Blanketten om selvforsørgelse i hånden. Du kan derefter vælge at indsende blanketten til os via almindelig post eller digitalt.</p>
+  </div>
+</div></fieldset>
+<fieldset id="fcg-3" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
+<div class="fieldset-wrapper">
+  <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
+    Indsend blanketten om selvforsørgelse til Ydelsesservice København  </div>
+
+  <div class="field field-name-field-text field-type-text-long field-label-hidden tx-content">
+    <p>Du kan vælge at indsende Blanketten om selvforsørgelse til Ydelsesservice København enten via:</p>
+<ol><li>Almindelig post til:<br>
+	Ydelsesservice København<br>
+	Kontanthjælp<br>
+	Postboks 210<br>
+	1502 København V<br>
+	&nbsp;</li>
+<li><a href="https://minside.borger.dk/post?function=inbox&amp;mailboxid=11088">Digital post</a>&nbsp;- Hav dit NemID klar.<br>
+	&nbsp;</li>
+<li>E-mail på&nbsp;<a href="mailto:kontanthjaelp@bif.kk.dk">kontanthjaelp@bif.kk.dk</a>, hvis du skriver til os via vores e-mail,&nbsp;skal du være opmærksom på, at en almindelig e-mail ikke er sikker.&nbsp;Skal du sende personfølsomme oplysninger til os, opfordrer vi dig til at bruge Digital Post.</li>
+</ol>  </div>
+</div></fieldset>
+  <fieldset id="fcg-4" class="form-wrapper horizontal-tabs-pane horizontal-tab-hidden">
+    <div class="fieldset-wrapper">
+      <div class="field field-name-field-teaser field-type-text-long field-label-hidden tx-teaser">
+        Du får udtalelsen fra kommunen indenfor tre uger.</div>
+
+      <div class="field field-name-field-text field-type-text-long field-label-hidden tx-content">
+        <p>Læs mere om reglerne for at få dansk statsborgerskab på <a href="https://www.nyidanmark.dk/da-dk">nyidanmark.dk</a></p>
+      </div>
+    </div>
+  </fieldset>
+</div></div></div>  </div>
+</aside>          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .horizontal-tabs .horizontal-tab-hidden {
+  display: block;
+  position: absolute;
+  top: -100000px;
+  width: 100%;
+}
+.horizontal-tabs .horizontal-tabs-pane {
+  padding: 42px;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Flexslider</h2>
+            <div class="component--demo">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img title="Foto af Nyhavnsbroen (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Nyhavnsbroen-Indholdsbillede.jpg?itok=uACX3OqK" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                  <li>
+                    <img title="Foto af Knippelsbro (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Knippelsbro-Indholdsbillede.jpg?itok=Bx5ITf0u" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                  <li>
+                    <img title="Foto af Langebro (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Langebro-Indholdsbillede.jpg?itok=l1F-Dej6" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                  <li>
+                    <img title="Foto af Bryggebro (foto:Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Bryggebro-Indholdsbillede.jpg?itok=IEHeH__f" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                  <li>
+                    <img title="Foto af Teglværksbroen (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Teglv%C3%A6rksbroen-Indholdsbillede.jpg?itok=UOhSCUFP" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                  <li>
+                    <img title="Foto af Nyhavnsbroen (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Nyhavnsbroen-Indholdsbillede.jpg?itok=uACX3OqK" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                  <li>
+                    <img title="Foto af Knippelsbro (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Knippelsbro-Indholdsbillede.jpg?itok=Bx5ITf0u" typeof="foaf:Image"
+                    draggable="false">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img title="Foto af Nyhavnsbroen (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Nyhavnsbroen-Indholdsbillede.jpg?itok=uACX3OqK" typeof="foaf:Image" draggable="false">
+    </li>
+    <li>
+      <img title="Foto af Knippelsbro (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Knippelsbro-Indholdsbillede.jpg?itok=Bx5ITf0u" typeof="foaf:Image" draggable="false">
+    </li>
+    <li>
+      <img title="Foto af Langebro (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Langebro-Indholdsbillede.jpg?itok=l1F-Dej6" typeof="foaf:Image" draggable="false">
+    </li>
+    <li>
+      <img title="Foto af Bryggebro (foto:Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Bryggebro-Indholdsbillede.jpg?itok=IEHeH__f" typeof="foaf:Image" draggable="false">
+    </li>
+    <li>
+      <img title="Foto af Teglværksbroen (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Teglv%C3%A6rksbroen-Indholdsbillede.jpg?itok=UOhSCUFP" typeof="foaf:Image" draggable="false">
+    </li>
+    <li>
+      <img title="Foto af Nyhavnsbroen (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Nyhavnsbroen-Indholdsbillede.jpg?itok=uACX3OqK" typeof="foaf:Image" draggable="false">
+    </li>
+    <li>
+      <img title="Foto af Knippelsbro (foto: Ursula Bach)" alt="" src="http://www.kk.dk/sites/default/files/styles/node_view_images/public/uploaded-images/S%C3%A5dan-f%C3%A5r-du-en-bro-%C3%A5bnet-Knippelsbro-Indholdsbillede.jpg?itok=Bx5ITf0u" typeof="foaf:Image" draggable="false">
+    </li>
+  </ul>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          @font-face {
+  font-family: 'flexslider-icon';
+  src: url(../../fonts/flexslider-icon.eot);
+  src: url(../../fonts/flexslider-icon.eot?#iefix) format('embedded-opentype'), url(../../fonts/flexslider-icon.woff) format('woff'), url(../../fonts/flexslider-icon.ttf) format('truetype'), url(../../fonts/flexslider-icon.svg#flexslider-icon) format('svg');
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.flex-pauseplay a.flex-play:before {
+  content: "";
+}
+.flex-pauseplay a:before {
+  content: "";
+  display: inline-block;
+  font-family: "flexslider-icon";
+  font-size: 20px;
+}
+.flex-pauseplay a.flex-play:before {
+  content: "";
+}
+.flex-pauseplay a {
+  bottom: 5px;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  left: 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  z-index: 10;
+}
+.flexslider {
+  position: relative;
+  max-width: 800px;
+}
+.flexslider .controls-nav {
+  bottom: 0;
+  height: 34px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+.flexslider .flex-control-nav {
+  bottom: 1em;
+  display: inline-block;
+  position: static;
+  width: auto;
+}
+.flexslider .flex-control-nav li a {
+  background-color: #007ea4;
+}
+.flexslider .flex-control-nav.flex-control-paging li a {
+  height: 14px;
+  width: 14px;
+}
+.flexslider .flex-direction-nav {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.flexslider .flex-direction-nav .flex-prev,
+.flexslider .flex-direction-nav .flex-next {
+  background-color: #007ea4;
+  background-position: center center;
+  color: white;
+  text-indent: -9999px;
+}
+.flexslider .flex-direction-nav .flex-prev {
+  background: url("../../images/icon-arrow-left.png") no-repeat scroll center center #007ea4;
+  left: 0.5em;
+}
+.flexslider .flex-direction-nav .flex-next {
+  background: url("../../images/icon-arrow-right.png") no-repeat scroll center center #007ea4;
+  right: 0.5em;
+}
+.flexslider .flex-pauseplay {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  vertical-align: top;
+}
+.flexslider .flex-pauseplay .flex-pause,
+.flexslider .flex-pauseplay .flex-play {
+  background-position: center center;
+  color: #007ea4;
+}
+.flexslider .flex-pauseplay a {
+  position: static;
+}
+.flexslider .flex-pauseplay a,
+.flexslider .flex-pauseplay a.flex-pause,
+.flexslider .flex-pauseplay a.flex-play {
+  color: #fff;
+  padding: 0 12px;
+  text-align: left;
+  width: 40px;
+}
+.flexslider .flex-pauseplay a:before,
+.flexslider .flex-pauseplay a.flex-pause:before,
+.flexslider .flex-pauseplay a.flex-play:before {
+  color: #007ea4;
+  font-size: 16px;
+  line-height: 15px;
+  vertical-align: top;
+}
+.flex-control-nav {
+  bottom: -40px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.flex-control-nav li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.flex-control-paging li a {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
+  display: block;
+  height: 11px;
+  text-indent: -9999px;
+  width: 11px;
+}
+.flex-direction-nav a {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  margin: -20px 0 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  top: 50%;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  z-index: 10;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Better Exposed Filters Link</h2>
+            <div class="component--demo">
+              <div class="bef-link">
+                <div class="form-type-bef-link selected">
+                  <a href="#">Alle</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Børn og uddannelse</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Vækst og beskæftigelse</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Social udvikling</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Grøn by</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Kultur og idræt</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Sundhed</a>
+                </div>
+                <div class="form-type-bef-link">
+                  <a href="#">Borgerservice</a>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="bef-link">
+  <div class="form-type-bef-link selected">
+    <a href="#">Alle</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Børn og uddannelse</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Vækst og beskæftigelse</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Social udvikling</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Grøn by</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Kultur og idræt</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Sundhed</a>
+  </div>
+  <div class="form-type-bef-link">
+    <a href="#">Borgerservice</a>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .bef-link {
+  color: #fff;
+}
+.bef-link .form-type-bef-link {
+  background-color: #e2e2e2;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.bef-link .form-type-bef-link a {
+  display: block;
+  padding: 5px 10px;
+  color: #444444;
+}
+.bef-link .form-type-bef-link.selected {
+  background-color: #00ba5a;
+}
+.bef-link .form-type-bef-link.selected a {
+  color: #fff;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">List image</h2>
+            <div class="component--demo">
+              <div class="list-image">
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s150x150/e15/10919705_1412483479082057_19978079_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11378318_137429133254992_1539367568_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11348393_814235122017241_182655127_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11355864_792040254243591_1702978201_n.jpg">
+                </a>
+                <a href="#" rel="group1" target="blank_" class="group">
+                  <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11381810_971487742871723_1580480050_n.jpg">
+                </a>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="list-image">
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s150x150/e15/10919705_1412483479082057_19978079_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11378318_137429133254992_1539367568_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11348393_814235122017241_182655127_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11355864_792040254243591_1702978201_n.jpg">
+  </a>
+  <a href="#" rel="group1" target="blank_" class="group">
+    <img src="//scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e15/11381810_971487742871723_1580480050_n.jpg">
+  </a>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+          .list-image {
+  margin: 0 -2.5px;
+}
+.list-image:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.list-image a {
+  float: left;
+  padding: 0 2.5px 5px;
+}
+.list-image a img {
+  height: 193px;
+  width: 193px;
+}          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">File video</h2>
+            <div class="component--demo">
+              <div class="file file-video">
+                <h2 class="element-invisible">
+    <a href="#">Exit fra kriminalitet - Tidligere deltager </a>
+  </h2>
+                <div class="content">
+                  <div style="width:100%; height:0; position: relative; padding-bottom:56.25%">
+                    <iframe frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" scrolling="no" border="0" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" src="http://www.video.kk.dk/v.ihtml/player.html?source=share&amp;photo%5fid=8756041&amp;autoPlay=0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="file file-video">
+  <h2 class="element-invisible">
+    <a href="#">Exit fra kriminalitet - Tidligere deltager </a>
+  </h2>
+  <div class="content">
+    <div style="width:100%; height:0; position: relative; padding-bottom:56.25%">
+      <iframe frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" scrolling="no" border="0" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" src="http://www.video.kk.dk/v.ihtml/player.html?source=share&amp;photo%5fid=8756041&amp;autoPlay=0"></iframe>
+    </div>
+  </div>
+</div>
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+                    </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+          <div class="component--item">
+            <h2 class="component--title">Intro text with list link</h2>
+            <div class="component--demo">
+              <div class="intro-with-list-link">
+                <div class="tx-teaser">
+                  Afmeld din olietank eller tjek om der er olietank på din grund. Se hvordan du etablerer en ny olietank.
+                </div>
+                <div class="tx-content">
+                  <h3>
+        <a href="http://www.kk.dk/node/10173">Etablering eller udskifter af olietank</a>
+    </h3>
+                  <h3>
+        <a href="http://www.kk.dk/node/10167">Kontrol af store olietanke over 6.000 liter&nbsp;</a>
+    </h3>
+                  <h3>
+        <a href="http://www.kk.dk/node/10170">Sløjfning og bortskaffelse af olietank</a>
+    </h3>
+                  <h3>
+        <a href="http://www.kk.dk/node/10169">Spild fra olietank</a>
+    </h3>
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+            <div class="intro-with-list-link">
+  <div class="tx-teaser">
+  Afmeld din olietank eller tjek om der er olietank på din grund. Se hvordan du etablerer en ny olietank.
+  </div>
+  <div class="tx-content">
+    <h3>
+        <a href="http://www.kk.dk/node/10173">Etablering eller udskifter af olietank</a>
+    </h3>
+    <h3>
+        <a href="http://www.kk.dk/node/10167">Kontrol af store olietanke over 6.000 liter&nbsp;</a>
+    </h3>
+    <h3>
+        <a href="http://www.kk.dk/node/10170">Sløjfning og bortskaffelse af olietank</a>
+    </h3>
+    <h3>
+        <a href="http://www.kk.dk/node/10169">Spild fra olietank</a>
+    </h3>
+  </div>
+</div>
+          </pre>
               </div>
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>

@@ -1,0 +1,25 @@
+table.sticky-header {
+  background-color: #fff;
+  margin-top: 0;
+}
+.sticky-header {
+  border-collapse: collapse;
+  font-size: 0.88889em;
+  table-layout: fixed;
+  width: 100%;
+}
+.sticky-header thead {
+  display: table-header-group !important;
+  font-size: 18px;
+}
+.sticky-header thead tr {
+  background-color: #f4f4f4;
+}
+.sticky-header thead th {
+  background-color: #f4f4f4;
+  border: 1px solid #ebebeb;
+  font-weight: bold;
+  padding: 0.8em;
+  text-align: left;
+  word-wrap: break-word;
+}

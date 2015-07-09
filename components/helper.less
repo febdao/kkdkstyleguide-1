@@ -5,9 +5,38 @@
 @black: #000;
 @white: #fff;
 
-//Helper class
-.clearleft() {
+//Helper media queries
+// Media queries breakpoints
+@mq-bp-desktop-plus: 960px;
+@mq-bp-desktop-plus-minus: 959px;
+@mq-bp-desktop: 768px;
+@mq-bp-desktop-minus: 767px;
+@mq-bp-tablet-plus : 480px;
+@mq-bp-tablet-plus-minus : 479px;
 
+//Helper minin
+.responsiveMin(@minWidth; @rules) {
+  @media (min-width: @minWidth) {
+    @rules();
+  }
+}
+
+.responsive(@minWidth; @maxWidth; @rules) {
+  @media (min-width: @minWidth) and (max-width: @maxWidth){
+    @rules();
+  }
+}
+.responsiveMax(@maxWidth; @rules) {
+  @media (max-width: @maxWidth) {
+    @rules();
+  }
+}
+
+.span-columns(@numCol) {
+  width: 100% / @numCol;
+}
+
+.clearleft() {
   &:after {
     clear: both;
     content: '';
@@ -34,13 +63,6 @@
   opacity:    @opacity;
 }
 
-.element-invisible {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-}
-
 .border-radius (@radius: 5px) {
   -webkit-border-radius: @radius;
   -moz-border-radius:    @radius;
@@ -50,3 +72,12 @@
   -webkit-background-clip: padding-box;
   background-clip:         padding-box;
 }
+
+// .thanh {
+//   &__item {
+//     .responsiveMin(@mq-bp-desktop-minus; {
+//       .span-columns(6);
+//     });
+//   }
+// }
+
