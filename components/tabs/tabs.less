@@ -1,3 +1,5 @@
+@import '../helper.less';
+
 .horizontal-tabs .horizontal-tab-hidden {
   display: block;
   position: absolute;
@@ -7,4 +9,37 @@
 }
 .horizontal-tabs .horizontal-tabs-pane {
   padding: 42px;
+}
+
+.page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button  {
+	.box-shadow(none);
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: transparent;
+  border-color: -moz-use-text-color transparent;
+  border-image: none;
+  border-style: none solid;
+  border-width: 0 1px;
+  display: inline-block;
+  float: inherit;
+  font-weight: bold;
+  margin: 0 3px -1px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  a:hover {
+  	.box-shadow(none);
+  }
+
+  &.selected a {
+  	border-bottom: 1px solid #ccc;
+  }
+
+  .responsiveMin(@mq-bp-desktop; {
+    width: auto;
+    border: 0;
+  });
 }

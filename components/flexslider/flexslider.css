@@ -38,6 +38,7 @@
 .flexslider {
   position: relative;
   max-width: 800px;
+  margin: 0 auto;
 }
 .flexslider .controls-nav {
   bottom: 0;

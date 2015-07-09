@@ -8,3 +8,39 @@
 .horizontal-tabs .horizontal-tabs-pane {
   padding: 42px;
 }
+.page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: transparent;
+  border-color: -moz-use-text-color transparent;
+  border-image: none;
+  border-style: none solid;
+  border-width: 0 1px;
+  display: inline-block;
+  float: inherit;
+  font-weight: bold;
+  margin: 0 3px -1px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button a:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
+  border-bottom: 1px solid #ccc;
+}
+@media (min-width: 768px) {
+  .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
+    width: auto;
+    border: 0;
+  }
+}
