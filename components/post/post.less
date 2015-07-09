@@ -8,9 +8,18 @@
   margin: 0 -4px;
 
   &__item {
-    padding: 0 4px;
-    width: @width-33;
     float: left;
+    margin-bottom: 12px;
+    padding: 0 4px;
+    width: 100%;
+
+    .responsiveMin(@mq-bp-tablet-plus; {
+      .span-columns(2);
+    });
+
+    .responsiveMin(@mq-bp-desktop; {
+      .span-columns(3);
+    });
   }
 
   &__content {

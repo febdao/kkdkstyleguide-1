@@ -9,7 +9,15 @@
     float: left;
     margin-bottom: 1em;
     padding: 0 17.5px;
-    width: @width-33;
+    width: 100%;
+
+    .responsiveMin(@mq-bp-tablet-plus; {
+      .span-columns(2);
+    });
+
+    .responsiveMin(@mq-bp-desktop; {
+      .span-columns(3);
+    });
   }
 
   &__item-inner {

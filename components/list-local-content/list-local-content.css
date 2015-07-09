@@ -10,7 +10,17 @@
   float: left;
   margin-bottom: 1em;
   padding: 0 17.5px;
-  width: 33.33333333%;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .list-local-content__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .list-local-content__item {
+    width: 33.33333333%;
+  }
 }
 .list-local-content__item-inner {
   border: 1px solid #ebebeb;
