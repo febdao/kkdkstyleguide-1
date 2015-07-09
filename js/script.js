@@ -56,5 +56,21 @@
     });
 
     $('.list-local-content__wrap').matchHeight();
+
+    //List components
+    $(".component--list--item a").click(function(){
+      $(".component--list--item a").removeClass("active");
+      $(this).addClass("active");
+    });
+    $(".show-list").click(function(){
+      $(".component--list").addClass("active");
+      $(".show-list").hide();
+      $(".hide-list").addClass("active").show();
+    });
+    $(".hide-list").click(function(){
+      $(".component--list").removeClass("active");
+      $(".hide-list").removeClass("active").hide();
+      $(".show-list").show();
+    });
   });
 } )( jQuery );

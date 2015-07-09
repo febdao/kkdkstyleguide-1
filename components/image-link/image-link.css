@@ -7,9 +7,20 @@
   display: table;
 }
 .image-link__item {
-  padding: 0 18px;
-  width: 33.33333333%;
   float: left;
+  margin-bottom: 12px;
+  padding: 0 18px;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .image-link__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .image-link__item {
+    width: 33.33333333%;
+  }
 }
 .image-link__content {
   position: relative;

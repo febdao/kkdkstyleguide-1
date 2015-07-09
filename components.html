@@ -61,7 +61,7 @@
         <div class="reg-inner-regions">
 
 
-          <div class="component--item">
+          <div class="component--item" id="boxicon">
             <h2 class="component--title">Box Icon</h2>
             <div class="component--demo">
               <div class="box-icons">
@@ -293,7 +293,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="most-read-pages">
             <h2 class="component--title">Most Read Pages</h2>
             <div class="component--demo">
               <div class="most-read-pages">
@@ -356,7 +356,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="tags">
             <h2 class="component--title">Tags</h2>
             <div class="component--demo">
               <div class="tags ic-tag">
@@ -401,7 +401,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="coloured-infobox">
             <h2 class="component--title">Info Box</h2>
             <div class="component--demo">
               <div class="coloured-infobox">
@@ -458,9 +458,20 @@
   display: table;
 }
 .coloured-infobox__item {
-  width: 33.33333333%;
   float: left;
   padding: 0 17.5px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .coloured-infobox__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .coloured-infobox__item {
+    width: 33.33333333%;
+  }
 }
 .coloured-infobox__link {
   border: 1px solid #ebebeb;
@@ -491,7 +502,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="post">
             <h2 class="component--title">Post</h2>
             <div class="component--demo">
               <div class="post">
@@ -593,9 +604,20 @@
   display: table;
 }
 .post__item {
-  padding: 0 4px;
-  width: 33.33333333%;
   float: left;
+  margin-bottom: 12px;
+  padding: 0 4px;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .post__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .post__item {
+    width: 33.33333333%;
+  }
 }
 .post__content {
   border: 1px solid #ebebeb;
@@ -617,7 +639,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="image-link">
             <h2 class="component--title">Image Link</h2>
             <div class="component--demo">
               <div class="image-link">
@@ -706,9 +728,20 @@
   display: table;
 }
 .image-link__item {
-  padding: 0 18px;
-  width: 33.33333333%;
   float: left;
+  margin-bottom: 12px;
+  padding: 0 18px;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .image-link__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .image-link__item {
+    width: 33.33333333%;
+  }
 }
 .image-link__content {
   position: relative;
@@ -737,7 +770,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="pager">
             <h2 class="component--title">Pager</h2>
             <div class="component--demo">
               <ul class="pager">
@@ -793,7 +826,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="banner">
             <h2 class="component--title">Banner</h2>
             <div class="component--demo">
               <div class="banner">
@@ -868,7 +901,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="social">
             <h2 class="component--title">Social</h2>
             <div class="component--demo">
               <div class="follow-links">
@@ -911,7 +944,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="search">
             <h2 class="component--title">Search</h2>
             <div class="component--demo">
               <form accept-charset="UTF-8" id="search-form" method="post" action="" class="search-form">
@@ -987,7 +1020,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="filter">
             <h2 class="component--title">Filter</h2>
             <div class="component--demo">
               <form accept-charset="UTF-8" id="facetapi-multiselect-form-5" class="filter" method="post" action="">
@@ -1100,7 +1133,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="better-cph-limited">
             <h2 class="component--title">Better Cph Limited</h2>
             <div class="component--demo">
               <div class="pane-bundle-better-cph-limited better-cph-limited">
@@ -1255,7 +1288,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="kkdk-menu">
             <h2 class="component--title">Kkdk Menu</h2>
             <div class="component--demo">
               <div class="kkdk-menu">
@@ -1325,7 +1358,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="contact">
             <h2 class="component--title">Contact</h2>
             <div class="component--demo">
               <div class="bl-element contact">
@@ -1410,7 +1443,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="list-without-bullets">
             <h2 class="component--title">List without bullets</h2>
             <div class="component--demo">
               <div class="list-without-bullets">
@@ -1469,7 +1502,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="box-list-without-bullets">
             <h2 class="component--title">Box list without bullets</h2>
             <div class="component--demo">
               <div class="box-list-without-bullets">
@@ -1531,7 +1564,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="menu-vertical">
             <h2 class="component--title">Menu vertical</h2>
             <div class="component--demo">
               <div class="menu-vertical">
@@ -1664,7 +1697,7 @@
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="accordion">
             <h2 class="component--title">Accordion</h2>
             <div class="component--demo">
               <div class="accordion effect-bounceslide">
@@ -2024,7 +2057,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="related-files">
             <h2 class="component--title">Related files</h2>
             <div class="component--demo">
               <div class="related-files">
@@ -2120,7 +2153,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="quote">
             <h2 class="component--title">Quote</h2>
             <div class="component--demo">
               <div class="tx-content">
@@ -2150,7 +2183,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="service">
             <h2 class="component--title">Service</h2>
             <div class="component--demo">
               <div class="service">
@@ -2233,7 +2266,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="factbox">
             <h2 class="component--title">Factbox</h2>
             <div class="component--demo">
               <aside class="factbox bl-element">
@@ -2283,7 +2316,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="table">
             <h2 class="component--title">Table</h2>
             <div class="component--demo">
               <div class="table">
@@ -2429,7 +2462,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="tabs">
             <h2 class="component--title">Tabs</h2>
             <div class="component--demo">
               <aside class="node node-stepbox-tabs tabs">
@@ -2562,7 +2595,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="flexslider">
             <h2 class="component--title">Flexslider</h2>
             <div class="component--demo">
               <div class="flexslider">
@@ -2789,7 +2822,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="bef-link">
             <h2 class="component--title">Better Exposed Filters Link</h2>
             <div class="component--demo">
               <div class="bef-link">
@@ -2878,7 +2911,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="list-image">
             <h2 class="component--title">List image</h2>
             <div class="component--demo">
               <div class="list-image">
@@ -2946,7 +2979,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="file-video">
             <h2 class="component--title">File video</h2>
             <div class="component--demo">
               <div class="file file-video">
@@ -2985,7 +3018,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="intro-with-list-link">
             <h2 class="component--title">Intro text with list link</h2>
             <div class="component--demo">
               <div class="intro-with-list-link">
@@ -3042,7 +3075,7 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
               <button class="hide-code">Hide Code</button>
             </div>
           </div>
-          <div class="component--item">
+          <div class="component--item" id="list-icon">
             <h2 class="component--title">list-icon</h2>
             <div class="component--demo">
               <ul>
@@ -3160,6 +3193,78 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                     </pre>
               </div>
               <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+
+          <div class="component--list">
+            <div class="component--list--header">
+              <h2 class="component--title">Components List</h2>
+              <a title="Show List" class="show-list">+</a>
+              <a title="Hide List" style="display:none" class="hide-list">-</a>
+            </div>
+            <div class="component--list--content">
+              <ul>
+                <li class="component--list--item"><a href="#boxicon">Box Icon</a>
+                </li>
+                <li class="component--list--item"><a href="#most-read-pages">Most Read Pages</a>
+                </li>
+                <li class="component--list--item"><a href="#tags">Tags</a>
+                </li>
+                <li class="component--list--item"><a href="#coloured-infobox">Info Box</a>
+                </li>
+                <li class="component--list--item"><a href="#post">Post</a>
+                </li>
+                <li class="component--list--item"><a href="#image-link">Image Link</a>
+                </li>
+                <li class="component--list--item"><a href="#pager">Pager</a>
+                </li>
+                <li class="component--list--item"><a href="#banner">Banner</a>
+                </li>
+                <li class="component--list--item"><a href="#social">Social</a>
+                </li>
+                <li class="component--list--item"><a href="#search">Search</a>
+                </li>
+                <li class="component--list--item"><a href="#filter">Filter</a>
+                </li>
+                <li class="component--list--item"><a href="#better-cph-limited">Better Cph Limited</a>
+                </li>
+                <li class="component--list--item"><a href="#kkdk-menu">Kkdk Menu</a>
+                </li>
+                <li class="component--list--item"><a href="#contact">Contact</a>
+                </li>
+                <li class="component--list--item"><a href="#list-without-bullets">List without bullets</a>
+                </li>
+                <li class="component--list--item"><a href="#box-list-without-bullets">Box list without bullets</a>
+                </li>
+                <li class="component--list--item"><a href="#menu-vertical">Menu vertical</a>
+                </li>
+                <li class="component--list--item"><a href="#accordion">Accordion</a>
+                </li>
+                <li class="component--list--item"><a href="#related-files">Related files</a>
+                </li>
+                <li class="component--list--item"><a href="#quote">Quote</a>
+                </li>
+                <li class="component--list--item"><a href="#service">Service</a>
+                </li>
+                <li class="component--list--item"><a href="#factbox">Factbox</a>
+                </li>
+                <li class="component--list--item"><a href="#table">Table</a>
+                </li>
+                <li class="component--list--item"><a href="#tabs">Tabs</a>
+                </li>
+                <li class="component--list--item"><a href="#flexslider">Flexslider</a>
+                </li>
+                <li class="component--list--item"><a href="#bef-link">Better Exposed Filters Link</a>
+                </li>
+                <li class="component--list--item"><a href="#list-image">List image</a>
+                </li>
+                <li class="component--list--item"><a href="#file-video">File video</a>
+                </li>
+                <li class="component--list--item"><a href="#intro-with-list-link">Intro text with list link</a>
+                </li>
+                <li class="component--list--item"><a href="#list-icon">list-icon</a>
+                </li>
+              </ul>
             </div>
           </div>
 
