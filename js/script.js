@@ -55,23 +55,6 @@
 
     function func_resize(){
     var width = window.innerWidth || document.documentElement.clientWidth;
-    if (width > 1024){
-      var offset_tb = $(".sticky-header").offset();
-      var width_table = $(".sticky-header").width();
-      var height_table = $(".sticky-enabled").height();
-      var min_sticky = offset_tb.top;
-      var max_sticky = offset_tb.top + height_table;
-      var offset_left = offset_tb.left;
-      $(window).scroll(function(){
-        var scroll_top = $(document).scrollTop();
-        if(scroll_top >= min_sticky &&  scroll_top <= max_sticky){
-          $('.sticky-header').css({"visibility": "visible", "position": "fixed", "left": offset_left, "width": width_table, "top": "0" });
-        }
-        else {
-          $('.sticky-header').css("visibility","hidden");
-        }
-      });
-    }
     // Tabs Js
     if(width < 768) {
       //$(".wrap-tabs").addClass("rps");
