@@ -1,5 +1,10 @@
 ( function ( $ ) {
   $(document).ready(function(){
+    //Active for main menu
+    var pageType = $(".pagetype").data("page");
+    $("."+pageType).addClass("active");
+
+    //Show/hide code
     $(".show-code").click(function(){
       $(this).next(".component--source").toggleClass("element-invisible");
     });
@@ -14,7 +19,7 @@
       heightStyle: "content",
       collapsible: true
     });
-    
+
     $(".filter .form-select").chosen({
       width: '100%',
     });

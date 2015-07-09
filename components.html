@@ -43,13 +43,13 @@
       <nav class="sec sec-menu">
         <div class="sec-inner menu-section-addings-processed">
           <ul class="menu-main menu clearfix" id="main-menu">
-            <li><a class="active" href="index.html">KK Style Guide</a>
+            <li><a class="page-index" href="index.html">KK Style Guide</a>
             </li>
-            <li><a href="components.html">Components</a>
+            <li><a class="page-compo" href="components.html">Components</a>
             </li>
-            <li><a href="typography.html">Typography</a>
+            <li><a class="page-typo" href="typography.html">Typography</a>
             </li>
-            <li><a href="grid.html">Grid</a>
+            <li><a class="page-grid" href="grid.html">Grid</a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@
     <section id="main-content" class="sec sec-content">
       <div class="sec-inner">
         <div class="reg-inner-regions">
-
+          <div class="pagetype" data-page="page-compo"></div>
 
           <div class="component--item" id="boxicon">
             <h2 class="component--title">Box Icon</h2>
@@ -820,6 +820,9 @@
   clear: both;
   content: '';
   display: table;
+}
+.pager-ellipsis {
+  height: 32px;
 }          </pre>
               </div>
               <button class="hide-code">Hide Code</button>
@@ -993,8 +996,13 @@
   width: 100%;
 }
 .search-form .form-item {
+  margin-bottom: 12px;
   width: 100%;
-  padding-right: 155px;
+}
+@media (min-width: 480px) {
+  .search-form .form-item {
+    padding-right: 23%;
+  }
 }
 .search-form .form-text {
   background-image: url("http://www.kk.dk/sites/all/themes/kkms_theme/images/icon-search-flip.png");
@@ -1007,13 +1015,19 @@
 .search-form .form-submit {
   font-size: 1em;
   line-height: 39px;
+  margin-bottom: 6px;
   margin-right: 0;
   padding: 0 0.5em;
-  position: absolute;
-  right: 0;
   text-transform: uppercase;
-  top: 0;
-  width: 140px;
+}
+@media (min-width: 480px) {
+  .search-form .form-submit {
+    margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21%;
+  }
 }          </pre>
               </div>
               <button class="hide-code">Hide Code</button>
