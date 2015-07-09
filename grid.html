@@ -13,12 +13,11 @@
   <link rel="stylesheet" type="text/css" href="css/shCore.css">
   <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
   <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
-  <link rel="stylesheet" type="text/css" href="css/app.css">
-  <link rel="stylesheet" type="text/css" href="css/helper-class.css">
-  <link rel="stylesheet" type="text/css" href="css/thanh.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="components/flexslider/flexslider.css">
-  <link rel="stylesheet" type="text/css" href="components/services/services.css">
+  <link rel="stylesheet" type="text/css" href="css/helper-class.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="http://2nlizv2n463m4ezbxb1ci6m1.wpengine.netdna-cdn.com/wp-content/themes/woo/includes/js/jquery.flexslider.min.js?ver=2.2.2"></script>
@@ -44,7 +43,7 @@
       <nav class="sec sec-menu">
         <div class="sec-inner menu-section-addings-processed">
           <ul class="menu-main menu clearfix" id="main-menu">
-            <li><a href="index.html">KK Style Guide</a>
+            <li><a class="active" href="index.html">KK Style Guide</a>
             </li>
             <li><a href="components.html">Components</a>
             </li>
@@ -60,93 +59,240 @@
       <div class="sec-inner">
         <div class="reg-inner-regions">
 
-          <div class="layout-3col">
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
+          <div class="component--item">
+            <h2 class="component--title">Layout 3 columns</h2>
+            <div class="component--demo">
+              <div class="layout-3col">
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+                <div class="layout-3col__col-x">
+                  The <code>.layout-3col__col-x</code> grid item.
+                </div>
+              </div>
             </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
-            </div>
-            <div class="layout-3col__col-x">
-              The <code>.layout-3col__col-x</code> grid item.
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+        <div class="layout-3col">
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-3col__col-x">
+				    The <code>.layout-3col__col-x</code> grid item.
+				  </div>
+				</div>
+      </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+      css
+      </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
 
-          <div class="layout-4col">
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
+          <div class="component--item">
+            <h2 class="component--title">Layout 4 columns</h2>
+            <div class="component--demo">
+              <div class="layout-4col">
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+                <div class="layout-4col__col-x">
+                  The <code>.layout-4col__col-x</code> grid item.
+                </div>
+              </div>
             </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
-            </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
-            </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
-            </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
-            </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
-            </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
-            </div>
-            <div class="layout-4col__col-x">
-              The <code>.layout-4col__col-x</code> grid item.
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+				<div class="layout-4col">
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-4col__col-x">
+				    The <code>.layout-4col__col-x</code> grid item.
+				  </div>
+				</div>
+      </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+      css
+      </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
 
-          <div class="layout-5col">
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
+          <div class="component--item">
+            <h2 class="component--title">Layout 5 columns</h2>
+            <div class="component--demo">
+              <div class="layout-5col">
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+                <div class="layout-5col__col-x">
+                  The <code>.layout-5col__col-x</code> grid item.
+                </div>
+              </div>
             </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
-            </div>
-            <div class="layout-5col__col-x">
-              The <code>.layout-5col__col-x</code> grid item.
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+				<div class="layout-5col">
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				  </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				    </div>
+				  <div class="layout-5col__col-x">
+				    The <code>.layout-5col__col-x</code> grid item.
+				  </div>
+				</div>
+      </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+      css
+      </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
             </div>
           </div>
         </div>
