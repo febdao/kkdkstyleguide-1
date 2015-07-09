@@ -23,22 +23,6 @@
     $(".filter .form-select").chosen({
       width: '100%',
     });
-    var offset = $(".sticky-header").offset();
-    var width_table = $(".sticky-header").width();
-    var height_table = $(".sticky-enabled").height();
-    var min_sticky = offset.top;
-    var max_sticky = offset.top + height_table;
-    var offset_left = offset.left;
-    $(window).scroll(function(){
-      var scroll_top = $(document).scrollTop();
-      if(scroll_top >= min_sticky &&  scroll_top <= max_sticky){
-        $('.sticky-header').css({"visibility": "visible", "position": "fixed", "left": offset_left, "width": width_table, "top": "0" });
-      }
-      else {
-        $('.sticky-header').css("visibility","hidden");
-      }
-    });
-
 
     // Js slider
     $('.flexslider').flexslider({
@@ -50,17 +34,6 @@
     $(".flex-control-paging,.flex-pauseplay").wrapAll("<div class='controls-nav'></div>");
     $(".flex-pauseplay").next().remove();
     $(".flex-pauseplay").next().remove();
-
-    // Js tabs
-
-    $(".horizontal-tabs .horizontal-tab-button").click(function(index){
-      var tab_index = $(this).index();
-      $(".horizontal-tabs-processed .horizontal-tabs-pane").addClass('horizontal-tab-hidden');
-      $(".horizontal-tabs .horizontal-tab-button").removeClass('selected');
-      $(this).addClass( "selected" );
-      $(".horizontal-tabs-processed .horizontal-tabs-pane").eq( tab_index ).removeClass( "horizontal-tab-hidden" );
-      return false;
-    });
 
     $('.list-local-content__wrap').matchHeight();
 
@@ -79,5 +52,70 @@
       $(".hide-list").removeClass("active").hide();
       $(".show-list").show();
     });
+
+    function func_resize(){
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    if (width > 1024){
+      var offset_tb = $(".sticky-header").offset();
+      var width_table = $(".sticky-header").width();
+      var height_table = $(".sticky-enabled").height();
+      var min_sticky = offset_tb.top;
+      var max_sticky = offset_tb.top + height_table;
+      var offset_left = offset_tb.left;
+      $(window).scroll(function(){
+        var scroll_top = $(document).scrollTop();
+        if(scroll_top >= min_sticky &&  scroll_top <= max_sticky){
+          $('.sticky-header').css({"visibility": "visible", "position": "fixed", "left": offset_left, "width": width_table, "top": "0" });
+        }
+        else {
+          $('.sticky-header').css("visibility","hidden");
+        }
+      });
+    }
+    // Tabs Js
+    if(width < 768) {
+      //$(".wrap-tabs").addClass("rps");
+      $(".horizontal-tabs .horizontal-tab-button").each(function(index){
+        var tab_index = $(this).index();
+        var tab_content = $(".horizontal-tabs-processed .horizontal-tabs-pane");
+        if ($(this).children(".horizontal-tabs-pane").length == 0){
+          var tab_clone = tab_content.eq( tab_index).clone();
+          tab_clone.appendTo(this);
+        }
+      });
+      $(".horizontal-tabs .horizontal-tabs-panes").hide();
+      $(".horizontal-tabs .horizontal-tab-button").click(function(index){
+        $(".horizontal-tabs .horizontal-tab-button").removeClass( "selected" );
+        $(".horizontal-tabs .horizontal-tabs-pane").addClass('horizontal-tab-hidden');
+        $(this).addClass( "selected" );
+        $(this).children(".horizontal-tabs-pane").removeClass( "horizontal-tab-hidden" );
+        return false;
+      });
+    }
+    else if(width >= 768){
+      $(".horizontal-tabs .horizontal-tabs-panes").show();
+      $(".horizontal-tabs-list .horizontal-tab-button > .horizontal-tabs-pane").remove();
+      $(".horizontal-tabs-list .horizontal-tab-button").removeClass("selected");
+      $(".horizontal-tabs-processed .horizontal-tabs-pane").addClass('horizontal-tab-hidden');
+      $(".horizontal-tabs-processed .horizontal-tabs-pane").eq(0).removeClass( "horizontal-tab-hidden" );
+      $(".horizontal-tabs-list .horizontal-tab-button").eq(0).addClass("selected");
+
+      // Js tabs
+      $(".horizontal-tabs .horizontal-tab-button").click(function(index){
+        var tab_index = $(this).index();
+        $(".horizontal-tabs-processed .horizontal-tabs-pane").addClass('horizontal-tab-hidden');
+        $(".horizontal-tabs .horizontal-tab-button").removeClass('selected');
+        $(this).addClass( "selected" );
+        $(".horizontal-tabs-processed .horizontal-tabs-pane").eq( tab_index ).removeClass( "horizontal-tab-hidden" );
+        return false;
+      });
+    }
+  }
+
+  func_resize();
+  $( window ).resize(function() {
+    func_resize();
+  });
+
   });
 } )( jQuery );
