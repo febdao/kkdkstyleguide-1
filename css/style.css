@@ -526,9 +526,6 @@
   width: 32.7731%;
   margin-top: -28px;
 }
-.menu-vertical__title {
-  display: none;
-}
 .list-without-bullets > ul {
   border: none;
   list-style: none;
@@ -545,6 +542,9 @@
 .list-without-bullets > ul > li > a:after,
 .list-without-bullets > ul > li > a:before {
   content: '';
+}
+.menu-vertical__title {
+  display: none;
 }
 .most-read-pages {
   margin-bottom: 28px;
@@ -662,6 +662,7 @@
   top: 0;
   width: 140px;
 }
+
 
 .tags {
   font-size: 0.83333em;
