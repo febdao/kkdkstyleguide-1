@@ -25,7 +25,6 @@ $mq-bp-tablet-plus-minus : 479px;
   @extend %clearfix;
 
   &__col-x {
-    @include gallery(6 of 6);
     @include susy-media($mq-bp-tablet-plus) {
       @include gallery(3 of 6);
     }
@@ -40,7 +39,6 @@ $mq-bp-tablet-plus-minus : 479px;
   @extend %clearfix;
 
   &__col-x {
-    @include gallery(12 of 12);
     @include susy-media($mq-bp-tablet-plus) {
       @include gallery(6 of 12);
     }
@@ -55,7 +53,6 @@ $mq-bp-tablet-plus-minus : 479px;
   @extend %clearfix;
 
   &__col-x {
-    @include gallery(10 of 10);
     @include susy-media($mq-bp-tablet-plus) {
       @include gallery(5 of 10);
     }
