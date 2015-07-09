@@ -1,0 +1,21 @@
+<form accept-charset="UTF-8" id="user-login" method="post" action="/user" class="form-login">
+  <div>
+    <div class="form-item form-type-textfield form-item-name">
+      <label for="edit-name">Brugernavn
+        <span title="Dette felt er obligatorisk." class="form-required">*</span>
+      </label>
+      <input type="text" class="form-text required" maxlength="60" size="60" value="" name="name" id="edit-name">
+      <div class="description">Indtast dit Københavns Kommune brugernavn.</div>
+    </div>
+    <div class="form-item form-type-password form-item-pass">
+      <label for="edit-pass">Adgangskode
+        <span title="Dette felt er obligatorisk." class="form-required">*</span>
+      </label>
+      <input type="password" class="form-text required" maxlength="128" size="60" name="pass" id="edit-pass">
+      <div class="description">Indtast adgangskoden der hører til dit brugernavn.</div>
+    </div>
+    <div id="edit-actions" class="form-actions form-wrapper">
+      <input type="submit" class="form-submit" value="Log ind" name="op" id="edit-submit">
+    </div>
+  </div>
+</form>
