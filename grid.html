@@ -1,4 +1,3 @@
-{# layout.twig #}
 <!DOCTYPE html>
 <html>
 
@@ -34,22 +33,39 @@
 <body class="node-type-section-page">
   <div class="page">
     <section>
-      {% include "header.twig" %}
+      <div class="sec sec-header">
+        <div class="sec-inner">
+          <a class="logo-page" rel="home" title="Hjem" href="/">
+            <img alt="Københavns Kommune" src="http://www.kk.dk/sites/all/themes/kkdk_theme/logo.png">
+          </a>
+        </div>
+      </div>
+      <nav class="sec sec-menu">
+        <div class="sec-inner menu-section-addings-processed">
+          <ul class="menu-main menu clearfix" id="main-menu">
+            <li><a href="index.html">KK Style Guide</a>
+            </li>
+            <li><a href="components.html">Components</a>
+            </li>
+            <li><a href="typography.html">Typography</a>
+            </li>
+            <li><a href="grid.html">Grid</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </section>
     <section id="main-content" class="sec sec-content">
       <div class="sec-inner">
         <div class="reg-inner-regions">
-          {% block index %}{% endblock %}
-          {% block components %}{% endblock %}
-          {% block typography %}{% endblock %}
-          {% block grid %}{% endblock %}
+          grid
         </div>
       </div>
     </section>
   </div>
 
   <script type="text/javascript">
-     SyntaxHighlighter.all()
+    SyntaxHighlighter.all()
   </script>
 </body>
 

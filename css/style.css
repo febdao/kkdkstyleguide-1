@@ -285,6 +285,33 @@
   float: left;
   margin: 0 0 2px;
 }
+.contact {
+  background: none repeat scroll 0 0 white;
+  padding: 28px;
+}
+
+.contact > div:nth-of-type(1) {
+  margin-bottom: 1.33333em;
+}
+
+.contact .contact__content {
+  overflow: hidden;
+}
+
+.contact .contact__content h3 {
+  font-size: 1.11111em;
+  font-weight: bold;
+  margin-bottom: 0.27778em;
+  text-transform: none;
+}
+
+.contact .address {
+  margin: 0 42px 1em;
+}
+
+.contact .telephone {
+  margin: 0.5em 28px;
+}
 .coloured-infobox {
   margin: 0 -17.5px;
 }
@@ -327,33 +354,6 @@
   right: 5px;
   width: 130px;
   z-index: 1;
-}
-.contact {
-  background: none repeat scroll 0 0 white;
-  padding: 28px;
-}
-
-.contact > div:nth-of-type(1) {
-  margin-bottom: 1.33333em;
-}
-
-.contact .contact__content {
-  overflow: hidden;
-}
-
-.contact .contact__content h3 {
-  font-size: 1.11111em;
-  font-weight: bold;
-  margin-bottom: 0.27778em;
-  text-transform: none;
-}
-
-.contact .address {
-  margin: 0 42px 1em;
-}
-
-.contact .telephone {
-  margin: 0.5em 28px;
 }
 
 
