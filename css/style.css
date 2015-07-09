@@ -75,6 +75,29 @@
 .accordion .ui-accordion-header-active .ui-accordion-header-icon:before {
   content: '\e613';
 }
+.bef-link {
+  color: #fff;
+}
+
+.bef-link .form-type-bef-link {
+  background-color: #e2e2e2;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.bef-link .form-type-bef-link a {
+  display: block;
+  padding: 5px 10px;
+  color: #444444;
+}
+
+.bef-link .form-type-bef-link.selected {
+  background-color: #00ba5a;
+}
+
+.bef-link .form-type-bef-link.selected a {
+  color: #fff;
+}
 .banner {
   overflow: hidden;
   position: relative;
@@ -116,29 +139,6 @@
     padding: 28px;
     font-size: 42px;
   }
-}
-.bef-link {
-  color: #fff;
-}
-
-.bef-link .form-type-bef-link {
-  background-color: #e2e2e2;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.bef-link .form-type-bef-link a {
-  display: block;
-  padding: 5px 10px;
-  color: #444444;
-}
-
-.bef-link .form-type-bef-link.selected {
-  background-color: #00ba5a;
-}
-
-.bef-link .form-type-bef-link.selected a {
-  color: #fff;
 }
 .better-cph-limited {
   margin-bottom: 25px;
@@ -224,10 +224,6 @@
   margin-top: 0;
   font-size: 1.11111em;
 }
-.box-icons {
-  margin: 0 -12px;
-}
-
 .box-icons:after {
   clear: both;
   content: '';
@@ -285,33 +281,6 @@
   float: left;
   margin: 0 0 2px;
 }
-.contact {
-  background: none repeat scroll 0 0 white;
-  padding: 28px;
-}
-
-.contact > div:nth-of-type(1) {
-  margin-bottom: 1.33333em;
-}
-
-.contact .contact__content {
-  overflow: hidden;
-}
-
-.contact .contact__content h3 {
-  font-size: 1.11111em;
-  font-weight: bold;
-  margin-bottom: 0.27778em;
-  text-transform: none;
-}
-
-.contact .address {
-  margin: 0 42px 1em;
-}
-
-.contact .telephone {
-  margin: 0.5em 28px;
-}
 .coloured-infobox {
   margin: 0 -17.5px;
 }
@@ -354,6 +323,33 @@
   right: 5px;
   width: 130px;
   z-index: 1;
+}
+.contact {
+  background: none repeat scroll 0 0 white;
+  padding: 28px;
+}
+
+.contact > div:nth-of-type(1) {
+  margin-bottom: 1.33333em;
+}
+
+.contact .contact__content {
+  overflow: hidden;
+}
+
+.contact .contact__content h3 {
+  font-size: 1.11111em;
+  font-weight: bold;
+  margin-bottom: 0.27778em;
+  text-transform: none;
+}
+
+.contact .address {
+  margin: 0 42px 1em;
+}
+
+.contact .telephone {
+  margin: 0.5em 28px;
 }
 
 

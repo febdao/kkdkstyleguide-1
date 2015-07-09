@@ -1,0 +1,67 @@
+@import "../bower_components/susy/sass/susy";
+
+// $desktop:
+$mq-bp-desktop-plus: 960px;
+$mq-bp-desktop-plus-minus: 959px;
+$mq-bp-desktop: 768px;
+$mq-bp-desktop-minus: 767px;
+$mq-bp-tablet-plus : 480px;
+$mq-bp-tablet-plus-minus : 479px;
+
+//Clearfix
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.layout-3col {
+  @extend %clearfix;
+
+  &__col-x {
+    @include gallery(6 of 6);
+    @include susy-media($mq-bp-tablet-plus) {
+      @include gallery(3 of 6);
+    }
+
+    @include susy-media($mq-bp-desktop) {
+      @include gallery(2 of 6);
+    }
+  }
+}
+
+.layout-4col {
+  @extend %clearfix;
+
+  &__col-x {
+    @include gallery(12 of 12);
+    @include susy-media($mq-bp-tablet-plus) {
+      @include gallery(6 of 12);
+    }
+
+    @include susy-media($mq-bp-desktop) {
+      @include gallery(3 of 12);
+    }
+  }
+}
+
+.layout-5col {
+  @extend %clearfix;
+
+  &__col-x {
+    @include gallery(10 of 10);
+    @include susy-media($mq-bp-tablet-plus) {
+      @include gallery(5 of 10);
+    }
+
+    @include susy-media($mq-bp-desktop) {
+      @include gallery(2 of 10);
+    }
+  }
+}

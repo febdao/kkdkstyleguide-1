@@ -1,6 +1,3 @@
-.box-icons {
-  margin: 0 -12px;
-}
 .box-icons:after {
   clear: both;
   content: '';
