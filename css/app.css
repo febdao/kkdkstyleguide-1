@@ -16,6 +16,7 @@
 }
 .component--list .component--title{
 	background: #f5f5f5;
+	text-align: left;
   -webkit-border-radius: 0;
 					border-radius: 0;
 }
@@ -53,7 +54,6 @@
 	cursor: default;
 
 }
-.hide-list:hover,
 .show-list:hover {
 	opacity: 0.8;
 }
@@ -63,7 +63,7 @@
 .component--list--content {
   overflow: auto;
   width: 100%;
-  height: 100%;
+  height: 95%;
   padding-bottom: 20px;
   position: relative;
   z-index: 2;
@@ -71,6 +71,7 @@
 .component--list--item a{
 	display: block;
 	padding: 5px 10px;
+	background-color: #fff;
 	border-bottom: 1px solid #d3d3d3;
 }
 .component--list--item a:hover,
@@ -79,30 +80,32 @@
 }
 .component--item {
   border: 1px solid #ddd;
-  -webkit-border-radius: 5px;
-					border-radius: 5px;
-	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-					box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
+					border-radius: 5px;
+  -webkit-border-radius: 5px;
+					box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .component--title {
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	background-color: #f5f5f5;
+	background-repeat: repeat-x;
 	background: #f5f5f5; /* Old browsers */
 	background: -moz-linear-gradient(top,  #f5f5f5 0%, #e8e8e8 100%); /* FF3.6+ */
+	background: -ms-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%); /* IE10+ */
+	background: -o-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%); /* Opera 11.10+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #f5f5f5 0%,#e8e8e8 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
-
-	background-repeat: repeat-x;
-	background-color: #f5f5f5;
 	border-color: #ddd;
 	color: #333;
-	-webkit-border-radius: 5px 5px 0 0;
-					border-radius: 5px 5px 0 0;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+	font-weight: bold;
 	padding: 10px 15px;
+	text-align: center;
+	text-transform: capitalize;
 }
 
 .component--demo {
@@ -123,4 +126,8 @@
 .menu-main a:active {
   background: #007ea4 none repeat scroll 0 0;
   color: white;
+}
+.styleguide-color {
+  color: white;
+  padding: 5px 10px;
 }

@@ -870,6 +870,10 @@
   content: '';
   display: table;
 }
+
+.pager-ellipsis {
+  height: 32px;
+}
 .personlige-forhold {
   margin-left: auto;
   margin-right: auto;
@@ -992,8 +996,14 @@
 }
 
 .search-form .form-item {
+  margin-bottom: 12px;
   width: 100%;
-  padding-right: 155px;
+}
+
+@media (min-width: 480px) {
+  .search-form .form-item {
+    padding-right: 23%;
+  }
 }
 
 .search-form .form-text {
@@ -1008,13 +1018,20 @@
 .search-form .form-submit {
   font-size: 1em;
   line-height: 39px;
+  margin-bottom: 6px;
   margin-right: 0;
   padding: 0 0.5em;
-  position: absolute;
-  right: 0;
   text-transform: uppercase;
-  top: 0;
-  width: 140px;
+}
+
+@media (min-width: 480px) {
+  .search-form .form-submit {
+    margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21%;
+  }
 }
 .service {
   background: none repeat scroll 0 0 #00acdd;
