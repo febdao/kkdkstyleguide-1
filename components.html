@@ -1838,6 +1838,143 @@
             </div>
           </div>
 
+          <div class="component--item" id="personlige-forhold">
+            <h2 class="component--title">Personlige Forhold</h2>
+            <div class="component--demo">
+              <div class="personlige-forhold">
+                <div class="personlige-forhold__info">
+                  <h2>Personlige forhold</h2>
+                  <div class="personlige-forhold__description">Her finder du oplysninger om bl.a. flytning, vielse og pension. Du kan også læse om Digital Post og få mere at vide om pas, kørekort og personnummer.</div>
+                </div>
+                <div class="personlige-forhold__image">
+                  <img alt="Personlige forhold" src="http://www.kk.dk/sites/default/files/styles/kkdk_menu_parent_icon/public/menu_icons/menu_icon_1820.png?itok=_B4yz-4h" typeof="foaf:Image">
+                </div>
+              </div>
+            </div>
+            <button class="show-code">Show/Hide Code</button>
+            <div class="component--source element-invisible">
+              <div class="component--html">
+                <h2 class="component--source--title">Markup</h2>
+                <pre class="brush: php">
+
+            <div class="personlige-forhold">
+
+  <div class="personlige-forhold__info">
+
+		<h2>Personlige forhold</h2>
+
+    <div class="personlige-forhold__description">Her finder du oplysninger om bl.a. flytning, vielse og pension. Du kan også læse om Digital Post og få mere at vide om pas, kørekort og personnummer.</div>
+
+  </div>
+
+  <div class="personlige-forhold__image">
+
+  	<img alt="Personlige forhold" src="http://www.kk.dk/sites/default/files/styles/kkdk_menu_parent_icon/public/menu_icons/menu_icon_1820.png?itok=_B4yz-4h" typeof="foaf:Image">
+
+  </div>
+
+</div>
+
+          </pre>
+              </div>
+              <div class="component--css">
+                <h2 class="component--source--title">Style</h2>
+                <pre class="brush: css">
+
+          .personlige-forhold {
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  max-width: 59em;
+
+  padding-bottom: 0 !important;
+
+  padding-left: 1em;
+
+  padding-right: 1em;
+
+  padding-top: 1em;
+
+  position: relative;
+
+}
+
+.personlige-forhold:after {
+
+  clear: both;
+
+  content: '';
+
+  display: table;
+
+}
+
+.personlige-forhold__info h2 {
+
+  font-size: 2em;
+
+  line-height: 1em;
+
+  text-transform: uppercase;
+
+}
+
+@media (min-width: 768px) {
+
+  .personlige-forhold__info {
+
+    margin-right: 0.84034%;
+
+    padding-bottom: 28px;
+
+    width: 66.3866%;
+
+    float: left;
+
+  }
+
+}
+
+.personlige-forhold__description {
+
+  font-size: 1.22222em;
+
+  line-height: 1.4em;
+
+  margin-top: 5px;
+
+}
+
+@media (min-width: 768px) {
+
+  .personlige-forhold__image {
+
+    float: right;
+
+    margin-right: 0;
+
+    margin-top: -28px;
+
+    position: absolute;
+
+    right: 0;
+
+    width: 32.7731%;
+
+    bottom: 0;
+
+  }
+
+}
+
+          </pre>
+              </div>
+              <button class="hide-code">Hide Code</button>
+            </div>
+          </div>
+
           <div class="component--item" id="contact">
             <h2 class="component--title">Contact</h2>
             <div class="component--demo">
@@ -3110,24 +3247,24 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
           <div class="component--item" id="form-login">
             <h2 class="component--title">Form login</h2>
             <div class="component--demo">
-              <form accept-charset="UTF-8" id="user-login" method="post" action="/user" class="form-login">
+              <form class="form-login" action="/user" method="post" id="user-login" accept-charset="UTF-8">
                 <div>
-                  <div class="form-item form-type-textfield form-item-name">
-                    <label for="edit-name">Brugernavn
-                      <span title="Dette felt er obligatorisk." class="form-required">*</span>
+                  <div class="form-item form-item-name">
+                    <label for="edit-name">Username
+                      <span class="form-required" title="User name">*</span>
                     </label>
-                    <input type="text" class="form-text required" maxlength="60" size="60" value="" name="name" id="edit-name">
-                    <div class="description">Indtast dit Københavns Kommune brugernavn.</div>
+                    <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+                    <div class="description">Enter your username of site.</div>
                   </div>
-                  <div class="form-item form-type-password form-item-pass">
-                    <label for="edit-pass">Adgangskode
-                      <span title="Dette felt er obligatorisk." class="form-required">*</span>
+                  <div class="form-item form-item-pass">
+                    <label for="edit-pass">Password
+                      <span class="form-required" title="Password">*</span>
                     </label>
-                    <input type="password" class="form-text required" maxlength="128" size="60" name="pass" id="edit-pass">
-                    <div class="description">Indtast adgangskoden der hører til dit brugernavn.</div>
+                    <input type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required">
+                    <div class="description">Enter the password that accompanies your username.</div>
                   </div>
-                  <div id="edit-actions" class="form-actions form-wrapper">
-                    <input type="submit" class="form-submit" value="Log ind" name="op" id="edit-submit">
+                  <div class="form-actions">
+                    <input type="submit" id="edit-submit" name="op" value="Log ind" class="form-submit">
                   </div>
                 </div>
               </form>
@@ -3139,24 +3276,24 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 <h2 class="component--source--title">Markup</h2>
                 <pre class="brush: php">
 
-            <form accept-charset="UTF-8" id="user-login" method="post" action="/user" class="form-login">
+            <form class="form-login" action="/user" method="post" id="user-login" accept-charset="UTF-8">
   <div>
-    <div class="form-item form-type-textfield form-item-name">
-      <label for="edit-name">Brugernavn
-        <span title="Dette felt er obligatorisk." class="form-required">*</span>
+    <div class="form-item form-item-name">
+      <label for="edit-name">Username
+        <span class="form-required" title="User name">*</span>
       </label>
-      <input type="text" class="form-text required" maxlength="60" size="60" value="" name="name" id="edit-name">
-      <div class="description">Indtast dit Københavns Kommune brugernavn.</div>
+      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+      <div class="description">Enter your username of site.</div>
     </div>
-    <div class="form-item form-type-password form-item-pass">
-      <label for="edit-pass">Adgangskode
-        <span title="Dette felt er obligatorisk." class="form-required">*</span>
+    <div class="form-item form-item-pass">
+      <label for="edit-pass">Password
+        <span class="form-required" title="Password">*</span>
       </label>
-      <input type="password" class="form-text required" maxlength="128" size="60" name="pass" id="edit-pass">
-      <div class="description">Indtast adgangskoden der hører til dit brugernavn.</div>
+      <input type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required">
+      <div class="description">Enter the password that accompanies your username.</div>
     </div>
-    <div id="edit-actions" class="form-actions form-wrapper">
-      <input type="submit" class="form-submit" value="Log ind" name="op" id="edit-submit">
+    <div class="form-actions">
+      <input type="submit" id="edit-submit" name="op" value="Log ind" class="form-submit">
     </div>
   </div>
 </form>
