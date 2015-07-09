@@ -857,6 +857,10 @@
   content: '';
   display: table;
 }
+
+.pager-ellipsis {
+  height: 32px;
+}
 .post {
   margin: 0 -4px;
 }
@@ -931,7 +935,7 @@
 
 .search-form .form-item {
   width: 100%;
-  padding-right: 155px;
+  padding-right: 23%;
 }
 
 .search-form .form-text {
@@ -952,7 +956,7 @@
   right: 0;
   text-transform: uppercase;
   top: 0;
-  width: 140px;
+  width: 21%;
 }
 .service {
   background: none repeat scroll 0 0 #00acdd;
