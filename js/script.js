@@ -20,9 +20,9 @@
       collapsible: true
     });
 
-    $(".filter .form-select").chosen({
-      width: '100%',
-    });
+    // $(".filter .form-select").chosen({
+    //   width: '100%',
+    // });
 
     // Js slider
     $('.flexslider').flexslider({
