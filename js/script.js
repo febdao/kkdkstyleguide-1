@@ -1,14 +1,14 @@
-( function ( $ ) {
-  $(document).ready(function(){
+(function($) {
+  $(document).ready(function() {
     //Active for main menu
     var pageType = $(".pagetype").data("page");
     $("."+pageType).addClass("active");
 
     //Show/hide code
-    $(".show-code").click(function(){
+    $(".show-code").click(function() {
       $(this).next(".component--source").toggleClass("element-invisible");
     });
-    $(".hide-code").click(function(){
+    $(".hide-code").click(function() {
       $(this).parent(".component--source").addClass("element-invisible");
       $('html, body').animate({
         scrollTop: $(this).parents(".component--item").offset().top
