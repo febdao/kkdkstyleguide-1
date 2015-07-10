@@ -1,79 +1,83 @@
 @import '../helper.less';
 
 .better-cph-limited{
-	margin-bottom: 25px;
-	margin-top: 25px;
-	min-height: 250px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	overflow: hidden;
-	position: relative;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  min-height: 250px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
 
-	.pane-title {
-		padding-right: 125px;
-		color: white;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
+  .pane-title {
+    padding-right: 125px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-	.better-cph-limited__link {
-		text-align: right;
-		top: -23px;
-		position: relative;
-		z-index: 2;
-		padding-left: 1em;
-		padding-right: 1em;
-	}
+  .better-cph-limited__link {
+    text-align: right;
+    top: -23px;
+    position: relative;
+    z-index: 2;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
-	.better-cph-limited__content {
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-		.responsiveMin(@mq-bp-desktop; {
+  .better-cph-limited__content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    .responsiveMin(@mq-bp-desktop; {
       padding-left: 1em;
-			padding-right: 1em;
+      padding-right: 1em;
     });
-	}
+  }
 
-	.better-cph-limited__image {
-		bottom: 0;
-		position: absolute;
-		top: 0;
-	}
+  .better-cph-limited__image {
+    bottom: 0;
+    position: absolute;
+    top: 0;
 
-	.stats-numbers-wrapper {
-		border-top: 1px solid white;
-		margin-top: -17px;
-		padding-top: 15px;
-		position: relative;
-		z-index: 2;
-	}
+    img {
+      max-width: inherit;
+    }
+  }
 
-	.stats__items {
-		color: white;
-		margin-bottom: 25px;
+  .stats-numbers-wrapper {
+    border-top: 1px solid white;
+    margin-top: -17px;
+    padding-top: 15px;
+    position: relative;
+    z-index: 2;
+  }
 
-		.responsiveMin(@mq-bp-desktop; {
-			float: left;
+  .stats__items {
+    color: white;
+    margin-bottom: 25px;
+
+    .responsiveMin(@mq-bp-desktop; {
+      float: left;
       .span-columns(3);
     });
 
-		&:first-child {
-			clear: both;
-		}
+    &:first-child {
+      clear: both;
+    }
 
-		&:first-child + div + div {
-			margin-right: 0;
-		}
-	}
+    &:first-child + div + div {
+      margin-right: 0;
+    }
+  }
 
-	.stats__number {
-		line-height: 1;
-		padding-top: 5px;
+  .stats__number {
+    line-height: 1;
+    padding-top: 5px;
 
-		a {
-			color: white;
-			font-size: 2em;
-			font-weight: bold;
-		}
-	}
+    a {
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
 }
