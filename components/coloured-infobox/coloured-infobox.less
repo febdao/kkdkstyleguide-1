@@ -3,16 +3,21 @@
 .coloured-infobox {
   .clearleft;
 
-  margin: 0 -17.5px;
+  .responsiveMin(@mq-bp-tablet-plus; {
+    margin-left: -17.5px;
+    margin-right: -17.5px;
+  });
 
   &__item {
     float: left;
-    padding: 0 17.5px;
+
     margin-bottom: 12px;
     width: 100%;
 
     .responsiveMin(@mq-bp-tablet-plus; {
       .span-columns(2);
+
+      padding: 0 17.5px;
     });
 
     .responsiveMin(@mq-bp-desktop; {

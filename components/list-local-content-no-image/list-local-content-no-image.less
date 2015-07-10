@@ -3,16 +3,20 @@
 .list-local-content {
   .clearleft();
 
-  margin: 0 -17.5px;
+  .responsiveMin(@mq-bp-tablet-plus; {
+    margin-left: -17.5;
+    margin-right: -17.5;
+  });
 
   &__item {
     float: left;
     margin-bottom: 1em;
-    padding: 0 17.5px;
     width: 100%;
 
     .responsiveMin(@mq-bp-tablet-plus; {
       .span-columns(2);
+
+      padding: 0 17.5px;
     });
 
     .responsiveMin(@mq-bp-desktop; {

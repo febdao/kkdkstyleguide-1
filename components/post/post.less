@@ -5,16 +5,20 @@
 .post {
   .clearleft;
 
-  margin: 0 -4px;
+  .responsiveMin(@mq-bp-tablet-plus; {
+    margin-left: -4px;
+    margin-right: -4px;
+  });
 
   &__item {
     float: left;
     margin-bottom: 12px;
-    padding: 0 4px;
     width: 100%;
 
     .responsiveMin(@mq-bp-tablet-plus; {
       .span-columns(2);
+
+      padding: 0 4px;
     });
 
     .responsiveMin(@mq-bp-desktop; {
