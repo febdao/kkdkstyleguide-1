@@ -93,8 +93,8 @@
 }
 .accordion .accordion_item .ui-accordion-header-icon {
   background: none;
-  text-indent: 0;
   left: 1em;
+  text-indent: 0;
 }
 .accordion .accordion_item .ui-accordion-header-icon:before {
   font-family: 'icomoon';

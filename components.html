@@ -1439,7 +1439,7 @@
                 <div>
                   <div class="form-item form-type-select form-item-facets">
                     <label for="edit-facets--5" class="element-invisible">Filtrér efter Search page facet</label>
-                    <select id="edit-facets--5" name="" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
+                    <select id="edit-facets--5" name="" multiple="multiple" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
                       <option value="">Kultur</option>
                       <option value="">Digital borger</option>
                       <option value="">It</option>
@@ -1449,8 +1449,6 @@
                   <input type="submit" class="form-submit" value="Indsend" name="op" id="edit-submit--7">
                 </div>
               </form>
-
-              <!-- multiple="multiple" -->
 
             </div>
             <button class="show-code">Show/Hide Code</button>
@@ -1467,7 +1465,7 @@
 
       <label for="edit-facets--5" class="element-invisible">Filtrér efter Search page facet </label>
 
-      <select id="edit-facets--5" name="" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
+      <select id="edit-facets--5" name="" multiple="multiple" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
 
         <option value="">Kultur</option>
 
@@ -1489,17 +1487,17 @@
 
 
 
-<!-- multiple="multiple" -->
-
-
-
           </pre>
               </div>
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
 
-          .filter .chosen-container {
+          .filter .form-select {
+  padding: 5px;
+  width: 100%;
+}
+.filter .chosen-container {
   font-size: 0.88889em;
   max-width: 100%;
 }
@@ -2915,8 +2913,8 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
 }
 .accordion .accordion_item .ui-accordion-header-icon {
   background: none;
-  text-indent: 0;
   left: 1em;
+  text-indent: 0;
 }
 .accordion .accordion_item .ui-accordion-header-icon:before {
   font-family: 'icomoon';
