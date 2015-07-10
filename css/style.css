@@ -117,29 +117,6 @@
     font-size: 42px;
   }
 }
-.bef-link {
-  color: #fff;
-}
-
-.bef-link .form-type-bef-link {
-  background-color: #e2e2e2;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.bef-link .form-type-bef-link a {
-  display: block;
-  padding: 5px 10px;
-  color: #444444;
-}
-
-.bef-link .form-type-bef-link.selected {
-  background-color: #00ba5a;
-}
-
-.bef-link .form-type-bef-link.selected a {
-  color: #fff;
-}
 .better-cph-limited {
   margin-bottom: 25px;
   margin-top: 25px;
@@ -221,6 +198,29 @@
   color: white;
   font-size: 2em;
   font-weight: bold;
+}
+.bef-link {
+  color: #fff;
+}
+
+.bef-link .form-type-bef-link {
+  background-color: #e2e2e2;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.bef-link .form-type-bef-link a {
+  display: block;
+  padding: 5px 10px;
+  color: #444444;
+}
+
+.bef-link .form-type-bef-link.selected {
+  background-color: #00ba5a;
+}
+
+.bef-link .form-type-bef-link.selected a {
+  color: #fff;
 }
 .box-list-without-bullets {
   border: 1px solid #ebebeb;
@@ -387,6 +387,16 @@
   }
 }
 
+.contact .group-contact-info__inner {
+  margin-bottom: 42px;
+}
+
+.contact .group-contact-info__inner:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 
 .filter .chosen-container {
   font-size: 0.88889em;
@@ -401,6 +411,9 @@
 }
 
 .filter .chosen-container .chosen-choices {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   line-height: 39px;
 }
 
@@ -1148,6 +1161,25 @@ table {
   padding: 42px;
 }
 
+.page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: white;
+  border-color: #cbd0d3 #cbd0d3 white;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 2px 0 0 rgba(68, 68, 68, 0.15);
+  padding: 0;
+  z-index: 100;
+}
+
+.page div.horizontal-tabs ul.horizontal-tabs-list {
+  overflow: inherit;
+}
+
 .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1179,6 +1211,12 @@ table {
 
 .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
   border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
+    border: 0;
+  }
 }
 
 @media (min-width: 768px) {
