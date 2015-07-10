@@ -3,16 +3,20 @@
 .image-link {
   .clearleft();
 
-  margin: 0 -18px;
+  .responsiveMin(@mq-bp-tablet-plus; {
+    margin-left: -18px;
+    margin-right: -18px;
+  });
 
   &__item {
     float: left;
     margin-bottom: 12px;
-    padding: 0 18px;
     width: 100%;
 
     .responsiveMin(@mq-bp-tablet-plus; {
       .span-columns(2);
+
+      padding: 0 18px;
     });
 
     .responsiveMin(@mq-bp-desktop; {
