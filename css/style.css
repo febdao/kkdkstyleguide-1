@@ -772,7 +772,6 @@
   z-index: 10;
 }
 
-
 .image-link {
   margin: 0 -18px;
 }
@@ -828,6 +827,7 @@
 .image-link__info a {
   color: #ffffff;
 }
+
 .list-icon {
   margin-bottom: 20px;
 }
