@@ -299,6 +299,10 @@
   top: 0;
 }
 
+.better-cph-limited .better-cph-limited__image img {
+  max-width: inherit;
+}
+
 .better-cph-limited .stats-numbers-wrapper {
   border-top: 1px solid white;
   margin-top: -17px;
@@ -768,7 +772,6 @@
   z-index: 10;
 }
 
-
 .image-link {
   margin: 0 -18px;
 }
@@ -824,6 +827,7 @@
 .image-link__info a {
   color: #ffffff;
 }
+
 .list-icon {
   margin-bottom: 20px;
 }

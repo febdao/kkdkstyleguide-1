@@ -36,6 +36,9 @@
   position: absolute;
   top: 0;
 }
+.better-cph-limited .better-cph-limited__image img {
+  max-width: inherit;
+}
 .better-cph-limited .stats-numbers-wrapper {
   border-top: 1px solid white;
   margin-top: -17px;

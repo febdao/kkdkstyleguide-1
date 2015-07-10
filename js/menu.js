@@ -19,7 +19,6 @@ function getInternetExplorerVersion()
   $(document).ready(function(){
     var menu_section = $('.sec-menu .sec-inner');
     var main_menu = $('#main-menu', menu_section);
-    alert(main_menu);
     var ie_version = getInternetExplorerVersion();
 
     if (main_menu.length) {
