@@ -81,6 +81,12 @@
   padding: 1em 2em 1em 2.5em;
   text-transform: uppercase;
 }
+.accordion .accordion_item,
+.accordion .accordion_item:active,
+.accordion .accordion_item:hover,
+.accordion .accordion_item:focus {
+  outline: none;
+}
 .accordion .accordion_item:before {
   position: absolute;
   left: 0;
