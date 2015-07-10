@@ -1,3 +1,7 @@
+.filter .form-select {
+  padding: 5px;
+  width: 100%;
+}
 .filter .chosen-container {
   font-size: 0.88889em;
   max-width: 100%;

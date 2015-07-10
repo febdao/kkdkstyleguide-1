@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="components/flexslider/flexslider.css">
   <link rel="stylesheet" type="text/css" href="css/helper-class.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/app.css">
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
@@ -1438,7 +1439,7 @@
                 <div>
                   <div class="form-item form-type-select form-item-facets">
                     <label for="edit-facets--5" class="element-invisible">Filtrér efter Search page facet</label>
-                    <select id="edit-facets--5" name="" multiple="multiple" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
+                    <select id="edit-facets--5" name="" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
                       <option value="">Kultur</option>
                       <option value="">Digital borger</option>
                       <option value="">It</option>
@@ -1449,7 +1450,7 @@
                 </div>
               </form>
 
-              <script type="text/javascript"></script>
+              <!-- multiple="multiple" -->
 
             </div>
             <button class="show-code">Show/Hide Code</button>
@@ -1466,7 +1467,7 @@
 
       <label for="edit-facets--5" class="element-invisible">Filtrér efter Search page facet </label>
 
-      <select id="edit-facets--5" name="" multiple="multiple" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
+      <select id="edit-facets--5" name="" class="facetapi-multiselect facetapi-multiselect-sm-search-terms form-select">
 
         <option value="">Kultur</option>
 
@@ -1488,7 +1489,7 @@
 
 
 
-<script type="text/javascript"></script>
+<!-- multiple="multiple" -->
 
 
 
@@ -1823,91 +1824,48 @@
                 <pre class="brush: css">
 
           .personlige-forhold {
-
   margin-left: auto;
-
   margin-right: auto;
-
   max-width: 59em;
-
   padding-bottom: 0 !important;
-
   padding-left: 1em;
-
   padding-right: 1em;
-
   padding-top: 1em;
-
   position: relative;
-
 }
-
 .personlige-forhold:after {
-
   clear: both;
-
   content: '';
-
   display: table;
-
 }
-
 .personlige-forhold__info h2 {
-
   font-size: 2em;
-
   line-height: 1em;
-
   text-transform: uppercase;
-
 }
-
 @media (min-width: 768px) {
-
   .personlige-forhold__info {
-
     margin-right: 0.84034%;
-
     padding-bottom: 28px;
-
     width: 66.3866%;
-
     float: left;
-
   }
-
 }
-
 .personlige-forhold__description {
-
   font-size: 1.22222em;
-
   line-height: 1.4em;
-
   margin-top: 5px;
-
 }
-
 @media (min-width: 768px) {
-
   .personlige-forhold__image {
-
     float: right;
-
     margin-right: 0;
-
     margin-top: -28px;
-
     position: absolute;
-
     right: 0;
-
     width: 32.7731%;
-
     bottom: 0;
-
   }
-
 }
 
           </pre>
@@ -2212,27 +2170,16 @@
                 <pre class="brush: css">
 
           .box-list-without-bullets {
-
   border: 1px solid #ebebeb;
-
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   padding: 28px;
-
 }
-
 .box-list-without-bullets > .title {
-
   margin-bottom: 1em;
-
   margin-top: 0;
-
   font-size: 1.11111em;
-
 }
 
           </pre>
@@ -2873,134 +2820,172 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 <h2 class="component--source--title">Style</h2>
                 <pre class="brush: css">
 
-          .accordion .ui-accordion-header {
-
-  border-bottom: 2px solid #cbd0d3;
-
-  color: #007ea4;
-
-  cursor: pointer;
-
-  font-size: 14px;
-
+          .accordion {
   margin: 0;
-
-  padding: 1em 2em 1em 2.5em;
-
-  position: relative;
-
+  padding: 0;
+  font-size: 0.88889em;
+  font-family: "Gill Sans W04", "Gill Sans", serif;
+}
+.accordion h1 {
+  font-size: em(20, 18);
   text-transform: uppercase;
-
-}
-
-.accordion .ui-accordion-header:before {
-
-  bottom: 0;
-
-  content: '';
-
-  left: 0;
-
-  max-width: 4px;
-
-  position: absolute;
-
-  top: 0;
-
-  width: 4px;
-
-}
-
-.accordion .ui-accordion-header:hover {
-
-  background-color: #ebebeb;
-
-}
-
-.accordion .ui-accordion-header:hover:before {
-
-  border-left: 4px solid #007ea4;
-
-}
-
-.accordion .ui-accordion-header .ui-accordion-header-icon {
-
-  left: 1em;
-
-  margin-top: -8px;
-
-  position: absolute;
-
-  top: 50%;
-
-}
-
-.accordion .ui-accordion-header .ui-accordion-header-icon:before {
-
-  color: #007ea4;
-
-  content: '\e615';
-
-  font-family: "icomoon";
-
-  font-style: normal;
-
-  font-variant: normal;
-
+  margin-bottom: 0.5em;
   font-weight: normal;
-
-  line-height: 1;
-
-  text-transform: none;
-
 }
-
-.accordion #ui-id-1.accordion_item {
-
-  border-top: 2px solid transparent;
-
+.accordion__content {
+  overflow: auto !important;
+  background: none #ebebeb;
+  height: 100% !important;
+  border: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin: 0;
 }
-
-.accordion #ui-id-1.accordion_item:hover,
-
-.accordion #ui-id-1.ui-accordion-header-active {
-
-  border-top: 2px solid #cbd0d3;
-
+.accordion .ui-widget-content {
+  overflow: auto !important;
+  background: #ebebeb;
+  height: 100% !important;
+  border: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin: 0;
 }
-
-.accordion .ui-accordion-content {
-
+.accordion .ui-state-default,
+.accordion .ui-widget-content .ui-state-default,
+.accordion .ui-widget-header .ui-state-default {
+  background: #fff;
+  border: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   border-bottom: 2px solid #cbd0d3;
-
-  padding: 1em 2.2em;
-
+  margin-top: 0;
 }
-
-.accordion .ui-accordion-header-active,
-
-.accordion .ui-accordion-content-active {
-
-  background-color: #cbd0d3;
-
+.accordion .ui-state-default a,
+.accordion .ui-widget-content .ui-state-default a,
+.accordion .ui-widget-header .ui-state-default a {
+  color: #007ea4;
 }
-
-.accordion .ui-accordion-header-active {
-
-  color: #444444;
-
+.accordion .ui-state-hover,
+.accordion .ui-widget-content .ui-state-hover,
+.accordion .ui-widget-header .ui-state-hover {
+  background: none #ebebeb;
+  border: 0;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 2px solid #cbd0d3;
 }
-
-.accordion .ui-accordion-header-active:before {
-
+.accordion .ui-state-hover a,
+.accordion .ui-widget-content .ui-state-hover a,
+.accordion .ui-widget-header .ui-state-hover a {
+  color: #000;
+}
+.accordion .ui-state-active a,
+.accordion .ui-state-active a:link,
+.accordion .ui-state-active a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+.accordion .ui-state-active a a,
+.accordion .ui-state-active a:link a,
+.accordion .ui-state-active a:visited a {
+  color: #000;
+}
+.accordion .accordion_item {
+  color: #000;
+  font-size: 0.9375em;
+  font-weight: 400;
+  padding: 1em 2em 1em 2.5em;
+  text-transform: uppercase;
+}
+.accordion .accordion_item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: ' ';
+  width: 4px;
+  max-width: 4px;
+  border-left: 4px solid #fff;
+}
+.accordion .accordion_item .ui-accordion-header-icon {
+  background: none;
+  text-indent: 0;
+  left: 1em;
+}
+.accordion .accordion_item .ui-accordion-header-icon:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.accordion .accordion_item .ui-accordion-header-icon:before {
+  color: #007ea4;
+  font-size: 0.8em;
+  font-weight: 600;
+  visibility: visible;
+  content: '\e615';
+}
+.accordion .ui-accordion-content {
+  border-bottom: 2px solid #cbd0d3;
+}
+.accordion .accordion_item.ui-state-active,
+.accordion .accordion_item.ui-state-focus,
+.accordion .accordion_item.ui-state-hover {
+  background: none #ebebeb;
+  border-bottom: 2px solid #cbd0d3;
+}
+.accordion .accordion_item.ui-state-active:before,
+.accordion .accordion_item.ui-state-focus:before,
+.accordion .accordion_item.ui-state-hover:before {
   border-left: 4px solid #007ea4;
-
 }
-
-.accordion .ui-accordion-header-active .ui-accordion-header-icon:before {
-
+.accordion .accordion_item.ui-state-active .ui-accordion-header-icon:before {
   content: '\e613';
-
+}
+.accordion .accordion_item:first-child {
+  border-top: 2px solid #fff;
+}
+.accordion .accordion_item.ui-state-focus:first-child,
+.accordion .accordion_item.ui-state-hover:first-child {
+  border-top: 2px solid #cbd0d3;
+}
+.accordion .field-name-field-image-single {
+  clear: both;
+}
+.accordion .ui-corner-all,
+.accordion .ui-corner-top,
+.accordion .ui-corner-left,
+.accordion .ui-corner-tl {
+  border-top-left-radius: 0;
+}
+.accordion .ui-corner-all,
+.accordion .ui-corner-top,
+.accordion .ui-corner-right,
+.accordion .ui-corner-tr {
+  border-top-right-radius: 0;
+}
+.accordion .ui-corner-all,
+.accordion .ui-corner-bottom,
+.accordion .ui-corner-left,
+.accordion .ui-corner-bl {
+  border-bottom-left-radius: 0;
+}
+.accordion .ui-corner-all,
+.accordion .ui-corner-bottom,
+.accordion .ui-corner-right,
+.accordion .ui-corner-br {
+  border-bottom-right-radius: 0;
 }
 
           </pre>
@@ -3122,35 +3107,20 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 <pre class="brush: css">
 
           .related-files {
-
   border: 1px solid #ebebeb;
-
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   margin-bottom: 28px;
-
   padding: 28px;
-
 }
-
 .related-files__title {
-
   margin-bottom: 18px;
-
   font-size: 1.33333em;
-
   line-height: 1.15em;
-
 }
-
 .related-files__type {
-
   margin-bottom: 2px;
-
 }
 
           </pre>
@@ -3318,103 +3288,54 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                 <pre class="brush: css">
 
           .service {
-
   border: 1px solid #ebebeb;
-
   -moz-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   -webkit-box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   box-shadow: 3px 3px 0 rgba(68, 68, 68, 0.15), 0 0 1px rgba(68, 68, 68, 0.15);
-
   background: none repeat scroll 0 0 #00acdd;
-
   color: white;
-
   line-height: 1.1;
-
   min-height: 94px;
-
   padding: 20px 90px 20px 20px;
-
   position: relative;
-
 }
-
 .service:after {
-
   background: url("../../images/self-service-provided.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-
   content: " ";
-
   display: block;
-
   height: 54px;
-
   position: absolute;
-
   right: 20px;
-
   top: 20px;
-
   width: 55px;
-
   z-index: 1;
-
 }
-
 .service__title {
-
   font-size: 1.22222em;
-
   text-transform: uppercase;
-
 }
-
 .service__content {
-
   margin-top: 6px;
-
 }
-
 .service__link {
-
   display: block;
-
   height: 100%;
-
   left: 0;
-
   overflow: hidden;
-
   position: absolute;
-
   top: 0;
-
   width: 100%;
-
   z-index: 2;
-
 }
-
 .service__link a {
-
   padding-left: 100%;
-
   width: 0;
-
   z-index: 3;
-
   left: 0;
-
   overflow: hidden;
-
   position: absolute;
-
   top: 0;
-
   bottom: 0;
-
 }
 
           </pre>
@@ -3927,95 +3848,50 @@ table {
                 <pre class="brush: css">
 
           .horizontal-tabs .horizontal-tab-hidden {
-
   display: block;
-
   position: absolute;
-
   top: -100000px;
-
   width: 100%;
-
   left: 0;
-
 }
-
 .horizontal-tabs .horizontal-tabs-pane {
-
   padding: 42px;
-
 }
-
 .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
-
   -webkit-box-shadow: none;
-
   -moz-box-shadow: none;
-
   box-shadow: none;
-
   -moz-border-bottom-colors: none;
-
   -moz-border-left-colors: none;
-
   -moz-border-right-colors: none;
-
   -moz-border-top-colors: none;
-
   background-color: transparent;
-
   border-color: -moz-use-text-color transparent;
-
   border-image: none;
-
   border-style: none solid;
-
   border-width: 0 1px;
-
   display: inline-block;
-
   float: inherit;
-
   font-weight: bold;
-
   margin: 0 3px -1px 0;
-
   padding: 0;
-
   text-align: center;
-
   width: 100%;
-
   border: 1px solid #ccc;
-
 }
-
 .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button a:hover {
-
   -webkit-box-shadow: none;
-
   -moz-box-shadow: none;
-
   box-shadow: none;
-
 }
-
 .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button.selected a {
-
   border-bottom: 1px solid #ccc;
-
 }
-
 @media (min-width: 768px) {
-
   .page div.horizontal-tabs ul.horizontal-tabs-list .horizontal-tab-button {
-
     width: auto;
-
     border: 0;
-
   }
-
 }
 
           </pre>
@@ -4649,35 +4525,20 @@ table {
                 <pre class="brush: css">
 
           .list-image {
-
   margin: 0 -2.5px;
-
 }
-
 .list-image:after {
-
   clear: both;
-
   content: '';
-
   display: table;
-
 }
-
 .list-image a {
-
   float: left;
-
   padding: 0 2.5px 5px;
-
 }
-
 .list-image a img {
-
   height: 193px;
-
   width: 193px;
-
 }
 
           </pre>
@@ -4998,55 +4859,30 @@ table {
                 <pre class="brush: css">
 
           .list-icon {
-
   margin-bottom: 20px;
-
 }
-
 .list-icon:before,
-
 .list-icon:after {
-
   content: '';
-
   display: table;
-
 }
-
 .list-icon:after {
-
   clear: both;
-
 }
-
 .list-icon li {
-
   width: 100%;
-
   float: left;
-
   margin: 10px 0;
-
 }
-
 @media (min-width: 480px) {
-
   .list-icon li {
-
     width: 50%;
-
   }
-
 }
-
 @media (min-width: 768px) {
-
   .list-icon li {
-
     width: 33.33333333%;
-
   }
-
 }
 
           </pre>
