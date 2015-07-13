@@ -425,14 +425,7 @@
   float: left;
   margin: 0 0 2px;
 }
-<<<<<<< HEAD
 
-.coloured-infobox {
-  margin: 0 -17.5px;
-}
-
-=======
->>>>>>> 0fafb20dae0a15010d83ee27ff29084be2063ab1
 .coloured-infobox:after {
   clear: both;
   content: '';
