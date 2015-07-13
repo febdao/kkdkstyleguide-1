@@ -36,11 +36,16 @@ Open command prompt (window) or terminal (ubuntu ... )
 * File css save style component
 * Open [dir project]/components.twig , find row {% set list_components = [
 * Add structure to last row
+
   {
+
     'id':'[name-folder]',
+
     'name': '[Description of component]'
+
   }
 
 **Run again 'gulp' command if after create new component**
 
 ## tks!!!
+
