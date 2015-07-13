@@ -1,8 +1,3 @@
-table.sticky-header {
-  background-color: #fff;
-  margin-top: 0;
-  font-size: 18px;
-}
 table {
   display: inline-block;
   width: 100%;
@@ -17,28 +12,22 @@ table {
     display: table;
   }
 }
-.sticky-header {
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
+table.tablefield {
+  font-size: 0.88889em;
 }
-.sticky-header thead {
-  display: table-header-group !important;
-}
-.sticky-header thead tr {
-  background-color: #f4f4f4;
-}
-.sticky-header thead th {
-  background-color: #f4f4f4;
-  border: 1px solid #ebebeb;
-  font-weight: bold;
-  padding: 0.8em;
-  text-align: left;
-  word-wrap: break-word;
+@media (min-width: 768px) {
+  table.tablefield {
+    font-size: 18px;
+  }
 }
 .table-link table {
   width: 100%;
-  font-size: 18px;
+  font-size: 0.88889em;
+}
+@media (min-width: 768px) {
+  .table-link table {
+    font-size: 18px;
+  }
 }
 .table-link table thead tr {
   background-color: whitesmoke;
