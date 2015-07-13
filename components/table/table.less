@@ -1,45 +1,21 @@
 @import '../helper.less';
 
-table.sticky-header {
-  background-color: #fff;
-  margin-top: 0;
-}
-
 table {
 	display: inline-block;
   width: 100%;
   overflow-x: auto;
+  margin-bottom: 20px;
 
   .responsiveMin(@mq-bp-desktop; {
 		border-collapse: collapse;
-	  font-size: 0.88889em;
 	  table-layout: fixed;
 	  overflow: none;
 	  display: table;
   });
 }
-
-.sticky-header {
-  border-collapse: collapse;
-  font-size: 0.88889em;
-  table-layout: fixed;
-  width: 100%;
-
-  thead {
-	  display: table-header-group !important;
-	  font-size: 18px;
-
-	  tr {
-		  background-color: #f4f4f4;
-		}
-
-		th {
-		  background-color: #f4f4f4;
-		  border: 1px solid #ebebeb;
-		  font-weight: bold;
-		  padding: 0.8em;
-		  text-align: left;
-		  word-wrap: break-word;
-		}
-	}
+table.tablefield {
+	font-size: 0.88889em;
+	.responsiveMin(@mq-bp-desktop; {
+  	font-size: 18px;
+  });
 }

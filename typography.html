@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/shCore.css">
   <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
   <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
-  <link rel="stylesheet" type="text/css" href="components/flexslider/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="components/table/table.css">
   <link rel="stylesheet" type="text/css" href="css/helper-class.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
   <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -54,6 +54,8 @@
             </li>
             <li><a class="page-grid" href="grid.html">Grid</a>
             </li>
+            <li><a class="page-color" href="color.html">Color</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -73,35 +75,23 @@
               <div class="kkdk-menu-description">Københavns kommune har tilbud til ældre, borgere med handicap, med psykisk sygdom, udsatte børn, unge og familier og hjemløse</div>
             </div>
           </div>
-          <div class="component--item">
-            <h2 class="component--title">Main color</h2>
-            <div class="component--demo">
-              <label>Primary Color</label>
-              <div class="styleguide-color" style="background: #007ea4;">#007ea4</div>
-              <hr>
-              <label>Default text color</label>
-              <div class="styleguide-color" style="background: #444444;">#444444</div>
-              <hr>
-              <label>Default link color</label>
-              <div class="styleguide-color" style="background: #007ea4;">#007ea4</div>
-              <hr>
-              <label>Default button color</label>
-              <div class="styleguide-color" style="background: #007ea4;">#007ea4</div>
-              <hr>
-              <label>Default button hover color</label>
-              <div class="styleguide-color" style="background: #181313;">#181313</div>
-              <hr>
-              <label>Default gray color</label>
-              <div class="styleguide-color" style="background: #EBEBEB;">#ebebeb</div>
-            </div>
-          </div>
 
           <div class="component--item">
             <h2 class="component--title">Typography</h2>
             <div class="component--demo">
               <h2 class="page-header">Headings</h2>
               <hr>
-              <h1>H1 Title Heading</h1>
+              <div class="pane-most-read-pages-most-read-pages">
+                <h2 class="most-read-pages-title">Mest læste sider</h2>
+              </div>
+              <div class="title-page bl-title ">
+                <h1>Sådan styres København</h1>
+              </div>
+              <div class="panel-pane">
+                <h2 class="pane-title">Begivenheder i byen</h2>
+              </div>
+
+              <h1>H1 Title Heading </h1>
               <p>Vestibulum eget libero velit, at sollicitudin ipsum. Vivamus tellus ante, lobortis eu posuere sed, bibendum eu erat.</p>
               <br>
               <h2>H2 Title Heading</h2>
@@ -128,6 +118,7 @@
               <p>And a kind of amused awe. How could I describe our relationship even to myself without either disparaging it or insulting it with the tawdry decoration of sentimentality? For this our delicate balance of dependence and independence, this
                 coolly critical, shrewdly ridiculing, but loving mutual contact, was surely a microcosm of true community, was after all in its simple style an actual and living example of that high goal which the world seeks.</p>
               <br>
+
               <h2 class="page-header">Blockquotes</h2>
               <hr>
               <blockquote>
@@ -178,48 +169,112 @@
             <h2 class="component--title">Table</h2>
             <div class="component--demo">
               <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table">
+                  <table id="tablefield-0" class="tablefield sticky-enabled tableheader-processed sticky-table">
+                    <thead>
+                      <tr>
+                        <th class="row_0 col_0">
+                          <p>ETABLERINGS- STØTTE (2015)</p>
+                        </th>
+                        <th class="row_0 col_1">
+                          <p>Ved udrejse</p>
+                        </th>
+                        <th class="row_0 col_2">
+                          <p>Efter 1 år i hjemlandet</p>
+                        </th>
+                        <th class="row_0 col_3">
+                          <p>I alt pr. person</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="odd">
+                        <td class="row_1 col_0">
+                          <p>Hvis du er over 18 år</p>
+                        </td>
+                        <td class="row_1 col_1">
+                          <p>51.772 kr.</p>
+                        </td>
+                        <td class="row_1 col_2">
+                          <p>77.658 kr.</p>
+                        </td>
+                        <td class="row_1 col_3">
+                          <p>129.430 kr.</p>
+                        </td>
+                      </tr>
+                      <tr class="even">
+                        <td class="row_2 col_0">
+                          <p>Hvis du er under 18 år</p>
+                        </td>
+                        <td class="row_2 col_1">
+                          <p>15.789 kr.</p>
+                        </td>
+                        <td class="row_2 col_2">
+                          <p>23.684 kr.</p>
+                        </td>
+                        <td class="row_2 col_3">
+                          <p>39.473 kr.</p>
+                        </td>
+                      </tr>
+                      <tr class="odd">
+                        <td class="row_1 col_0">
+                          <p>Hvis du er over 18 år</p>
+                        </td>
+                        <td class="row_1 col_1">
+                          <p>51.772 kr.</p>
+                        </td>
+                        <td class="row_1 col_2">
+                          <p>77.658 kr.</p>
+                        </td>
+                        <td class="row_1 col_3">
+                          <p>129.430 kr.</p>
+                        </td>
+                      </tr>
+                      <tr class="even">
+                        <td class="row_2 col_0">
+                          <p>Hvis du er under 18 år</p>
+                        </td>
+                        <td class="row_2 col_1">
+                          <p>15.789 kr.</p>
+                        </td>
+                        <td class="row_2 col_2">
+                          <p>23.684 kr.</p>
+                        </td>
+                        <td class="row_2 col_3">
+                          <p>39.473 kr.</p>
+                        </td>
+                      </tr>
+                      <tr class="odd">
+                        <td class="row_1 col_0">
+                          <p>Hvis du er over 18 år</p>
+                        </td>
+                        <td class="row_1 col_1">
+                          <p>51.772 kr.</p>
+                        </td>
+                        <td class="row_1 col_2">
+                          <p>77.658 kr.</p>
+                        </td>
+                        <td class="row_1 col_3">
+                          <p>129.430 kr.</p>
+                        </td>
+                      </tr>
+                      <tr class="even">
+                        <td class="row_2 col_0">
+                          <p>Hvis du er under 18 år</p>
+                        </td>
+                        <td class="row_2 col_1">
+                          <p>15.789 kr.</p>
+                        </td>
+                        <td class="row_2 col_2">
+                          <p>23.684 kr.</p>
+                        </td>
+                        <td class="row_2 col_3">
+                          <p>39.473 kr.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -334,6 +389,7 @@
               </form>
             </div>
           </div>
+
 
 
 
