@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/shCore.css">
   <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
   <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
-  <link rel="stylesheet" type="text/css" href="components/flexslider/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="components/table/table.css">
   <link rel="stylesheet" type="text/css" href="css/helper-class.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
   <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -2848,6 +2848,78 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
                   </tbody>
                 </table>
               </div>
+
+              <div class="table-link">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="table-link__name">
+                        <a class="active" title="sorter efter Kontrakttype" href="/udbud?order=name&amp;sort=asc">Kontrakttype</a>
+                      </th>
+                      <th class="table-link__title">
+                        <a class="active" title="sorter efter Titel" href="/udbud?order=title&amp;sort=asc">Titel</a>
+                      </th>
+                      <th class="table-link__announced">
+                        <a class="active" title="sorter efter Offentliggjort" href="/udbud?order=field_announced_1&amp;sort=asc">Offentliggjort</a>
+                      </th>
+                      <th class="table-link__announced-1">
+                        <a class="active" title="sorter efter Ansøgningsfrist" href="/udbud?order=field_submit&amp;sort=asc">Ansøgningsfrist</a>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd views-row-first view-tender-click-processed">
+                      <td class="table-link__name">Varer og tjenesteydelser</td>
+                      <td class="table-link__title">
+                        <a href="#">Rejseplansintegration i den kvikke vej</a>
+                      </td>
+                      <td class="table-link__announced">
+                        <span class="date-display-single">09.07.2015</span>
+                      </td>
+                      <td class="table-link__announced-1">
+                        <span class="date-display-single">10.08.2015</span>
+                      </td>
+                    </tr>
+                    <tr class="even view-tender-click-processed">
+                      <td class=" views-field-name">Varer og tjenesteydelser</td>
+                      <td class=" views-field-title">
+                        <a href="#">El-biler og Plug-in Hybridbiler</a>
+                      </td>
+                      <td class=" views-field-field-announced-1">
+                        <span class="date-display-single">03.07.2015</span>
+                      </td>
+                      <td class=" views-field-field-submit">
+                        <span class="date-display-single">11.08.2015</span>
+                      </td>
+                    </tr>
+                    <tr class="odd view-tender-click-processed">
+                      <td class=" views-field-name">Varer og tjenesteydelser</td>
+                      <td class=" views-field-title">
+                        <a href="/indhold/nyt-eoj-system">Nyt EOJ-system</a>
+                      </td>
+                      <td class=" views-field-field-announced-1">
+                        <span class="date-display-single">26.06.2015</span>
+                      </td>
+                      <td class=" views-field-field-submit">
+                        <span class="date-display-single">20.08.2015</span>
+                      </td>
+                    </tr>
+                    <tr class="even view-tender-click-processed">
+                      <td class=" views-field-name">Varer og tjenesteydelser</td>
+                      <td class=" views-field-title">
+                        <a href="/indhold/brintbiler">Brintbiler</a>
+                      </td>
+                      <td class=" views-field-field-announced-1">
+                        <span class="date-display-single">29.06.2015</span>
+                      </td>
+                      <td class=" views-field-field-submit">
+                        <span class="date-display-single">10.08.2015</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
             </div>
             <button class="show-code">Show/Hide Code</button>
             <div class="component--source element-invisible">
@@ -2903,7 +2975,79 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
       </tr>
     </tbody>
   </table>
-</div>          </pre>
+</div>
+
+<div class="table-link">
+  <table>
+    <thead>
+      <tr>
+        <th class="table-link__name">
+            <a class="active" title="sorter efter Kontrakttype" href="/udbud?order=name&amp;sort=asc">Kontrakttype</a>
+        </th>
+        <th class="table-link__title">
+            <a class="active" title="sorter efter Titel" href="/udbud?order=title&amp;sort=asc">Titel</a>
+        </th>
+        <th class="table-link__announced">
+            <a class="active" title="sorter efter Offentliggjort" href="/udbud?order=field_announced_1&amp;sort=asc">Offentliggjort</a>
+        </th>
+        <th class="table-link__announced-1">
+            <a class="active" title="sorter efter Ansøgningsfrist" href="/udbud?order=field_submit&amp;sort=asc">Ansøgningsfrist</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd views-row-first view-tender-click-processed">
+        <td class="table-link__name">Varer og tjenesteydelser</td>
+        <td class="table-link__title">
+          <a href="#">Rejseplansintegration i den kvikke vej</a>
+        </td>
+        <td class="table-link__announced">
+          <span class="date-display-single">09.07.2015</span>
+        </td>
+        <td class="table-link__announced-1">
+          <span class="date-display-single">10.08.2015</span>
+        </td>
+      </tr>
+      <tr class="even view-tender-click-processed">
+        <td class=" views-field-name">Varer og tjenesteydelser</td>
+        <td class=" views-field-title">
+          <a href="#">El-biler og Plug-in Hybridbiler</a>
+        </td>
+        <td class=" views-field-field-announced-1">
+          <span class="date-display-single">03.07.2015</span>
+        </td>
+        <td class=" views-field-field-submit">
+          <span class="date-display-single">11.08.2015</span>
+        </td>
+      </tr>
+      <tr class="odd view-tender-click-processed">
+        <td class=" views-field-name">Varer og tjenesteydelser</td>
+        <td class=" views-field-title">
+          <a href="/indhold/nyt-eoj-system">Nyt EOJ-system</a>
+        </td>
+        <td class=" views-field-field-announced-1">
+          <span  class="date-display-single">26.06.2015</span>
+        </td>
+        <td class=" views-field-field-submit">
+          <span class="date-display-single">20.08.2015</span>
+        </td>
+      </tr>
+      <tr class="even view-tender-click-processed">
+        <td class=" views-field-name">Varer og tjenesteydelser</td>
+        <td class=" views-field-title">
+          <a href="/indhold/brintbiler">Brintbiler</a></td>
+        <td class=" views-field-field-announced-1">
+          <span class="date-display-single">29.06.2015</span>
+        </td>
+        <td class=" views-field-field-submit">
+          <span class="date-display-single">10.08.2015</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+          </pre>
               </div>
               <div class="component--css">
                 <h2 class="component--source--title">Style</h2>
@@ -2911,16 +3055,17 @@ Når du bygger om, skal du være opmærksom på krav til brandsikkerhed, flugtve
           table.sticky-header {
   background-color: #fff;
   margin-top: 0;
+  font-size: 18px;
 }
 table {
   display: inline-block;
   width: 100%;
   overflow-x: auto;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   table {
     border-collapse: collapse;
-    font-size: 0.88889em;
     table-layout: fixed;
     overflow: none;
     display: table;
@@ -2928,13 +3073,11 @@ table {
 }
 .sticky-header {
   border-collapse: collapse;
-  font-size: 0.88889em;
   table-layout: fixed;
   width: 100%;
 }
 .sticky-header thead {
   display: table-header-group !important;
-  font-size: 18px;
 }
 .sticky-header thead tr {
   background-color: #f4f4f4;
@@ -2946,6 +3089,56 @@ table {
   padding: 0.8em;
   text-align: left;
   word-wrap: break-word;
+}
+.table-link table {
+  width: 100%;
+  font-size: 18px;
+}
+.table-link table thead tr {
+  background-color: whitesmoke;
+  border-top: 1px solid #dddddd;
+}
+.table-link table thead a {
+  color: #006d8c;
+  text-transform: uppercase;
+}
+.table-link table td,
+.table-link table th {
+  text-align: left;
+  vertical-align: middle;
+}
+.table-link table tr {
+  border-bottom: 1px solid #dddddd;
+}
+.table-link table tr:hover,
+.table-link table tr:hover a {
+  color: #006d8c;
+}
+.table-link table th a {
+  display: block;
+  padding: 17px 12px;
+}
+.table-link table td {
+  cursor: pointer;
+  height: 51px;
+  padding: 0 12px;
+}
+.table-link table a {
+  color: #444444;
+}
+.table-link .table-link__title a,
+.table-link .table-link__announced a,
+.table-link .table-link__announced-1 a {
+  border-left: 1px solid white;
+}
+.table-link .table-link__title {
+  width: 35%;
+}
+.table-link .table-link__announced {
+  width: 20%;
+}
+.table-link .table-link__announced-1 {
+  width: 20%;
 }          </pre>
               </div>
               <button class="hide-code">Hide Code</button>

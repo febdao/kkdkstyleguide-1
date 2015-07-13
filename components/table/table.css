@@ -1,16 +1,17 @@
 table.sticky-header {
   background-color: #fff;
   margin-top: 0;
+  font-size: 18px;
 }
 table {
   display: inline-block;
   width: 100%;
   overflow-x: auto;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   table {
     border-collapse: collapse;
-    font-size: 0.88889em;
     table-layout: fixed;
     overflow: none;
     display: table;
@@ -18,13 +19,11 @@ table {
 }
 .sticky-header {
   border-collapse: collapse;
-  font-size: 0.88889em;
   table-layout: fixed;
   width: 100%;
 }
 .sticky-header thead {
   display: table-header-group !important;
-  font-size: 18px;
 }
 .sticky-header thead tr {
   background-color: #f4f4f4;
@@ -36,4 +35,54 @@ table {
   padding: 0.8em;
   text-align: left;
   word-wrap: break-word;
+}
+.table-link table {
+  width: 100%;
+  font-size: 18px;
+}
+.table-link table thead tr {
+  background-color: whitesmoke;
+  border-top: 1px solid #dddddd;
+}
+.table-link table thead a {
+  color: #006d8c;
+  text-transform: uppercase;
+}
+.table-link table td,
+.table-link table th {
+  text-align: left;
+  vertical-align: middle;
+}
+.table-link table tr {
+  border-bottom: 1px solid #dddddd;
+}
+.table-link table tr:hover,
+.table-link table tr:hover a {
+  color: #006d8c;
+}
+.table-link table th a {
+  display: block;
+  padding: 17px 12px;
+}
+.table-link table td {
+  cursor: pointer;
+  height: 51px;
+  padding: 0 12px;
+}
+.table-link table a {
+  color: #444444;
+}
+.table-link .table-link__title a,
+.table-link .table-link__announced a,
+.table-link .table-link__announced-1 a {
+  border-left: 1px solid white;
+}
+.table-link .table-link__title {
+  width: 35%;
+}
+.table-link .table-link__announced {
+  width: 20%;
+}
+.table-link .table-link__announced-1 {
+  width: 20%;
 }

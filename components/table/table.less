@@ -3,16 +3,17 @@
 table.sticky-header {
   background-color: #fff;
   margin-top: 0;
+  font-size: 18px;
 }
 
 table {
 	display: inline-block;
   width: 100%;
   overflow-x: auto;
+  margin-bottom: 20px;
 
   .responsiveMin(@mq-bp-desktop; {
 		border-collapse: collapse;
-	  font-size: 0.88889em;
 	  table-layout: fixed;
 	  overflow: none;
 	  display: table;
@@ -21,13 +22,11 @@ table {
 
 .sticky-header {
   border-collapse: collapse;
-  font-size: 0.88889em;
   table-layout: fixed;
   width: 100%;
 
   thead {
 	  display: table-header-group !important;
-	  font-size: 18px;
 
 	  tr {
 		  background-color: #f4f4f4;
@@ -43,3 +42,62 @@ table {
 		}
 	}
 }
+
+.table-link {
+	table {
+		width: 100%;
+		font-size: 18px;
+		thead {
+			tr {
+			  background-color: whitesmoke;
+			  border-top: 1px solid #dddddd;
+			}
+
+			a {
+			  color: #006d8c;
+			  text-transform: uppercase;
+			}
+		}
+	  td, th {
+	  	text-align: left;
+	  	vertical-align: middle;
+	  }
+	  tr {
+	  	border-bottom: 1px solid #dddddd;
+	  	&:hover, &:hover a {
+			  color: #006d8c;
+			}
+	  }
+	  th a {
+		  display: block;
+		  padding: 17px 12px;
+		}
+	  td {
+	  	cursor: pointer;
+			height: 51px;
+			padding: 0 12px;
+	  }
+	  a {
+	  	color: #444444;
+	  }
+	}
+
+	.table-link__title a,
+	.table-link__announced a,
+	.table-link__announced-1 a {
+	  border-left: 1px solid white;
+	}
+
+	.table-link__title {
+		width: 35%;
+	}
+
+	.table-link__announced {
+		width: 20%;
+	}
+
+	.table-link__announced-1 {
+		width: 20%;
+	}
+}
+
