@@ -147,7 +147,11 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.markdown-body ul,
+.markdown-body ol {
+  list-style: outside none disc;
+  padding-left: 2em;
+}
 .markdown-body li>p {
   margin-top: 16px;
 }
