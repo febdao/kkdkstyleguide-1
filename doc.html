@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A demo of how to use gulp-twig" />
+  <meta name="author" content="Simon de Turck" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KK Styleguide</title>
+  <link rel="stylesheet" type="text/css" href="basetheme/css/kkms.style.css">
+  <link rel="stylesheet" type="text/css" href="basetheme/css/kkdk_styles.css">
+  <link rel="stylesheet" type="text/css" href="css/shCore.css">
+  <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
+  <link rel="stylesheet" type="text/css" href="libraries/chosen/chosen.min.css">
+  <link rel="stylesheet" type="text/css" href="components/table/table.css">
+  <link rel="stylesheet" type="text/css" href="css/helper-class.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://2nlizv2n463m4ezbxb1ci6m1.wpengine.netdna-cdn.com/wp-content/themes/woo/includes/js/jquery.flexslider.min.js?ver=2.2.2"></script>
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src='js/jquery.matchHeight.js'></script>
+  <script type="text/javascript" src='libraries/chosen/chosen.jquery.js'></script>
+  <script type="text/javascript" src='js/menu.js'></script>
+  <script type="text/javascript" src='js/script.js'></script>
+</head>
+
+<body class="node-type-section-page">
+  <div class="page">
+    <section>
+      <div class="sec sec-header">
+        <div class="sec-inner">
+          <a class="logo-page" rel="home" title="Hjem" href="/">
+            <img alt="Københavns Kommune" src="http://www.kk.dk/sites/all/themes/kkdk_theme/logo.png">
+          </a>
+        </div>
+      </div>
+      <nav class="sec sec-menu">
+        <div class="sec-inner menu-section-addings-processed">
+          <ul class="menu-main menu clearfix" id="main-menu">
+            <li><a class="page-index" href="index.html">KK Style Guide</a>
+            </li>
+            <li><a class="page-compo" href="components.html">Components</a>
+            </li>
+            <li><a class="page-typo" href="typography.html">Typography</a>
+            </li>
+            <li><a class="page-grid" href="grid.html">Grid</a>
+            </li>
+            <li><a class="page-color" href="color.html">Color</a>
+            </li>
+            <li><a class="page-doc" href="doc.html">Doc</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section id="main-content" class="sec sec-content">
+      <div class="sec-inner">
+        <div class="reg-inner-regions">
+          <div class="pagetype" data-page="page-doc"></div>
+
+          <div class="kkdk-doc">
+            <div class="boxed-group flush clearfix announce instapaper_body md" id="readme">
+              <article itemprop="mainContentOfPage" class="markdown-body entry-content">
+                <h1>
+          <a aria-hidden="true" href="#kkdkstyleguide" class="anchor" id="user-content-kkdkstyleguide">
+            <span class="octicon octicon-link"></span>
+          </a>kkdkstyleguide
+        </h1>
+                <h2>
+          <a aria-hidden="true" href="#styleguide-for-kkdk-site" class="anchor" id="user-content-styleguide-for-kkdk-site">
+            <span class="octicon octicon-link"></span>
+          </a>Styleguide for KK.dk site
+        </h2>
+                <h3>
+          <a aria-hidden="true" href="#install-nodejs" class="anchor" id="user-content-install-nodejs">
+            <span class="octicon octicon-link"></span>
+          </a>Install nodejs
+        </h3>
+                <h4>
+          <a aria-hidden="true" href="#in-window" class="anchor" id="user-content-in-window">
+            <span class="octicon octicon-link"></span>
+          </a>In window:
+        </h4>
+                <p>See page
+                  <a href="https://nodejs.org/download/">Nodejs download</a>
+                </p>
+                <h4>
+          <a aria-hidden="true" href="#in-linux-ubuntu" class="anchor" id="user-content-in-linux-ubuntu">
+            <span class="octicon octicon-link"></span>
+          </a>In linux (ubuntu...)
+        </h4>
+                <p>
+                  <code>sudo apt-get update</code>
+                </p>
+                <p>
+                  <code>sudo apt-get install nodejs</code>
+                </p>
+                <p>
+                  <code>sudo apt-get install npm</code>
+                </p>
+                <h3>
+          <a aria-hidden="true" href="#build-project" class="anchor" id="user-content-build-project">
+            <span class="octicon octicon-link"></span>
+          </a>Build project
+        </h3>
+                <p>Open command prompt node js (window) or terminal (ubuntu ... )</p>
+                <h1></h1>
+                <p>
+                  <code>npm install</code>
+                </p>
+                <h3>
+          <a aria-hidden="true" href="#run-project" class="anchor" id="user-content-run-project">
+            <span class="octicon octicon-link"></span>
+          </a>Run project
+        </h3>
+                <p>Open command prompt (window) or terminal (ubuntu ... )</p>
+                <h1></h1>
+                <p>
+                  <code>gulp</code>
+                </p>
+                <h3>
+          <a aria-hidden="true" href="#create-new-component" class="anchor" id="user-content-create-new-component">
+            <span class="octicon octicon-link"></span>
+          </a>Create new component
+        </h3>
+                <ul>
+                  <li>In folder component , create subfolder has name same name component (no space , special symbol)</li>
+                  <li>In folder yet created , create [name-folder].html and [name-folder].css</li>
+                  <li>File html save markup component</li>
+                  <li>File css save style component</li>
+                  <li>Open [dir project]/components.twig , find row "list_components"</li>
+                  <li>
+                    <p>Add structure to last row</p>
+                    <p>{</p>
+                    <p>'id':'[name-folder]',</p>
+                    <p>'name': '[Description of component]'</p>
+                    <p>}</p>
+                  </li>
+                </ul>
+                <p>
+                  <strong>Run again 'gulp' command if after create new component</strong>
+                </p>
+                <h2>
+          <a aria-hidden="true" href="#tks" class="anchor" id="user-content-tks">
+            <span class="octicon octicon-link"></span>
+          </a>tks!!!
+        </h2>
+              </article>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <a href="#" class="cd-top">Top</a>
+  <script type="text/javascript">
+    SyntaxHighlighter.all()
+  </script>
+</body>
+
+</html>

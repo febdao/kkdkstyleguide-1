@@ -1,0 +1,98 @@
+{# color.twig #}
+{% extends "includes/layout.twig" %}
+{% block doc %}
+<div class="pagetype" data-page="page-doc"></div>
+
+<div class="kkdk-doc">
+    <div class="boxed-group flush clearfix announce instapaper_body md" id="readme">
+      <article itemprop="mainContentOfPage" class="markdown-body entry-content">
+        <h1>
+          <a aria-hidden="true" href="#kkdkstyleguide" class="anchor" id="user-content-kkdkstyleguide">
+            <span class="octicon octicon-link"></span>
+          </a>kkdkstyleguide
+        </h1>
+        <h2>
+          <a aria-hidden="true" href="#styleguide-for-kkdk-site" class="anchor" id="user-content-styleguide-for-kkdk-site">
+            <span class="octicon octicon-link"></span>
+          </a>Styleguide for KK.dk site
+        </h2>
+        <h3>
+          <a aria-hidden="true" href="#install-nodejs" class="anchor" id="user-content-install-nodejs">
+            <span class="octicon octicon-link"></span>
+          </a>Install nodejs
+        </h3>
+        <h4>
+          <a aria-hidden="true" href="#in-window" class="anchor" id="user-content-in-window">
+            <span class="octicon octicon-link"></span>
+          </a>In window:
+        </h4>
+        <p>See page 
+          <a href="https://nodejs.org/download/">Nodejs download</a>
+        </p>
+        <h4>
+          <a aria-hidden="true" href="#in-linux-ubuntu" class="anchor" id="user-content-in-linux-ubuntu">
+            <span class="octicon octicon-link"></span>
+          </a>In linux (ubuntu...)
+        </h4>
+        <p>
+          <code>sudo apt-get update</code>
+        </p>
+        <p>
+          <code>sudo apt-get install nodejs</code>
+        </p>
+        <p>
+          <code>sudo apt-get install npm</code>
+        </p>
+        <h3>
+          <a aria-hidden="true" href="#build-project" class="anchor" id="user-content-build-project">
+            <span class="octicon octicon-link"></span>
+          </a>Build project
+        </h3>
+        <p>Open command prompt node js (window) or terminal (ubuntu ... )</p>
+        <h1></h1>
+        <p>
+          <code>npm install</code>
+        </p>
+        <h3>
+          <a aria-hidden="true" href="#run-project" class="anchor" id="user-content-run-project">
+            <span class="octicon octicon-link"></span>
+          </a>Run project
+        </h3>
+        <p>Open command prompt (window) or terminal (ubuntu ... )</p>
+        <h1></h1>
+        <p>
+          <code>gulp</code>
+        </p>
+        <h3>
+          <a aria-hidden="true" href="#create-new-component" class="anchor" id="user-content-create-new-component">
+            <span class="octicon octicon-link"></span>
+          </a>Create new component
+        </h3>
+        <ul>
+          <li>In folder component , create subfolder has name same name component (no space , special symbol)</li>
+          <li>In folder yet created , create [name-folder].html and [name-folder].css</li>
+          <li>File html save markup component</li>
+          <li>File css save style component</li>
+          <li>Open [dir project]/components.twig , find row "list_components" </li>
+          <li>
+            <p>Add structure to last row</p>
+            <p>{</p>
+            <p>'id':'[name-folder]',</p>
+            <p>'name': '[Description of component]'</p>
+            <p>}</p>
+          </li>
+        </ul>
+        <p>
+          <strong>Run again 'gulp' command if after create new component</strong>
+        </p>
+        <h2>
+          <a aria-hidden="true" href="#tks" class="anchor" id="user-content-tks">
+            <span class="octicon octicon-link"></span>
+          </a>tks!!!
+        </h2>
+      </article>
+    </div>
+</div>
+
+
+{% endblock %}
