@@ -1,6 +1,9 @@
 .component--list.active {
 	left: 0;
 }
+.syntaxhighlighter table {
+  table-layout: auto !important;
+}
 .component--list {
   bottom: 10px;
   left: -300px;
