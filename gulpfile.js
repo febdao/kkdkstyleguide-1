@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 		reload = browserSync.reload,
 	  src = {
 	    html: 'includes/*.twig',
-	    page: '*.twig',
+	    page: 'templates/*.twig',
 	    htmlcompo: 'components/**/*.html',
 	    css: 'components/**/*.css',
 	  };

@@ -8,7 +8,7 @@
   <meta name="description" content="A demo of how to use gulp-twig" />
   <meta name="author" content="Simon de Turck" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KK Styleguide</title>
+  <title>KK Styleguide - {% block title %}{% endblock %}</title>
   <link rel="stylesheet" type="text/css" href="basetheme/css/kkms.style.css">
   <link rel="stylesheet" type="text/css" href="basetheme/css/kkdk_styles.css">
   <link rel="stylesheet" type="text/css" href="css/shCore.css">
@@ -40,20 +40,25 @@
     <section id="main-content" class="sec sec-content">
       <div class="sec-inner">
         <div class="reg-inner-regions">
-          {% block index %}{% endblock %}
-          {% block components %}{% endblock %}
-          {% block typography %}{% endblock %}
-          {% block grid %}{% endblock %}
-          {% block color %}{% endblock %}
-          {% block doc %}{% endblock %}
+        <div class="pane-kkdk-menu-top-level-menu-item">
+          <div class="kkdk-menu-info">
+            <h2> {% block title %}{% endblock %} </h2>
+            <div class="kkdk-menu-description">{% block desc %}{% endblock %}</div>
+          </div>
+        </div>
+          {% block body %}{% endblock %}
         </div>
       </div>
+    </section>
+    <section>
+      {% include "footer.twig" %}
     </section>
   </div>
   <a href="#" class="cd-top">Top</a>
   <script type="text/javascript">
      SyntaxHighlighter.all()
   </script>
+
 </body>
 
 </html>

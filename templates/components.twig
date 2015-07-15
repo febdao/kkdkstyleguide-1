@@ -1,13 +1,14 @@
 {# components.twig #}
 {% extends "includes/layout.twig" %}
-{% block components %}
+
+{% block title %} Components List{% endblock %}
+
+{% block desc %}
+Københavns kommune har tilbud til ældre, borgere med handicap, med psykisk sygdom, udsatte børn, unge og familier og hjemløse
+{% endblock %}
+
+{% block body %}
   <div class="pagetype" data-page="page-compo"></div>
-  <div class="pane-kkdk-menu-top-level-menu-item">
-    <div class="kkdk-menu-info">
-      <h2> Components List </h2>
-      <div class="kkdk-menu-description">Københavns kommune har tilbud til ældre, borgere med handicap, med psykisk sygdom, udsatte børn, unge og familier og hjemløse</div>
-    </div>
-  </div>
 	{% set list_components = [
     {
       'id':'boxicon',
@@ -155,21 +156,21 @@
     <div class="component--item" id="{{component.id}}">
       <h2 class="component--title">{{ loop.index }}. {{ component.name }}</h2>
       <div class="component--demo">
-      {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
+      {% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
       </div>
       <button class="show-code">Show/Hide Code</button>
       <div class="component--source element-invisible">
         <div class="component--html">
           <h2 class="component--source--title">Markup</h2>
           <pre  class="brush: php">
-            {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
+            {% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
           </pre>
         </div>
         <div class="component--css">
           <h2 class="component--source--title">Style</h2>
           <pre class="brush: css">
           {% spaceless %}
-            {% include "components/" ~ component.id ~ "/" ~ component.id ~ ".css" %}
+            {% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".css" %}
           {% endspaceless %}
           </pre>
         </div>
