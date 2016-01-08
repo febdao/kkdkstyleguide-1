@@ -1,42 +1,39 @@
-# kkdkstyleguide
-Styleguide for KK.dk site
-------
+
+# Styleguide for KK.dk site
+
+[Demo page](http://66.228.54.41/kkdk/)
+
+====================
+
 ### Install nodejs
 
-#### In window:
-See page [Nodejs download](https://nodejs.org/download/)
+See page [Nodejs offical page](https://nodejs.org/)
 
-#### In linux (ubuntu...)
-
-`sudo apt-get update`
-
-`sudo apt-get install nodejs`
-
-`sudo apt-get install npm`
+====================
 
 ### Build project
 
-Open command prompt node js (window) or terminal (ubuntu ... )
+Open command prompt node js (window) or terminal (ubuntu, osx ... )
+
+{code}npm install{code}
 
 ====================
-
-`npm install`
 
 ### Run project
-Open command prompt (window) or terminal (ubuntu ... )
+Open command prompt (window) or terminal (ubuntu, osx... )
+
+{code}gulp{code}
 
 ====================
-
-`gulp`
 
 ### Create new component
 * In folder component , create subfolder has name same name component (no space , special symbol)
-* In folder yet created , create [name-folder].html and [name-folder].css
+* In folder yet created , create `[name-folder].html` and `[name-folder].css`
 * File html save markup component
 * File css save style component
-* Open [dir project]/components.twig , find row {% set list_components = [
+* Open `[dir project]/components.twig` , find row `{% set list_components = [`
 * Add structure to last row
-
+{code}
   {
 
     'id':'[name-folder]',
@@ -44,8 +41,10 @@ Open command prompt (window) or terminal (ubuntu ... )
     'name': '[Description of component]'
 
   }
+{code}
+**Run 'gulp' command again after create new component**
 
-**Run again 'gulp' command if after create new component**
+====================
 
-## tks!!!
+## FFW team!
 

@@ -24,14 +24,13 @@ gulp.task('server',['templates', 'css'],function(){
 	gulp.watch([src.html,src.page,src.htmlcompo], ['templates']);
 	gulp.watch(['js/*.js'], reload);
   gulp.watch(['css/app.css'], reload);
-	gulp.watch(['css/thanh.css'], reload);
 });
 
 /*
  * Compile sass into Css & auto-inject into browsers
  */
 gulp.task('css', function() {
-  return gulp.src('components/**/*.css')
+  return gulp.src(src.css)
     .pipe(concatCss("style.css"))
     .pipe(gulp.dest('css/'))
     .on("end", reload);
