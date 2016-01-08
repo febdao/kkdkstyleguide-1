@@ -13,16 +13,20 @@ See page [Nodejs offical page](https://nodejs.org/)
 
 ### Build project
 
-Open command prompt node js (window) or terminal (ubuntu, osx ... )
+Open `command prompt node js` (window) or `terminal` (ubuntu, osx ... )
 
-{code}npm install{code}
+```
+npm install
+```
 
 ====================
 
 ### Run project
-Open command prompt (window) or terminal (ubuntu, osx... )
+Open `command prompt` (window) or `terminal` (ubuntu, osx... )
 
-{code}gulp{code}
+```
+gulp
+```
 
 ====================
 
@@ -33,7 +37,7 @@ Open command prompt (window) or terminal (ubuntu, osx... )
 * File css save style component
 * Open `[dir project]/components.twig` , find row `{% set list_components = [`
 * Add structure to last row
-{code}
+```
   {
 
     'id':'[name-folder]',
@@ -41,7 +45,7 @@ Open command prompt (window) or terminal (ubuntu, osx... )
     'name': '[Description of component]'
 
   }
-{code}
+```
 **Run 'gulp' command again after create new component**
 
 ====================
