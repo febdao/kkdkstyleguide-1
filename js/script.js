@@ -25,15 +25,17 @@
     });
 
     // Js slider
-    $('.flexslider').flexslider({
-      animation: "slide",
-      pausePlay: true, //Boolean: Create pause/play dynamic element
-      pauseText: 'Pause', //String: Set the text for the "pause" pausePlay item
-      playText: 'Play',
-    });
-    $(".flex-control-paging,.flex-pauseplay").wrapAll("<div class='controls-nav'></div>");
-    $(".flex-pauseplay").next().remove();
-    $(".flex-pauseplay").next().remove();
+    if(typeof flexslider == 'function') {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        pausePlay: true, //Boolean: Create pause/play dynamic element
+        pauseText: 'Pause', //String: Set the text for the "pause" pausePlay item
+        playText: 'Play',
+      });
+      $(".flex-control-paging,.flex-pauseplay").wrapAll("<div class='controls-nav'></div>");
+      $(".flex-pauseplay").next().remove();
+      $(".flex-pauseplay").next().remove();
+    }
 
     $('.list-local-content__wrap').matchHeight();
 
